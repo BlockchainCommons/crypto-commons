@@ -61,8 +61,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="15%"><b>Language</b></td>
-  <td width="85%">C</td>
+  <td><b>Language</b></td>
+  <td width="100%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
@@ -70,7 +70,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
  <tr>
   <td><b>Notes</b></td>
-  <td>_Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes
+  <td>Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes
 </td>
  </tr>
 </table>
@@ -79,8 +79,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="15%"><b>Language</b></td>
-  <td width="85%">C</td>
+  <td><b>Language</b></td>
+  <td width="100%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
@@ -98,20 +98,94 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
+#### *bc-shamir*
 
-* **[bc-shamir](https://github.com/BlockchainCommons/bc-shamir) \(C\).** Implementation of Shamir Secret Sharing.
-* **[bc-slip39](https://github.com/BlockchainCommons/bc-slip39) \(C\).** Implementation of Satoshi Labs' [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md). 
-  * _Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead._
- * **[bc-sskr](https://github.com/blockchaincommons/bc-sskr) \(C\).** Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in [BCR-2020-011](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md).
-   * _The SSKR methodology is an alternative to SLIP-39 that converts Shamir shards to [URs](https://github.com/BlockchainCommons/bc-ur) or [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md). Its main improvement over SLIP-39 is that it  round trips with BIP-39, whereas [SLIP-39 does not](https://github.com/BlockchainCommons/bc-lethekit/issues/38)._
-* **[bc-ur](https://github.com/BlockchainCommons/bc-ur) \(C++\).** Implementation of Blockchain Commons' UR standard for Uniform Resources, as described in [BCR-2020-005](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md).  
-   * _The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)._
-   * _Blockchain Commons' UR has also been widely implemented in other languages:_
-      * **[bc-ur-java](https://github.com/BlockchainCommons/bc-ur-java) \(Java\).** A Java implementation created by Bitmark.
-      * **[URKit](https://github.com/BlockchainCommons/URKit) (Swift).** A Swift implementation that encodes and decodes URs.
-      * Third-party implementations of UR include **[Hummingbird](https://github.com/sparrowwallet/hummingbird) (Java)**, **[foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) (Python)**, and **[ur-rs](https://github.com/dspicher/ur-rs) (Rust)**. 
+<table width="100%">
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-shamir">bc-shamir</a></td>
+ </tr>
+ <tr>
+  <td><b>Notes</b></td>
+  <td>Implementation of Shamir Secret Sharing.
+  </td>
+ </tr>
+</table>
 
+#### *bc-slip39*
 
+<table width="100%">
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-slip39">bc-slip39</a></td>
+ </tr>
+ <tr>
+  <td><b>Notes</b></td>
+  <td>Implementation of Satoshi Labs' <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">SLIP-39</a>.<br> 
+ Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> instead.
+  </td>
+ </tr>
+</table>
+
+#### *bc-sskr*
+
+<table width="100%">
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a></td>
+ </tr>
+  <tr>
+  <td><b>Notes</b></td>
+  <td>Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md">BCR-2020-011</a>
+</td>
+ </tr>
+ <tr>
+  <td><b>Description</b></td>
+  <td>The SSKR methodology is an alternative to SLIP-39 that converts Shamir shards to <a href="https://github.com/BlockchainCommons/bc-ur">URs</a> or <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>. Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas <a href="https://github.com/BlockchainCommons/bc-lethekit/issues/38">SLIP-39 does not</a>.</td>
+ </tr>
+</table>
+
+#### *bc-ur*
+
+<table width="100%">
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">C++</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a></td>
+ </tr>
+  <tr>
+  <td><b>Notes</b></td>
+  <td>Implementation of Blockchain Commons' UR standard for Uniform Resources, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md">BCR-2020-005</a>.  
+</td>
+ </tr>
+ <tr>
+  <td><b>Description</b></td>
+  <td>The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>.</td>
+ </tr>
+ <tr>
+  <td><b>Other Versions</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-ur-java">bc-java</a> (Java), <a href="https://github.com/BlockchainCommons/URKit">URKit</a> (Swift)
+ </tr>
+  <tr>
+  <td><b>Third-Party Implementations</b></td>
+   <td><a href="https://github.com/sparrowwallet/hummingbird">Hummingbird</a> (Java), <a href="https://github.com/Foundation-Devices/foundation-ur-py">foundation-ur-py</a> (Python), and <a href="https://github.com/dspicher/ur-rs">ur-rs</a> (Rust)
+ </tr>
+</table>
 
 ## Status - Varied
 
