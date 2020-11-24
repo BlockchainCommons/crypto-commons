@@ -43,8 +43,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="10%"><b>Language</b></td>
-  <td width="90%">C</td>
+  <td width="15%"><b>Language</b></td>
+  <td width="85%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
@@ -61,8 +61,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="10%"><b>Language</b></td>
-  <td width="90%">C</td>
+  <td width="15%"><b>Language</b></td>
+  <td width="85%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
@@ -79,8 +79,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="10%"><b>Language</b></td>
-  <td width="90%">C</td>
+  <td width="15%"><b>Language</b></td>
+  <td width="85%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
@@ -88,7 +88,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Notes</b></td>
-  <td>_Implementation of bytewords from <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">BCR-2020-012</a>.<br>Bytewords are also used in <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> and <a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a>.
+  <td>Implementation of bytewords from <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">BCR-2020-012</a>.<br>Bytewords are also used in <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> and <a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a>.
 </td>
  </tr>
  <tr>
