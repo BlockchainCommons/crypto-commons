@@ -1,16 +1,61 @@
-# Blockchain Commons `$projectname`
+# Crypto Commons
 
-**`$ProjectDescription`** is …
+_Crypto Commons is the Gordian reference code & CLI utilities. It collects together all of Blockchain Commons' wallet libraries and the utilities built from them._
 
 ## Additional Information
 
-The following files contain…
+The Crypto Commons includes reference libraries (mostly in C), which can be used to build wallets; and demos & tools, which exercise and exemplify those wallet libraries.
 
-* `$ListOfEssentialDocs`
+### Libraries
 
-## Status - Late Alpha
+_The Crypto Commons libraries are reference implementations, meant to be examples of how to standardly implement these various crypto functions._
 
-` $projectname`  is currently under active development and in the late alpha testing phase. It should not be used for production tasks until it has had further testing and auditing.
+**[bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) \(C\).** Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions
+
+**[bc-bech32](https://github.com/BlockchainCommons/bc-bech32) \(C\).** Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
+  * _No longer being actively supported._
+
+**[bc-bip-39](https://github.com/blockchaincommons/bc-bip39) \(C\).** Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes.
+
+**[bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords) \(C\).** Implementation of bytewords from [BCR-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
+   * _The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters._
+   * _Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
+
+**[bc-shamir](https://github.com/BlockchainCommons/bc-shamir) \(C\).** Implementation of Shamir Secret Sharing.
+
+**[bc-slip39](https://github.com/BlockchainCommons/bc-slip39) \(C\).** Implementation of Satoshi Labs' [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md). 
+  * _Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead._
+ 
+**[bc-sskr](https://github.com/blockchaincommons/bc-sskr) \(C\).** Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in [BCR-2020-011](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md).
+   * _The SSKR methodology is an alternative to SLIP-39 that converts Shamir shards to [URs](https://github.com/BlockchainCommons/bc-ur) or [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md). Its main improvement over SLIP-39 is that it  round trips with BIP-39, whereas [SLIP-39 does not](https://github.com/BlockchainCommons/bc-lethekit/issues/38)._
+
+**[bc-ur](https://github.com/BlockchainCommons/bc-ur) \(C++\).** Implementation of Blockchain Commons' UR standard for Uniform Resources, as described in [BCR-2020-005](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md).  
+   * _The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)._
+ 
+ _Blockchain Commons' UR has also been widely implemented in other languages:_
+ 
+   * **[bc-ur-java](https://github.com/BlockchainCommons/bc-ur-java) \(Java\).** A Java implementation created by Bitmark.
+   * **[URKit](https://github.com/BlockchainCommons/URKit) (Swift).** A Swift implementation that encodes and decodes URs.
+   * Third-party implementations of UR include **[Hummingbird](https://github.com/sparrowwallet/hummingbird) (Java)**, **[foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) (Python)**, and **[ur-rs](https://github.com/dspicher/ur-rs) (Rust)**. 
+
+## Demos & Tools
+
+_Blockchain Commons has also released a number of kits and CLI tools that exercise the various reference libraries._
+
+**[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
+  * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base)._
+
+**[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
+  * _LetheKit's Seedtool exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur) (the last through a bc-ur-arduino port)._
+
+**[Seedtool](https://github.com/BlockchainCommons/bc-seedtool-cli) \(CLI\).** A tool for generating seeds from a variety of random inputs and for translating seeds among formats like BIP39, [SSKR](https://github.com/blockchaincommons/bc-sskr), hex, and [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
+   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
+
+**[URDemo](https://github.com/BlockchainCommons/URDemo) \(Demo\).** A demonstration of the [URKit](https://github.com/BlockchainCommons/URKit) that can be compiled and run in Xcode using Swift. It demonstrates multi-part animated QRs.
+
+## Status - Varied
+
+Please see individual projects for their exact status. The C libraries are largely in feature-complete beta status.
 
 ## Origin, Authors, Copyright & Licenses
 
@@ -18,35 +63,11 @@ Unless otherwise noted (either in this [/README.md](./README.md) or in the file'
 
 In most cases, the authors, copyright, and license for each file reside in header comments in the source code. When it does not, we have attempted to attribute it accurately in the table below.
 
-This table below also establishes provenance (repository of origin, permalink, and commit id) for files included from repositories that are outside of this repo. Contributors to these files are listed in the commit history for each repository, first with changes found in the commit history of this repo, then in changes in the commit history of their repo of their origin.
-
-| File      | From                                                         | Commit                                                       | Authors & Copyright (c)                                | License                                                     |
-| --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
-| exception-to-the-rule.c or exception-folder | [https://github.com/community/repo-name/PERMALINK](https://github.com/community/repo-name/PERMALINK) | [https://github.com/community/repo-name/commit/COMMITHASH]() | 2020 Exception Author  | [MIT](https://spdx.org/licenses/MIT)                        |
-
-### Dependencies
-
-To build  `$projectname` you'll need to use the following tools:
-
-- autotools - Gnu Build System from Free Software Foundation ([intro](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html)).
-
-### Derived from…
-
-This  `$projectname` project is either derived from or was inspired by:
-
-- [community/repo-name/](https://github.com/community/repo-name) — Repo that does what, by [developer](https://github.com/developer)  or from  [community](https://community.com).
-
-### Used with…
-
-These are other projects that work with or leverage `$projectname`:
-
-- [community/repo-name/](https://github.com/community/repo-name) — Repo that does what, by [developer](https://github.com/developer)  or from  [community](https://community.com).
-
 ## Financial Support
 
-`$projectname` is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
+Crypto Commons is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
 
-To financially support further development of `$projectname` and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
+To financially support further development of Crypto Commons and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
 
 ## Contributing
 
