@@ -54,7 +54,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td><b>Notes</b></td>
   <td>Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
 
-No longer being actively supported._
+<p><i>No longer being actively supported.</i>
 </td>
  </tr>
 </table>
