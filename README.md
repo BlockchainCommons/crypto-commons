@@ -24,7 +24,6 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 #### *bc-crypto-base*
 
-| | |
 |---|---|
 | **Language** | C |
 | **Link** | [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) |
