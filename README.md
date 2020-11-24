@@ -59,21 +59,45 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 #### *bc-bip-39*
 
-* **Language:** C
-* **Link:** [bc-bip-39](https://github.com/blockchaincommons/bc-bip39)
-
-_Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes._
+<table width="100%">
+ <tr>
+  <td width="10%"><b>Language</b></td>
+  <td width="90%">C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/blockchaincommons/bc-bip39">bc-bip39</a></td>
+ </tr>
+ <tr>
+  <td><b>Notes</b></td>
+  <td>_Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes
+</td>
+ </tr>
+</table>
 
 #### *bc-bytewords*
 
-* **Language:** C
-* **Link:** [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords)
+<table width="100%">
+ <tr>
+  <td width="10%"><b>Language</b></td>
+  <td width="90%">C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-bytewords">bc-bytewords</a></td>
+ </tr>
+  <tr>
+  <td><b>Notes</b></td>
+  <td>_Implementation of bytewords from <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">BCR-2020-012</a>.<br>Bytewords are also used in <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> and <a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a>.
+</td>
+ </tr>
+ <tr>
+  <td><b>Description</b></td>
+  <td>The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters.
+</td>
+ </tr>
+</table>
 
-_Implementation of bytewords from [BCR-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)._
-
-_The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters._
-
-_Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur).
 
 * **[bc-shamir](https://github.com/BlockchainCommons/bc-shamir) \(C\).** Implementation of Shamir Secret Sharing.
 * **[bc-slip39](https://github.com/BlockchainCommons/bc-slip39) \(C\).** Implementation of Satoshi Labs' [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md). 
