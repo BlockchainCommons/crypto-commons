@@ -26,15 +26,15 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td>**Language**</td>
+  <td><b>Language</b></td>
   <td>C</td>
  </tr>
  <tr>
-  <td>**Link**</td>
-  <td>[bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base)</td>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-crypto-base">bc-crypto-base</a></td>
  </tr>
  <tr>
-  <td>**Notes**</td>
+  <td><b>Notes</b></td>
   <td>Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions.</td>
  </tr>
 </table>
