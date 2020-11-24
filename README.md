@@ -6,7 +6,19 @@ _Crypto Commons is the Gordian reference code & CLI utilities. It collects toget
 
 The Crypto Commons includes reference libraries (mostly in C), which can be used to build wallets; and demos & tools, which exercise and exemplify those wallet libraries.
 
-### Libraries
+### Gordian Tools & Demos
+
+_Blockchain Commons has released a number of kits and CLI tools that exercise the Gordian reference libraries._
+
+* **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
+  * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base)._
+* **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
+  * _LetheKit's Seedtool exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur) (the last through a bc-ur-arduino port)._
+* **[Seedtool](https://github.com/BlockchainCommons/bc-seedtool-cli) \(CLI\).** A tool for generating seeds from a variety of random inputs and for translating seeds among formats like BIP39, [SSKR](https://github.com/blockchaincommons/bc-sskr), hex, and [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
+   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
+* **[URDemo](https://github.com/BlockchainCommons/URDemo) \(Demo\).** A demonstration of the [URKit](https://github.com/BlockchainCommons/URKit) that can be compiled and run in Xcode using Swift. It demonstrates multi-part animated QRs.
+
+### Gordian Reference Libraries
 
 _The Crypto Commons libraries are reference implementations, meant to be examples of how to standardly implement these various crypto functions._
 
@@ -26,10 +38,24 @@ _Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-017
 
 _No longer being actively supported._
 
-* **[bc-bip-39](https://github.com/blockchaincommons/bc-bip39) \(C\).** Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes.
-* **[bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords) \(C\).** Implementation of bytewords from [BCR-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
-   * _The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters._
-   * _Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
+#### *bc-bip-39*
+
+* **Language:** C
+* **Link:** [bc-bip-39](https://github.com/blockchaincommons/bc-bip39)
+
+_Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes._
+
+#### *bc-bytewords*
+
+* **Language:** C
+* **Link:** [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords)
+
+_Implementation of bytewords from [BCR-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)._
+
+_The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters._
+
+_Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur).
+
 * **[bc-shamir](https://github.com/BlockchainCommons/bc-shamir) \(C\).** Implementation of Shamir Secret Sharing.
 * **[bc-slip39](https://github.com/BlockchainCommons/bc-slip39) \(C\).** Implementation of Satoshi Labs' [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md). 
   * _Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead._
@@ -42,17 +68,7 @@ _No longer being actively supported._
       * **[URKit](https://github.com/BlockchainCommons/URKit) (Swift).** A Swift implementation that encodes and decodes URs.
       * Third-party implementations of UR include **[Hummingbird](https://github.com/sparrowwallet/hummingbird) (Java)**, **[foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) (Python)**, and **[ur-rs](https://github.com/dspicher/ur-rs) (Rust)**. 
 
-### Tools & Demos
 
-_Blockchain Commons has also released a number of kits and CLI tools that exercise the various reference libraries._
-
-* **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
-  * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base)._
-* **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
-  * _LetheKit's Seedtool exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur) (the last through a bc-ur-arduino port)._
-* **[Seedtool](https://github.com/BlockchainCommons/bc-seedtool-cli) \(CLI\).** A tool for generating seeds from a variety of random inputs and for translating seeds among formats like BIP39, [SSKR](https://github.com/blockchaincommons/bc-sskr), hex, and [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
-   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base), [bc-bip-39](https://github.com/blockchaincommons/bc-bip39), [bc-shamir](https://github.com/BlockchainCommons/bc-shamir), [bc-sskr](https://github.com/blockchaincommons/bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
-* **[URDemo](https://github.com/BlockchainCommons/URDemo) \(Demo\).** A demonstration of the [URKit](https://github.com/BlockchainCommons/URKit) that can be compiled and run in Xcode using Swift. It demonstrates multi-part animated QRs.
 
 ## Status - Varied
 
