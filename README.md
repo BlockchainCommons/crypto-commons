@@ -43,8 +43,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
-  <td width="20%"><b>Language</b></td>
-  <td width="80%">C</td>
+  <td width="10%"><b>Language</b></td>
+  <td width="90%">C</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
