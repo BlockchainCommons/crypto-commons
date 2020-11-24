@@ -38,7 +38,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
    * **[URKit](https://github.com/BlockchainCommons/URKit) (Swift).** A Swift implementation that encodes and decodes URs.
    * Third-party implementations of UR include **[Hummingbird](https://github.com/sparrowwallet/hummingbird) (Java)**, **[foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) (Python)**, and **[ur-rs](https://github.com/dspicher/ur-rs) (Rust)**. 
 
-## Demos & Tools
+### Demos & Tools
 
 _Blockchain Commons has also released a number of kits and CLI tools that exercise the various reference libraries._
 
