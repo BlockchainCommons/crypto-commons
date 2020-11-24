@@ -37,6 +37,10 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td><b>Notes</b></td>
   <td>Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions.</td>
  </tr>
+  <tr>
+  <td><b>Other Versions</b></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
+ </tr>
 </table>
 
 #### *bc-bech32*
@@ -79,6 +83,11 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 <table width="100%">
  <tr>
+  <td><b>Description</b></td>
+  <td>The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters.
+</td>
+ </tr>
+ <tr>
   <td><b>Language</b></td>
   <td width="100%">C</td>
  </tr>
@@ -89,11 +98,6 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <tr>
   <td><b>Notes</b></td>
   <td>Implementation of bytewords from <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">BCR-2020-012</a>.<br>Bytewords are also used in <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> and <a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a>.
-</td>
- </tr>
- <tr>
-  <td><b>Description</b></td>
-  <td>The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters.
 </td>
  </tr>
 </table>
@@ -113,6 +117,10 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td><b>Notes</b></td>
   <td>Implementation of Shamir Secret Sharing.
   </td>
+ </tr>
+   <tr>
+  <td><b>Other Versions</b></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
  </tr>
 </table>
 
@@ -138,6 +146,10 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 #### *bc-sskr*
 
 <table width="100%">
+  <tr>
+  <td><b>Description</b></td>
+  <td>The SSKR methodology is an alternative to SLIP-39 that converts Shamir shards to <a href="https://github.com/BlockchainCommons/bc-ur">URs</a> or <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>. Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas <a href="https://github.com/BlockchainCommons/bc-lethekit/issues/38">SLIP-39 does not</a>.</td>
+ </tr>
  <tr>
   <td><b>Language</b></td>
   <td width="100%">C</td>
@@ -151,15 +163,19 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td>Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md">BCR-2020-011</a>
 </td>
  </tr>
- <tr>
-  <td><b>Description</b></td>
-  <td>The SSKR methodology is an alternative to SLIP-39 that converts Shamir shards to <a href="https://github.com/BlockchainCommons/bc-ur">URs</a> or <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>. Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas <a href="https://github.com/BlockchainCommons/bc-lethekit/issues/38">SLIP-39 does not</a>.</td>
+   <tr>
+  <td><b>Other Versions</b></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
  </tr>
 </table>
 
 #### *bc-ur*
 
 <table width="100%">
+  <tr>
+  <td><b>Description</b></td>
+  <td>The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>.</td>
+ </tr>
  <tr>
   <td><b>Language</b></td>
   <td width="100%">C++</td>
@@ -174,10 +190,6 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 </td>
  </tr>
  <tr>
-  <td><b>Description</b></td>
-  <td>The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>.</td>
- </tr>
- <tr>
   <td><b>Other Versions</b></td>
   <td><a href="https://github.com/BlockchainCommons/bc-ur-java">bc-ur-java</a> (Java), <a href="https://github.com/BlockchainCommons/URKit">URKit</a> (Swift)
  </tr>
@@ -186,6 +198,10 @@ _The Crypto Commons libraries are reference implementations, meant to be example
    <td><a href="https://github.com/sparrowwallet/hummingbird">Hummingbird</a> (Java), <a href="https://github.com/Foundation-Devices/foundation-ur-py">foundation-ur-py</a> (Python), and <a href="https://github.com/dspicher/ur-rs">ur-rs</a> (Rust)
  </tr>
 </table>
+
+### Third-Party Libraries
+
+Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project libwally wallet library. We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-libs-java).
 
 ## Status - Varied
 
