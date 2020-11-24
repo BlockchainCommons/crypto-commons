@@ -10,9 +10,8 @@ The Crypto Commons includes reference libraries (mostly in C), which can be used
 
 _The Crypto Commons libraries are reference implementations, meant to be examples of how to standardly implement these various crypto functions._
 
-**[bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) \(C\).** Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions
-
-**[bc-bech32](https://github.com/BlockchainCommons/bc-bech32) \(C\).** Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
+* **[bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) \(C\).** Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions
+* **[bc-bech32](https://github.com/BlockchainCommons/bc-bech32) \(C\).** Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
   * _No longer being actively supported._
 
 **[bc-bip-39](https://github.com/blockchaincommons/bc-bip39) \(C\).** Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes.
