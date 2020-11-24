@@ -201,7 +201,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 ### Third-Party Libraries
 
-Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project libwally wallet library. We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-libs-java).
+Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-libs-java).
 
 ## Status - Varied
 
