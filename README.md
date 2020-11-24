@@ -15,16 +15,16 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 * **Language:** C
 * **Link:** [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base)
 
-| Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions
+> Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions
 
 #### bc-bech32
 
 * **Language:** C
 * **Link:** [bc-bech32](https://github.com/BlockchainCommons/bc-bech32)
 
-| Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
+> Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
 
-| _No longer being actively supported._
+> _No longer being actively supported._
 
 * **[bc-bip-39](https://github.com/blockchaincommons/bc-bip39) \(C\).** Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes.
 * **[bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords) \(C\).** Implementation of bytewords from [BCR-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
