@@ -41,6 +41,24 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 #### *bc-bech32*
 
+<table width="100%">
+ <tr>
+  <td><b>Language</b></td>
+  <td>C</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-bech32">bc-bech32</a></td>
+ </tr>
+ <tr>
+  <td><b>Notes</b></td>
+  <td>Implementation of [BIP-173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), Bech32 address format.
+
+No longer being actively supported._
+</td>
+ </tr>
+</table>
+
 * **Language:** C
 * **Link:** [bc-bech32](https://github.com/BlockchainCommons/bc-bech32)
 
