@@ -2,11 +2,9 @@
 
 _Crypto Commons is the Gordian reference code & CLI utilities. It collects together all of Blockchain Commons' wallet libraries and the utilities built from them._
 
-## Additional Information
+It includes reference libraries (mostly in C), which can be used to build wallets; and demos & tools, which exercise and exemplify those wallet libraries.
 
-The Crypto Commons includes reference libraries (mostly in C), which can be used to build wallets; and demos & tools, which exercise and exemplify those wallet libraries.
-
-### Gordian Tools & Demos
+## Gordian Tools & Demos
 
 _Blockchain Commons has released a number of kits and CLI tools that exercise the Gordian reference libraries._
 
@@ -18,11 +16,11 @@ _Blockchain Commons has released a number of kits and CLI tools that exercise th
    * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur)._
 * **[URDemo](https://github.com/BlockchainCommons/URDemo) \(Demo\).** A demonstration of the [URKit](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur) that can be compiled and run in Xcode using Swift. It demonstrates multi-part animated QRs.
 
-### Gordian Reference Libraries
+## Gordian Reference Libraries
 
 _The Crypto Commons libraries are reference implementations, meant to be examples of how to standardly implement these various crypto functions._
 
-#### *bc-crypto-base*
+### *bc-crypto-base*
 
 <table width="100%">
  <tr>
@@ -43,7 +41,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-bech32*
+### *bc-bech32*
 
 <table width="100%">
  <tr>
@@ -61,7 +59,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-bip-39*
+### *bc-bip-39*
 
 <table width="100%">
  <tr>
@@ -79,7 +77,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-bytewords*
+### *bc-bytewords*
 
 <table width="100%">
  <tr>
@@ -102,7 +100,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-shamir*
+### *bc-shamir*
 
 <table width="100%">
  <tr>
@@ -124,7 +122,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-slip39*
+### *bc-slip39*
 
 <table width="100%">
  <tr>
@@ -143,7 +141,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-sskr*
+### *bc-sskr*
 
 <table width="100%">
   <tr>
@@ -169,7 +167,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-#### *bc-ur*
+### *bc-ur*
 
 <table width="100%">
   <tr>
@@ -199,7 +197,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-### Third-Party Libraries
+## Third-Party Libraries
 
 Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-libs-java).
 
