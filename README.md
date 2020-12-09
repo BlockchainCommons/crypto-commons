@@ -41,7 +41,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
@@ -122,7 +122,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
@@ -167,7 +167,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
@@ -203,7 +203,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 ## Third-Party Libraries
 
-Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-libs-java).
+Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-bclibwally-java).
 
 ## Status - Varied
 
