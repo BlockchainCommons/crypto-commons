@@ -193,7 +193,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
  <tr>
   <td><b>Other Versions</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-ur-java">bc-ur-java</a> (Java), <a href="https://github.com/BlockchainCommons/URKit">URKit</a> (Swift)
+  <td><a href="https://github.com/BlockchainCommons/bc-ur-java">bc-ur-java</a> (Java), <a href="https://github.com/BlockchainCommons/URKit">URKit</a> and <a href="https://github.com/BlockchainCommons/URUI">URUI</a> (Swift)
  </tr>
   <tr>
   <td><b>Third-Party Implementations</b></td>
