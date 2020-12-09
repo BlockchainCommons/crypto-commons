@@ -10,6 +10,8 @@ It includes reference libraries (mostly in C), which can be used to build wallet
 
 _Blockchain Commons has released a number of kits and CLI tools that exercise the Gordian reference libraries._
 
+* **[Bytewords](https://github.com/BlockchainCommons/bc-bytewords-cli) \(CLI\).** A tool for testing bytewords.
+   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base) and [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords).
 * **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
   * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base)._
 * **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
@@ -39,7 +41,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
@@ -118,9 +120,9 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td>Implementation of Shamir Secret Sharing.
   </td>
  </tr>
-   <tr>
+  <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
@@ -163,9 +165,9 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td>Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md">BCR-2020-011</a>
 </td>
  </tr>
-   <tr>
+  <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">Java wrapper</a>, <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
  </tr>
 </table>
 
