@@ -11,7 +11,7 @@ It includes reference libraries (mostly in C), which can be used to build wallet
 _Blockchain Commons has released a number of kits and CLI tools that exercise the Gordian reference libraries._
 
 * **[Bytewords](https://github.com/BlockchainCommons/bc-bytewords-cli) \(CLI\).** A tool for testing bytewords.
-   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base) and [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords).
+   * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base) and [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords)._
 * **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
   * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base)._
 * **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
