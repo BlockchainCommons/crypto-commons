@@ -76,7 +76,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
  <tr>
   <td><b>Notes</b></td>
-  <td>Implementation of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic codes
+  <td>Implementation of <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP-39</a> mnemonic codes
 </td>
  </tr>
 </table>
