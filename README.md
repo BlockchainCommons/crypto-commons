@@ -1,5 +1,7 @@
 # Crypto Commons
 
+![](https://raw.githubusercontent.com/BlockchainCommons/crypto-commons/master/images/logos/crypto-commons-logo.png)
+
 ### _by Wolf McNally and Christopher Allen_
 
 _Crypto Commons is the Gordian reference code & CLI utilities. It collects together all of Blockchain Commons' wallet libraries and the utilities built from them._
