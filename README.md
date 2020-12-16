@@ -1,6 +1,4 @@
-# Crypto Commons
-
-![](https://raw.githubusercontent.com/BlockchainCommons/crypto-commons/master/images/logos/crypto-commons-logo.png)
+![Crypto Commons](https://raw.githubusercontent.com/BlockchainCommons/crypto-commons/master/images/logos/crypto-commons-logo.png)
 
 ### _by Wolf McNally and Christopher Allen_
 
