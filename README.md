@@ -16,6 +16,8 @@ _Blockchain Commons has released a number of kits and CLI tools that exercise th
   * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base)._
 * **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
   * _LetheKit's Seedtool exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), [bc-bytewords](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bytewords), [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur) (the last through a bc-ur-arduino port)._
+* **[LifeHashTool](https://github.com/BlockchainCommons/LifeHashTool) \(Swift CLI\).** A tool for generating Lifehash PNGs from the command line.
+  * _LifeHashTool uses [LifeHash](https://github.com/BlockchainCommons/LifeHash).
 * **[Seedtool](https://github.com/BlockchainCommons/bc-seedtool-cli) \(CLI\).** A tool for generating seeds from a variety of random inputs and for translating seeds among formats like BIP39, [SSKR](https://github.com/blockchaincommons/bc-sskr), hex, and [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
    * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur)._
 * **[Fehu](https://github.com/BlockchainCommons/Fehu) \(iOS App\).** An iOS tool for managing seeds.
@@ -103,6 +105,24 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td><b>Notes</b></td>
   <td>Implementation of bytewords from <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">BCR-2020-012</a>.<br>Bytewords are also used in <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> and <a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a>.
 </td>
+ </tr>
+</table>
+
+### *LifeHash*
+
+<table width="100%">
+ <tr>
+  <td><b>Description</b></td>
+  <td>A library for creating LifeHash security images
+</td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Swift</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a></td>
  </tr>
 </table>
 
