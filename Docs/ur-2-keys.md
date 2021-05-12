@@ -1,4 +1,4 @@
-# A Guide to Using UR for Key Material
+# A Guide to Using URs for Key Material
 
 Uniform Resources (URs) allow for the encoding of binary data in typed, serializable text strings that can be easily converted to QR Codes. The types of crypto-data that Blockchain Commons has specified for URs appear in [Registry of UR Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) and include a variety of key material including seeds, private keys, and BIP-39 mnemonics. (SSKR shards can also be encoded as URs, but are the subject of a later article.)
 
@@ -377,3 +377,7 @@ bc-ur provides access to objects such as `UREncoder`, `URDecoder`, and `Byteword
 ## Conclusion
 
 Key material can be transferred using `ur:crypto-seed`, `ur:crypto-bip39`, and `ur:crypto-hdkey`. Doing so allows you to use airgaps, which increase the safety of these vulnerable operations; and also increases your interoperability, so that other software can work with you, and so that your key material remains usable far into the future.
+
+## Coming Soon
+
+_Our next UR article will cover crypto-request and crypto-response. We'll then be looking at SSKRs and PSBTs._
