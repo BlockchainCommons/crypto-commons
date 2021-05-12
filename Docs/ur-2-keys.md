@@ -49,7 +49,7 @@ UR:CRYPTO-SEED/OYADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDHPYLJEDA
 ```
 As shown in the following screenshot from [QR Vault]():
 
-![](https://i.imgur.com/xrkRyCA.png =x500)
+![](https://i.imgur.com/xrkRyCA.png)
 
 #### A Seed with Metadata
 
@@ -96,7 +96,7 @@ And you have a crypto-seed:
 ```
 UR:CRYPTO-SEED/OXADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDAOTPIECYHNMOUOATAXIHFPIAJLJPJTAAJZFXJLIYIYIHIHCXJNJLJTIHKKPSEERNWL
 ```
-![](https://i.imgur.com/znvoWBd.png =x500)
+![](https://i.imgur.com/znvoWBd.png)
 
 ### Mnemonic Words ([ur:crypto-bip39](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#bip-39-encoded-seed-crypto-bip39))
 
