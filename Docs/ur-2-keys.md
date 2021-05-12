@@ -1,5 +1,4 @@
-# UR Article #2: A Guide to Using UR for Key Material
-###### tags: `article / in process`
+# A Guide to Using UR for Key Material
 
 Uniform Resources (URs) allow for the encoding of binary data in typed, serializable text strings that can be easily converted to QR Codes. The types of crypto-data that Blockchain Commons has specified for URs appear in [Registry of UR Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) and include a variety of key material including seeds, private keys, and BIP-39 mnemonics. (SSKR shards can also be encoded as URs, but are the subject of a later article.)
 
