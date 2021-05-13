@@ -6,6 +6,11 @@ _Crypto Commons is the Gordian reference code & CLI utilities. It collects toget
 
 It includes reference libraries (mostly in C), which can be used to build wallets; and demos & tools, which exercise and exemplify those wallet libraries.
 
+## Documents
+
+* **[URs: An Overview](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)**
+   * **[A Guide to Using URs for Key Material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md)**
+  
 ## Gordian Tools & Demos
 
 _Blockchain Commons has released a number of kits and CLI tools that exercise the Gordian reference libraries._
