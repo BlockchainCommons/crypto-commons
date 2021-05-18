@@ -1,11 +1,11 @@
 # Uniform Resources (UR): An Overview
 
-The [Uniform Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md) specification is a method for encoding binary data in plain-text strings that are also well-formed URIs. It's usable with any binary data, but was developed with Bitcoin and other cryptocurrencies in mind.
+The [Uniform Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md) specification is a method for encoding structured binary data in plain-text strings that are also well-formed URIs. It's usable with any binary data, but was developed with Bitcoin and other cryptocurrencies in mind.
 
 To be precise, Uniform Resources (URs) include:
 
-1. A standard way to wrap [CBOR data](https://cbor.io/) in a URI.
-2. A standard way to type data so that it is self-describing.
+1. A standard way to wrap [CBOR-encoded data structures](https://cbor.io/) in a URI.
+2. A standard way to type the data in the URI so that it is self-describing.
 3. A standard way split and sequence longer messages.
 4. Optimizations for efficiency when URs are presented as QR codes.
 
@@ -39,7 +39,7 @@ As discussed in the [UR specification](https://github.com/BlockchainCommons/Rese
 
 Thus the process encoding a UR, which is largely automated by Blockchain Commons libraries, is:
 
-1. Refer to the [Registry of Uniform Resource Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) for how to represent the desired data. 
+1. Refer to the [Registry of Uniform Resource Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) for how to represent the desired data.
 2. Refer to the [CBOR RFC](https://tools.ietf.org/html/rfc7049) for how to encode the data. In particular, be aware of how to [use Canonical CBOR](https://tools.ietf.org/html/rfc7049#section-3.9), how to [encode major types](https://tools.ietf.org/html/rfc7049#section-2.1), and how to [encode byte strings](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#canonical-cbor).
    * The CBOR reference is the _best_ place to read about CBOR encoding, but be aware that whenever you encode something, you will typically preface data with one or more bytes showing data type and length; and as required you may also tag data (which is data type #6).
 3. Convert your complete CBOR binary representation to [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md) using the minimal encoding. This is the first and last letters of the word, and will be done automatically if you are using the Blockchain Commons [bytewords library](https://github.com/BlockchainCommons/bc-bytewords) and request minimal encoding
@@ -63,7 +63,7 @@ For example:
 
 ## What Can Be Encoded in URs?
 
-*Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes.
+*Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
 
 To date, the major uses have fallen into two categories:
 
@@ -74,7 +74,11 @@ When data is being transferred between airgapped documents, it often is done as 
 
 ## What Tools Can I Use to Understand CBOR?
 
-Obviously, the most important tool is the [CBOR reference](https://tools.ietf.org/html/rfc7049). When you are testing your understanding of how CBOR encoding works, you can also use the [CBOR Playground](http://cbor.me/) or if you prefer a command-line implementation, the [CBOR-cli](https://www.npmjs.com/package/cbor-cli), which can be installed with `npm` if you have Node.js installed.
+Obviously, the most important tool is the [CBOR reference](https://tools.ietf.org/html/rfc7049).
+
+CBOR has a more human-readable text [diagnostic notation](https://datatracker.ietf.org/doc/html/rfc7049#page-33) you should become familiar with. When you are testing your understanding of how CBOR encoding works or debugging, you can use the [CBOR Playground](http://cbor.me/) to transform CBOR between hex and diagnostic notation, or if you prefer a command-line implementation, the [CBOR-cli](https://www.npmjs.com/package/cbor-cli), which can be installed with `npm` if you have Node.js installed.
+
+Specifications for CBOR structures are written in the [Concise Data Defintion Language (CDDL)](https://datatracker.ietf.org/doc/html/rfc8610).
 
 The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be of use, since in URs, CBOR is converted to bytewords for text encoding.
 
@@ -97,7 +101,7 @@ The following implementations demonstrate examples of UR usage:
 
 Project | Publisher | UR Usage | Status
 --------|-------------|----------|--------
-[AirGap Vault](https://airgap.it/) | Papers | TBD | Live 
+[AirGap Vault](https://airgap.it/) | Papers | TBD | Live
 [BCC Keytool CLI](https://github.com/BlockchainCommons/bc-keytool-cli) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-request<br>ur:crypto-response<br>ur:crypto-seed | Reference
 [BCC Seedtool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) | Blockchain&nbsp;Commons | ur:crypto-seed<br>ur:crypto-sskr | Reference
 [BlueWallet](https://bluewallet.io/) | BlueWallet | bc-ur v1 | Live
