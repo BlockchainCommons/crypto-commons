@@ -19,7 +19,7 @@ A simple, unadorned seed looks like this:
 ```
 59F2293A5BCE7D4DE59E71B4207AC5D2
 ```
-As discussed in the [UR Overview](https://hackmd.io/9MjfFaJwSW6j05gshsXM7Q), this seed can be converted to the CBOR `A1015059F2293A5BCE7D4DE59E71B4207AC5D2` and then a `ur:crypto-seed`:
+As discussed in the [UR Overview](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md), this seed can be converted to the CBOR `A1015059F2293A5BCE7D4DE59E71B4207AC5D2` and then a `ur:crypto-seed`:
 ```
 UR:CRYPTO-SEED/OYADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDHPYLJEDA
 ```
