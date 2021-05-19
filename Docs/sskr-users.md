@@ -6,7 +6,7 @@ SSKR is Sharded Secret Key Reconstruction. It's a way that you can break up the 
 
 The basic level of SSKR allows you to create a single group of shares, with a threshold for how many of those must be collected to reconstruct your seed. The following shows an example from [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) of creating three shares, of which two must be recovered.
 
-<table width="100%" style="border: none !important" align="center">
+<table width="100%" align="center">
   <tr>
     <Td>
       <img src="../images/sskr-single-1.jpeg" width=350>
@@ -30,8 +30,17 @@ SSKR supports a more advanced methodology where you can define multiple groups, 
 
 The following shows an example from [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) where either 2 of 3 shares must come back from the first group or 3 of 5 shares must come back from the second group. (If the group threshold was increased to 2, then those _both_ would be required.)
 
-![](https://i.imgur.com/CHmgCcq.jpg =350x)
-![](https://i.imgur.com/or1eFvb.jpg =350x)
+<table width="100%" align="center">
+  <tr>
+    <Td>
+      <img src="../images/sskr-group-1.jpeg" width=350>
+    </td>
+    <td>
+      <img src="../images/sskr-group-2.jpeg" width=350>
+    </td>
+  </tr>
+</table>
+</center>
 
 This can allow for more complex scenarios, such as a business that hands off one set of shares to Chief Officers, and then backs that up with a set of shares held by their accountants or some other fiduciary.
 
@@ -47,7 +56,14 @@ Technically, you don't need to record every word: the first four words can be re
 
 SSKR-compliant wallet tools should allow you to paste in your SSKR and reconstruct your seed, as shown in the following example for [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS)
 
-![](https://i.imgur.com/lREy37D.jpg =350x)
+<table width="100%" align="center">
+  <tr>
+    <Td>
+      <img src="../images/sskr-import.jpeg" width=350>
+    </td>
+  </tr>
+</table>
+</center>
 
 From there, your seed should be reconstructed and ready to go!
 
