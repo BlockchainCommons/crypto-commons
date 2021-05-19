@@ -5,6 +5,7 @@ These documents detail the usage of Blockchain Commons specifications and librar
 ## Sharded Secret Key Reconstruction (SSKR)
 
 1. [SSKR for Users](sskr-users.md)
+   * [SSKR Cold Storage](sskr-cold-storage.md)
 1. [SSKR for Developers](sskr-developers.md)
    * [SSKR Test Vector](sskr-test-vector.md)
 
