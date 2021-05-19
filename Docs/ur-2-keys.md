@@ -107,7 +107,7 @@ UR:CRYPTO-SEED/OXADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDAOTPIECYHNMOUOATAXIHFPIAJLJ
 ```
 ![](https://i.imgur.com/znvoWBd.png)
 
-## Mnemonic Words: [ur:crypto-bip39](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#bip-39-encoded-seed-crypto-bip39)
+## Mnemonic Words: [crypto-bip39](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#bip-39-encoded-seed-crypto-bip39)
 
 [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) details how mnemonic words can be used to define a master seed. These words can also be encoded for transportation using URs, as defined in the [CDDL for BIP39](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#cddl-3).
 
@@ -140,7 +140,7 @@ Converting this to minimal bytewords results in:
 ur:crypto-bip39/oeadlkiyjkisinihjzieihiojpjlkpjoihihjpjlieihihhskthsjeihiejzjliajeiojkhskpjkhsioihieiahsjkisihiojzhsjpihiekthskoihieiajpihktihiyjzhsjnihihiojzjlkoihaoidihjtrkkndede
 ```
 
-## Key Material: [ur:crypo-hdkey](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md)
+## Key Material: [crypo-hdkey](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md)
 
 HD Keys allow for a hierarchy of keys. Both master keys and derived keys can be encoded using URs, as described in the [CDDL for hdkeys](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md#cddl-for-hdkey).
 
@@ -231,7 +231,7 @@ ur:crypto-hdkey/onaxhdclaojlvoechgferkdpqdiabdrflawshlhdmdcemtfnlrctghchbdolvwse
 A few other URs are related to key material:
 
 * SSKR allows for the transmission of shares that are recombined to reconstruct key material.
-* Response and Request represent a common way to ask for (and receiving) key material.
+* [Response and Request](https://github.com/BlockchainCommons/crypto-commons/blob/shannona-docs-sskr-request-response/Docs/ur-99-request-response.md) represent a common way to ask for (and receiving) key material.
 
 Each is covered in their own document.
 
