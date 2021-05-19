@@ -2,7 +2,7 @@
 
 These documents detail the usage of Blockchain Commons specifications and libraries.
 
-## (SSKRS)
+## Sharded Secret Key Reconstruction (SSKR)
 
 1. [SSKR for Users](sskr-users.md)
 
