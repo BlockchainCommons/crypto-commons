@@ -1,5 +1,4 @@
 # SSKR Cold Storage
-###### tags: `article / in process`
 
 [Smart Custody](https://www.smartcustody.com/), Blockchain Commons' 2019 guide to best practices for key management, suggests maintaining copies of keys etched in metal. Though SSKR can produced a much larger set of words, it can still be managed. Ken Sedgwick demonstrated one way to do so using dogtags and the [test vector](https://hackmd.io/6ffODXuOSIiTs0VdMesP-Q).
 
