@@ -109,3 +109,5 @@ SSKR is the end-result of over two years of effort. It most immediately grew out
 ## What is the Future of SSKR?
 
 SSKR was designed from the beginning to work with different types of secret sharing. The first expansion is likely to be into VSS.
+
+_Also see the [SSKR Example & Test Vector](sskr-test-vector.md) for a ready-to-use seed._
