@@ -2,6 +2,10 @@
 
 These documents detail the usage of Blockchain Commons specifications and libraries.
 
+## (SSKRS)
+
+1. [SSKR for Users](sskr-users.md)
+
 ## Uniform Resources (URs)
 
 1. [URs: An Overview](ur-1-overview.md)
