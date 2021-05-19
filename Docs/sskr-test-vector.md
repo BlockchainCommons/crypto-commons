@@ -71,6 +71,6 @@ For a more complex SSKR such as this, you might want to use Gordian Guardian's p
 
 SSKR is a powerful way to back up digital secrets. This example demonstrates a specific seed and how it can be used to generate SSKR shares using two different groupings.
 
-See [SSKR Cold Storage](https://hackmd.io/8SEy7aZbTjCG0mJQI6N5zg) for an example of how to store this test vector by etching it in metal. 
+See [SSKR Cold Storage](sskr-cold-storage.md) for an example of how to store this test vector by etching it in metal. 
 
 
