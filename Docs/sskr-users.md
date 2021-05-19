@@ -6,7 +6,7 @@ SSKR is Sharded Secret Key Reconstruction. It's a way that you can break up the 
 
 The basic level of SSKR allows you to create a single group of shares, with a threshold for how many of those must be collected to reconstruct your seed. The following shows an example from [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) of creating three shares, of which two must be recovered.
 
-<table width="100%" border=0 align="center">
+<table width="100%" style="border: none" align="center">
   <tr>
     <Td>
       <img src="../images/sskr-single-1.jpeg" width=350>
