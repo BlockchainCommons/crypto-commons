@@ -26,9 +26,9 @@ URs allow for the interoperable transmission and storage of a variety of informa
 
 ### Coming Soon
 
-_We are planning one more UR article in the near future, detailing how to use URs with PSBTs. 
+_We are planning one more UR article in the near future, detailing how to use URs with PSBTs._
 
-Please feel free to file an issue if there's more Crypto Commons specifications that you'd like to see with more extensive documents._
+_Please feel free to file an issue if there's more Crypto Commons specifications that you'd like to see with more extensive documents._
 
 ## #SmartCustody
 
