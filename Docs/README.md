@@ -15,3 +15,8 @@ These documents detail the usage of Blockchain Commons specifications and librar
    * [A Guide to Using URs for Key Material](ur-2-keys.md)
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
+
+
+## Coming Soon
+
+_We are planning one more UR in the near future, detailing how to use URs with PSBTs. Please feel free to file an issue if there's more that you'd like to see with more extensive documents._
