@@ -24,6 +24,12 @@ URs allow for the interoperable transmission and storage of a variety of informa
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
 
+### Coming Soon
+
+_We are planning one more UR article in the near future, detailing how to use URs with PSBTs. 
+
+Please feel free to file an issue if there's more Crypto Commons specifications that you'd like to see with more extensive documents._
+
 ## #SmartCustody
 
 #SmartCustody is an initiative meant to help users to safely manage their cryptocurrency and is focused on responsible key management.
@@ -36,7 +42,3 @@ URs allow for the interoperable transmission and storage of a variety of informa
 Learning Bitcoin is our classic course that introduce Bitcoin concepts and programming beginning with Bitcoin Core's command-line tools and its RPC interface.
 
 1. [Learning Bitcoin from the Command Line 2.0](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/README.md)
-
-### Coming Soon
-
-_We are planning one more UR in the near future, detailing how to use URs with PSBTs. Please feel free to file an issue if there's more that you'd like to see with more extensive documents._
