@@ -14,6 +14,7 @@ _See the [complete listing](Docs/README.md)._
 
 1. **[SSKR for Users](Docs/sskr-users.md)**
    * **[SSKR Cold Storage](Docs/sskr-cold-storage.md)**
+   * **[SSKR Video Example](sskr-video.md)**
 1. **[SSKR for Developers](Docs/sskr-developers.md)**
    * **[SSKR Test Vector](Docs/sskr-test-vector.md)**
 
