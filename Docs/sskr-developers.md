@@ -82,7 +82,7 @@ ByteWords also has several advantages. It's as efficient as hex, the words are a
 
 URs are [Uniform Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md), another Blockchain Commons specification. They describe a methodology for efficient, self-describing resources, and are easily interoperable with ByteWords. We choose them as another output format for SSKR.
 
-See [A Guide to Using URs for SSKRs](https://hackmd.io/SkOk6DJqRmSzNtfbcJnQsg) for more information on integrating the two specifications.
+See [A Guide to Using URs for SSKRs](ur-sskrs.md) for how ByteWord SSKRs and UR SSKRs are encoded, and how they slightly differ.
 
 ## Why Did We Create a New Standard?
 
@@ -110,4 +110,4 @@ SSKR is the end-result of over two years of effort. It most immediately grew out
 
 SSKR was designed from the beginning to work with different types of secret sharing. The first expansion is likely to be into VSS.
 
-_Also see the [SSKR Example & Test Vector](sskr-test-vector.md) for a ready-to-use seed._
+_Also see the [SSKR Example & Test Vector](sskr-test-vector.md) for a ready-to-use seed and [A Guide to Using URs for SSKRs](https://github.com/BlockchainCommons/crypto-commons/blob/shannona-docs-sskr-request-response/Docs/ur-3-sskrs.md) for discussions of a variety of SSKR formatting._
