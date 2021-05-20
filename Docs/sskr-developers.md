@@ -82,7 +82,7 @@ ByteWords also has several advantages. It's as efficient as hex, the words are a
 
 URs are [Uniform Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md), another Blockchain Commons specification. They describe a methodology for efficient, self-describing resources, and are easily interoperable with ByteWords. We choose them as another output format for SSKR.
 
-See [A Guide to Using URs for SSKRs](ur-sskrs.md) for how ByteWord SSKRs and UR SSKRs are encoded, and how they slightly differ.
+See [A Guide to Using URs for SSKRs](ur-3-sskrs.md) for how ByteWord SSKRs and UR SSKRs are encoded, and how they slightly differ.
 
 ## Why Did We Create a New Standard?
 
