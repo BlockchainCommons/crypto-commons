@@ -4,12 +4,16 @@ These documents detail the usage of Blockchain Commons specifications and librar
 
 ## Sharded Secret Key Reconstruction (SSKR)
 
+SSKRs allow a seed to be sharded into shares that can be stored as words, URs, or QRs.
+
 1. [SSKR for Users](sskr-users.md)
    * [SSKR Cold Storage](sskr-cold-storage.md)
 1. [SSKR for Developers](sskr-developers.md)
    * [SSKR Test Vector](sskr-test-vector.md)
 
 ## Uniform Resources (URs)
+
+URs allow for the interoperable transmission and storage of a variety of information, especially cryptographic data.
 
 1. [URs: An Overview](ur-1-overview.md)
    * [A Guide to Using URs for Key Material](ur-2-keys.md)
