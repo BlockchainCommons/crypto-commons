@@ -1,8 +1,12 @@
 # Documents
 
-These documents detail the usage of Blockchain Commons specifications and libraries.
+Blockchain Commons has produced a variety of documentation of interest to developers and users of blockchains.
 
-## Sharded Secret Key Reconstruction (SSKR)
+## The Crypto Commons
+
+Our crypto-commons specifications, reference tools, and libraries offer new interoperable methodologies for cryptocurrency wallets, and may be of interest to developers and users.
+
+### Sharded Secret Key Reconstruction (SSKR)
 
 SSKRs allow a seed to be sharded into shares that can be stored as words, URs, or QRs.
 
@@ -11,7 +15,7 @@ SSKRs allow a seed to be sharded into shares that can be stored as words, URs, o
 1. [SSKR for Developers](sskr-developers.md)
    * [SSKR Test Vector](sskr-test-vector.md)
 
-## Uniform Resources (URs)
+### Uniform Resources (URs)
 
 URs allow for the interoperable transmission and storage of a variety of information, especially cryptographic data.
 
@@ -20,7 +24,19 @@ URs allow for the interoperable transmission and storage of a variety of informa
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
 
+## #SmartCustody
 
-## Coming Soon
+#SmartCustody is an initiative meant to help users to safely manage their cryptocurrency and is focused on responsible key management.
+
+1. [SmartCustody 1.0](https://www.smartcustody.com/)
+1. [Designing Multisig for Independence & Resilience](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Multisig.md)
+
+## Learning Bitcoin from the Command Line
+
+Learning Bitcoin is our classic course that introduce Bitcoin concepts and programming beginning with Bitcoin Core's command-line tools and its RPC interface.
+
+1. [Learning Bitcoin from the Command Line 2.0](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/README.md)
+
+### Coming Soon
 
 _We are planning one more UR in the near future, detailing how to use URs with PSBTs. Please feel free to file an issue if there's more that you'd like to see with more extensive documents._
