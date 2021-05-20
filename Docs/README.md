@@ -12,6 +12,7 @@ SSKRs allow a seed to be sharded into shares that can be stored as words, URs, o
 
 1. [SSKR for Users](sskr-users.md)
    * [SSKR Cold Storage](sskr-cold-storage.md)
+   * [SSKR Video Example](sskr-video.md)
 1. [SSKR for Developers](sskr-developers.md)
    * [SSKR Test Vector](sskr-test-vector.md)
 
