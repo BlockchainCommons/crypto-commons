@@ -375,7 +375,3 @@ bc-ur provides access to objects such as `UREncoder`, `URDecoder`, and `Byteword
 ## Conclusion
 
 Key material can be transferred using `ur:crypto-seed`, `ur:crypto-bip39`, and `ur:crypto-hdkey`. Doing so allows you to use airgaps, which increase the safety of these vulnerable operations; and also increases your interoperability, so that other software can work with you, and so that your key material remains usable far into the future.
-
-## Coming Soon
-
-_Our next UR article will cover crypto-request and crypto-response. We'll then be looking at SSKRs and PSBTs._
