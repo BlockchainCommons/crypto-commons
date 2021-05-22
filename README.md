@@ -8,8 +8,22 @@ It includes reference libraries (mostly in C), which can be used to build wallet
 
 ## Documents
 
-* **[URs: An Overview](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)**
-   * **[A Guide to Using URs for Key Material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md)**
+_See the [complete listing](Docs/README.md)._
+
+### SSKR
+
+1. **[SSKR for Users](Docs/sskr-users.md)**
+   * **[SSKR Cold Storage](Docs/sskr-cold-storage.md)**
+   * **[SSKR Video Example](Docs/sskr-video.md)**
+1. **[SSKR for Developers](Docs/sskr-developers.md)**
+   * **[SSKR Test Vector](Docs/sskr-test-vector.md)**
+
+### URs
+
+1. **[URs: An Overview](Docs/ur-1-overview.md)**
+   * **[A Guide to Using URs for Key Material](Docs/ur-2-keys.md)**
+   * **[A Guide to Using URs for SSKRs](Docs/ur-3-sskrs.md)**
+1. **[A Guide to Using UR Request & Response](Docs/ur-99-request-response.md)**
   
 ## Gordian Tools & Demos
 

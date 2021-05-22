@@ -85,9 +85,9 @@ The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also
 ## More Documents
 
 * [A Guide to Using URs for Key Material](ur-2-keys.md)
-* [A Guide to Using URs for SSKR] (pending)
+* [A Guide to Using URs for SSKR](ur-3-sskrs.md)
 * [A Guide to Using URs for PSBTs] (pending)
-* [A Guide to Using URs for Request & Response] (pending)
+* [A Guide to Using URs for Request & Response](ur-99-request-response.md)
 
 ## Reference Libraries
 
