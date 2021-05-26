@@ -4,8 +4,8 @@ SSKR is Sharded Secret Key Reconstruction. It's a methodology for secret sharing
 that allows for the sharding of a master seed into multiple shares, which may then be combined with a certain threshold to reconstruct that secret. Major expansions of the SSKR specification over previous standards include:
 
 1. Compatibility with BIP-39.
-2. Implementation of two-level shards.
-3. Encoding of shards as ByteWords.
+2. Implementation of two-level shares.
+3. Encoding of shares as ByteWords.
 4. Integration with URs.
 
 Currently, SSKR supports one secret-sharing algorithm: Shamir's Secret Sharing, which is version `0` of SSKR types. As such, it's intended to replace SLIP-39 as a specification for Shamir's Secret Sharing.
@@ -66,15 +66,15 @@ Though we believe that [the usage of multisig](https://github.com/BlockchainComm
 
 So, while we're leading the way in using multisig to better protect our digital wealth, we're also interested in improving the interoperability of resilient, single-signature addresses, and that primarily means improving the interoperability of Shamir's Secret Sharing.
 
-## What are Two-Level Shards?
+## What are Two-Level Shares?
 
-Using SSKR, you can implement Shamir's Secret Sharing as normal, using a group of shards with a threshold for reconstruction. However, you can also implement a two-level hierarchy with multiple groups, each of which contain some shards. You can then specify a threshold for both groups and shards.
+Using SSKR, you can implement Shamir's Secret Sharing as normal, using a group of sahres with a threshold for reconstruction. However, you can also implement a two-level hierarchy with multiple groups, each of which contain some shares. You can then specify a threshold for both groups and shares.
 
 For example, you could create shares for 2 groups: the first group might require 2 of 3 shares and the second group might require 3 of 5 shares. With a group threshold of 2, individual thresholds from both groups must be met.
 
 ## What are ByteWords?
 
-SSKR shards can be output as [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md), which is a specification for outputting encoded binary data as English words. We purposefully differentiated it from the BIP-39 mnemonics to avoid confusion: we wanted to make it obvious that the shards were SSKR, as evidenced by the ByteWords encoding, as opposed to SLIP-39, which would use BIP-39 encoding.
+SSKR shares can be output as [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md), which is a specification for outputting encoded binary data as English words. We purposefully differentiated it from the BIP-39 mnemonics to avoid confusion: we wanted to make it obvious that the shares were SSKR, as evidenced by the ByteWords encoding, as opposed to SLIP-39, which would use BIP-39 encoding.
 
 ByteWords also has several advantages. It's as efficient as hex, the words are all a uniform four letters, there are no homophones, and the first and last characters of each word differ from other words. Words were also specifically chosen to either be concrete or else to have valence. All around, the goal was to make ByteWords very easy to distinguish.
 
@@ -94,7 +94,7 @@ In the case of SSKR we felt that the creation of a new specification for Shamir'
 
 The result is SSKR, which is similar to SLIP-39, but not compatible. It includes the same Shamir's Secret Sharing technology, but uses a different key-derivation methodology, for compatibility with BIP-39.
 
-Seeing the need for a new specification that roundtripped with BIP-39 also allowed the possibility for expansion, which permitted us to introduce two-level shards as a major new feature.
+Seeing the need for a new specification that roundtripped with BIP-39 also allowed the possibility for expansion, which permitted us to introduce two-level shares as a major new feature.
 
 ## Why Did We Create New Libraries?
 
