@@ -46,7 +46,7 @@ The general format is:
 * member-threshold - 1 (4 bits)
    * How many members are required to retrieve the secret in this group?
 * RESERVED (4 bits)
-   * Must be zero. In lieu of member-count.
+   * Currently must be zero.
 * member-index (4 bits)
    * What member in this group is this share from?
 * secret-share (same number of bits as secret)
