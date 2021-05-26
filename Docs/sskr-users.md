@@ -21,10 +21,10 @@ The basic level of SSKR allows you to create a single group of shares, with a th
 You would take these shares and give one each to three different trusted people (or places, such as a safe or bank vault).
 
 Note [the overlap in words in different shares](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md#the-difference-between-sskr-bytewords-and-sskr-urs): this is expected. The first four words  will always be the same as they describe the share as SSKR ("tuna acid epic") of a specific length ("gyro"). The next two ("navy grim") are a fingerprint that match all the shares in a split, and the next two ("able acid") describe the group threshold, count, and index, plus the member threshold, so they're the same for all the shares in a group.
-```
-SSKR / length / ID / group & member info / secret share / checksum
-tuna acid epic / gyro / navy grim / able acid able / dice good code ugly junk deli wolf yell flap diet good gear peck hang edge iris / inch plus oboe ruby
-```
+
+SSKR | length | ID | group & member info | secret share | checksum
+---|---|---|---|---|---
+tuna acid epic | gyro | navy grim | able acid able | dice good ... edge iris | inch plus oboe ruby
 
 Note also that your words will change each time you regenerate SSKR shares from a secret. This is also expected: there is a random factor in SSKR generation.
 
