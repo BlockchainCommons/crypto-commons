@@ -89,7 +89,7 @@ oeadtpdagdaobncpftlnylfgfgmuztihbawfsgrtflaotaadwkoyadtaaohdhdcxvsdkfgkepezepefr
 ```
 And [then a UR](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md#how-are-urs-encoded):
 ```
-UR:CRYPTO-REQUEST/OEADTPDAGDAOBNCPFTLNYLFGFGMUZTIHBAWFSGRTFLAOTAADWKOYADTAAOHDHDCXVSDKFGKEPEZEPEFRRFFMBNNBMDVAHNPTRDTPBTUYIMMEMWEOOTJSHSMHLUNYESLNAMEYHSDI
+ur:crypto-request/oeadtpdagdaobncpftlnylfgfgmuztihbawfsgrtflaotaadwkoyadtaaohdhdcxvsdkfgkepezepefrrffmbnnbmdvahnptrdtpbtuyimmemweootjshsmhlunyeslnameyhsdi
 ```
 
 ### The Seed Request with Description
@@ -131,7 +131,7 @@ A301D82550020C223A86F7464693FC650EF3CAC04702D901F4A101D902585820E824467CAFFEAF3B
 ```
 Or as a request:
 ```
-UR:CRYPTO-REQUEST/OTADTPDAGDAOBNCPFTLNYLFGFGMUZTIHBAWFSGRTFLAOTAADWKOYADTAAOHDHDCXVSDKFGKEPEZEPEFRRFFMBNNBMDVAHNPTRDTPBTUYIMMEMWEOOTJSHSMHLUNYESLNAXKSCFGUIHIHIECXIYJLJPCXIDKPJKINJTIHJKJKCXHSIAIAJLKPJTJYFTPYHHBK
+ur:crypto-request/otadtpdagdaobncpftlnylfgfgmuztihbawfsgrtflaotaadwkoyadtaaohdhdcxvsdkfgkepezepefrrffmbnnbmdvahnptrdtpbtuyimmemweootjshsmhlunyeslnaxkscfguihihiecxiyjljpcxidkpjkinjtihjkjkcxhsiaiajlkpjtjyftpyhhbk
 ```
 
 ### The Seed Response
@@ -172,7 +172,7 @@ A201D82550020C223A86F7464693FC650EF3CAC04702D9012CA20150C7098580125E2AB098125346
 ```
 Or:
 ```
-UR:CRYPTO-RESPONSE/OEADTPDAGDAOBNCPFTLNYLFGFGMUZTIHBAWFSGRTFLAOTAADDWOEADGDSTASLPLABGHYDRPFMKBGGUFGLUDPRFGMAOTPIECYHNMOUOATBYFNGYCY
+ur:crypto-response/oeadtpdagdaobncpftlnylfgfgmuztihbawfsgrtflaotaaddwoeadgdstaslplabghydrpfmkbggufgludprfgmaotpiecyhnmouoatbyfngycy
 ```
 
 ## Request & Response: `crypto-hdkey`
@@ -239,7 +239,7 @@ A201D825506CA458A5C18A41A9978CFF448678E31B02D901F5A201F502D90130A1024487B7D32E
 ```
 Or:
 ```
-UR:CRYPTO-REQUEST/OEADTPDAGDJZOXHDONSELEFPPTMSLKZMFYLNKSVLCWAOTAADYKOEADYKAOTAADDYOYAOFYLTRLTEDMFHNBEYLU
+ur:crypto-request/oeadtpdagdjzoxhdonselefpptmslkzmfylnksvlcwaotaadykoeadykaotaaddyoyaofyltrltedmfhnbeylu
 ```
 ### A Master Key Response
 
@@ -316,7 +316,7 @@ A201D825506CA458A5C18A41A9978CFF448678E31B02D9012FA401F502F5035821007EC030774B69
 
 Or:
 ```
-UR:CRYPTO-RESPONSE/OEADTPDAGDJZOXHDONSELEFPPTMSLKZMFYLNKSVLCWAOTAADDLOXADYKAOYKAXHDCLAEKBRTDYKTGRINHHVSFRIEFDAYGOPSVYZECLVALDJTGLJTBNUYPLRTPMGUBEWKHHPFAAHDCXZSHHFXVASACFESRPPDDKSGBKECMUEOFPFZIMUTCPTBSPGDINTPENURRFFSBEGETPRYHDINCT
+ur:crypto-response/oeadtpdagdjzoxhdonselefpptmslkzmfylnksvlcwaotaaddloxadykaoykaxhdclaekbrtdyktgrinhhvsfriefdaygopsvyzeclvaldjtgljtbnuyplrtpmgubewkhhpfaahdcxzshhfxvasacfesrppddksgbkecmueofpfzimutcptbspgdintpenurrffsbegetpryhdinct
 ```
 
 ### Double-Checking the Reponse
@@ -421,7 +421,7 @@ A201D82550306186A30C94429E97E79186A71A95FE02D901F5A201F502D90130A2018A182CF501F5
 ```
 Or:
 ```
-UR:CRYPTO-REQUEST/OEADTPDAGDDYHSLNOTBNMWFWNNMSVDMELNOSCYMDZEAOTAADYKOEADYKAOTAADDYOEADLECSDWYKADYKADYKAEWKADWKAOFYLTRLTEDMMYTDWDBE
+ur:crypto-request/oeadtpdagddyhslnotbnmwfwnnmsvdmelnoscymdzeaotaadykoeadykaotaaddyoeadlecsdwykadykadykaewkadwkaofyltrltedmmytdwdbe
 ```
 ### A Derived Key Response
 
@@ -487,7 +487,7 @@ A201D82550306186A30C94429E97E79186A71A95FE02D9012FA502F503582100945B75F459495409
 ```
 Or:
 ```
-UR:CRYPTO-RESPONSE/OEADTPDAGDDYHSLNOTBNMWFWNNMSVDMELNOSCYMDZEAOTAADDLONAOYKAXHDCLAEMWHPKPWKHKGAGHASFHRPPYAMRYFTINBNSFNNHHIHBDJLMUCFZOJYFGYNLDGLEYWDAAHDCXSPIOFZBDSGSOGAHHGAEEGYVECAIEFWLSGUKISOBZEERFNEOTJSNBCEHEMTJYYACAAMOEADLECSDWYKADYKADYKAEWKADWKAOCYLTRLTEDMAYCYKNSFGOCAMDTTSESP
+ur:crypto-response/oeadtpdagddyhslnotbnmwfwnnmsvdmelnoscymdzeaotaaddlonaoykaxhdclaemwhpkpwkhkgaghasfhrppyamryftinbnsfnnhhihbdjlmucfzojyfgynldgleywdaahdcxspiofzbdsgsogahhgaeegyvecaiefwlsgukisobzeerfneotjsnbcehemtjyyacaamoeadlecsdwykadykadykaewkadwkaocyltrltedmaycyknsfgocamdttsesp
 ```
 
 ## Request & Response: `crypto-psbt`
