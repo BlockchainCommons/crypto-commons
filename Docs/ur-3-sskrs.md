@@ -18,7 +18,7 @@ The following examples use the [standard SSKR test vector](sskr-test-vector.md):
 
 ### Translating from Seed to SSKRs
 
-When running SSKR on a seed, it generates a number of shares. This creation of shares will be fully taken care of by your library of choice and is beyond the scope of this document.
+When running SSKR on a seed, it shards to secret to generates a number of shares. This creation of shares will be fully taken care of by your library of choice and is beyond the scope of this document.
 
 For example the following seed:
 ```
@@ -53,12 +53,12 @@ The general format is:
 
 The above shares can thus be read as follows:
 
-```
-ID / group / member / secret share
-754b / 000 / 100 / a8be4da2e6cf65a05424887888ae855c
-754b / 000 / 101 / 016fd11b9ed35e42bc08c12b47c6c476
-754b / 000 / 102 / e1076ecb16f7137f9f7c1ade0d7e0708
-```
+ID | group | member | secret share
+---|---|---|---
+754b | 000 | 100 | a8be4da2e6cf65a05424887888ae855c
+754b | 000 | 101 | 016fd11b9ed35e42bc08c12b47c6c476
+754b | 000 | 102 | e1076ecb16f7137f9f7c1ade0d7e0708
+
 The first share thus reveals:
 
 * **identifier:** `754b`
