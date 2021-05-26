@@ -1,6 +1,6 @@
 # SSKR for Users
 
-SSKR is Sharded Secret Key Reconstruction. It's a way that you can break up the master seed underlying a Bitcoin HD wallet into "shares", which you can then distribute to friends, family, or fiduciaries. If you ever lose your seed, you can then "reconstruct" it by collecting sufficient of your shares (the "threshold").
+SSKR is Sharded Secret Key Reconstruction. It's a way that you can divide ("shard") the master seed underlying a Bitcoin HD wallet into "shares", which you can then distribute to friends, family, or fiduciaries. If you ever lose your seed, you can then "reconstruct" it by collecting sufficient of your shares (the "threshold").
 
 ## How Does SSKR Work?
 
@@ -20,7 +20,11 @@ The basic level of SSKR allows you to create a single group of shares, with a th
 
 You would take these shares and give one each to three different trusted people (or places, such as a safe or bank vault).
 
-Note the overlap in words in different shares: this is expected. The first four words ("tuna acid epic gyro") will always be the same as they describe the share as SSKR of a specific length. The next two ("navy grim") match all the shares in a split, and the next two ("able acid") all the shares in a group. 
+Note [the overlap in words in different shares](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md#the-difference-between-sskr-bytewords-and-sskr-urs): this is expected. The first four words  will always be the same as they describe the share as SSKR ("tuna acid epic") of a specific length ("gyro"). The next two ("navy grim") are a fingerprint that match all the shares in a split, and the next two ("able acid") describe the group threshold, count, and index, plus the member threshold, so they're the same for all the shares in a group.
+```
+SSKR / length / ID / group & member info / secret share / checksum
+tuna acid epic / gyro / navy grim / able acid able / dice good code ugly junk deli wolf yell flap diet good gear peck hang edge iris / inch plus oboe ruby
+```
 
 Note also that your words will change each time you regenerate SSKR shares from a secret. This is also expected: there is a random factor in SSKR generation.
 
