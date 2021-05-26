@@ -1,6 +1,6 @@
 # SSKR Example & Test Vector
 
-SSKR creates shards of a seed which can then be distributed to other parties for later retrieval. The following example offers a test vector of a seed and shows its SSKR equivalents.
+SSKR shards a seed to create shares that can then be distributed to other parties for later retrieval. The following example offers a test vector of a seed and shows its SSKR equivalents.
 
 ## The Seed
 
