@@ -62,10 +62,10 @@ ID | group | member | secret share
 The first share thus reveals:
 
 * **identifier:** `754b`
-* **Group Threshold:** 0 + 1 = 1, just one group needed
-* **Group Count:** 0 + 1 = 1, just one group total
+* **Group Threshold:** 0 (+ 1 = 1), just one group needed
+* **Group Count:** 0 (+ 1 = 1), just one group total
 * **Group Index:** 0, the 0th group
-* **Member Threshold:** 1 + 1 = 2, two members needed
+* **Member Threshold:** 1 (+ 1 = 2), two members needed
 * **RESERVED:** 0
 * **Member Index:** 0, the 0th member
 * **Secret Share:** `a8be4da2e6cf65a05424887888ae855c`
