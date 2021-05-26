@@ -1,6 +1,6 @@
 # SSKR Video Example
 
-The following video shows the recovery of a [Gordian Wallet](https://github.com/BlockchainCommons/GordianWallet-iOS) with SSKR shards, using first an example with a threshold of two, then an example with a threshold of three. It goes by very quickly!
+The following video shows the recovery of a [Gordian Wallet](https://github.com/BlockchainCommons/GordianWallet-iOS) with SSKR shares, using first an example with a threshold of two, then an example with a threshold of three. It goes by very quickly!
 
 [![](http://img.youtube.com/vi/PIND7J096U8/0.jpg)](http://www.youtube.com/watch?v=PIND7J096U8 "Recover with SSKR")
 
