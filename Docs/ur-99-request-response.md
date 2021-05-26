@@ -27,7 +27,7 @@ UUIDs are a standard format that can be generated with programmatic libraries or
 $ uuidgen
 51D2B771-E4D5-4E46-A9E5-644E9ADD0458
 ```
-When sending a UUID with a `crypto-request`, you will typically omit the dashes.
+The use of hyphens in UUIDs is for display purposes only. They would not be included in the actual binary bytes you'd send as part of a `crypto-request`:
 ```
 $ uuidgen | sed s/-//g
 51D2B771E4D54E46A9E5644E9ADD0458
