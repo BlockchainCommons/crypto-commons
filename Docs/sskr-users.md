@@ -4,7 +4,7 @@ SSKR is Sharded Secret Key Reconstruction. It's a way that you can divide ("shar
 
 ## How Does SSKR Work?
 
-The basic level of SSKR allows you to create a single group of shares, with a threshold for how many of those must be collected to reconstruct your seed. The following shows an example from [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) of creating three shares, of which two must be recovered.
+The basic level of SSKR allows you to create a single group of shares, with a threshold for how many of those must be collected to reconstruct your seed. The following shows an example from [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) of creating three shares, of which two must be recovered.
 
 <table width="100%" align="center">
   <tr>
@@ -32,7 +32,7 @@ Note also that your words will change each time you regenerate SSKR shares from 
 
 SSKR supports a more advanced methodology where you can define multiple groups, and then require a certain number of shares to come back from each group for a certain number of groups.
 
-The following shows an example from [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) where either 2 of 3 shares must come back from the first group or 3 of 5 shares must come back from the second group. (If the group threshold was increased to 2, then those _both_ would be required.)
+The following shows an example from [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) where either 2 of 3 shares must come back from the first group or 3 of 5 shares must come back from the second group. (If the group threshold was increased to 2, then those _both_ would be required.)
 
 <table width="100%" align="center">
   <tr>
@@ -58,7 +58,7 @@ Technically, you don't need to record every word: the first four words can be re
 
 ## How Can I Reconstruct from SSKR?
 
-SSKR-compliant wallet tools should allow you to paste in your SSKR and reconstruct your seed, as shown in the following example for [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS)
+SSKR-compliant wallet tools should allow you to paste in your SSKR and reconstruct your seed, as shown in the following example for [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
 
 <table width="100%" align="center">
   <tr>
@@ -85,7 +85,7 @@ For that reason, we generally suggest [multisig](https://github.com/BlockchainCo
 
 ## Where is SSKR Available?
 
-Though the examples here demonstrate SSKR with Gordian Guardian, SSKR is a Blockchain Commons specification that we are making available to wallet manufacturers. We expect to see it become widely used in other products.
+Though the examples here demonstrate SSKR with Gordian SeedTool, SSKR is a Blockchain Commons specification that we are making available to wallet manufacturers. We expect to see it become widely used in other products.
 
 ## What is the Foundation of SSKR?
 
