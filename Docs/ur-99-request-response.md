@@ -500,7 +500,7 @@ Although this document is meant to provide a full understanding of how `crypto-r
 
 ## Conclusion
 
-Most URs allows for the transmission of data from one device to another, which is great when you want a user to initiate a transfer of data, such as when he chooses to scan a seed or key into [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) or [Gordian Cosigner](https://github.com/BlockchainCommons/GordianCosigner-iOS).
+Most URs allows for the transmission of data from one device to another, which is great when you want a user to initiate a transfer of data, such as when he chooses to scan a seed or key into [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) or [Gordian Cosigner](https://github.com/BlockchainCommons/GordianCosigner-iOS).
 
 But you may instead want to allow a more automated dialogue, where one application queries another for a specific key, seed, or PSBT. This allows for more dynamic and interactive functionality, without the user needing to know the specifics of seeds and keys. That's what `crypto-request` and `crypto-response` support, using a back and forth mechanism that builds on the [key material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md#hd-keys-urcrypo-hdkey) and PSBT URs.
 
