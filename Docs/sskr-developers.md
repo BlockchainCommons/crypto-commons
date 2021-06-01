@@ -44,9 +44,9 @@ Many of these libraries are available in the following conversions:
 
 The following applications demonstrate the usage of SSKR:
 
-* [Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) (app implementation)
+* [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (app implementation)
 * [LetheKit](https://github.com/BlockchainCommons/bc-lethekit) (hardware implementation)
-* [SeedTool](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
+* [SeedTool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
 
 ## How Do I Use SSKR?
 
