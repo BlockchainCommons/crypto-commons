@@ -56,7 +56,7 @@ If you read this with a QR reader you'll get:
 ```
 UR:CRYPTO-SEED/OYADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDHPYLJEDA
 ```
-As shown in the following screenshot from [QR Vault]():
+As shown in the following screenshot from [Gordian QRTool](https://github.com/BlockchainCommons/GordianQRTool-iOS):
 
 ![](https://i.imgur.com/xrkRyCA.png)
 
