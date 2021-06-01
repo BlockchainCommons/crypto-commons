@@ -8,7 +8,7 @@ As usual, this will typically be done for you automatically using Blockchain Com
 
 URs are generally a boon because they both improve interoperability and type their contents. As a result, whenever you look at a UR you can see exactly what it contains, and you can easily use that data on a variety of systems.
 
-URs can be particularly useful for SSKRs because of their tight integration with QR Codes. URs were built to work with QRs, and many applications that read in SSKR URs are likely to allow the option of using a camera to capture a QR. This means that instead of solely storing an SSKR share as words, you can also preserve them as a QR in an application like [UR Vault](https://github.com/BlockchainCommons/URVault-iOS). This can be a  gamechanger for the reliability and resilience of private keys because friends and family can easily store a variety of SSKR shares for a variety of different people and instanteously and reliably retrieve them as needed.
+URs can be particularly useful for SSKRs because of their tight integration with QR Codes. URs were built to work with QRs, and many applications that read in SSKR URs are likely to allow the option of using a camera to capture a QR. This means that instead of solely storing an SSKR share as words, you can also preserve them as a QR in an application like [QRTool](https://github.com/BlockchainCommons/QRTool-iOS). This can be a  gamechanger for the reliability and resilience of private keys because friends and family can easily store a variety of SSKR shares for a variety of different people and instanteously and reliably retrieve them as needed.
 
 ## SSKRs: `crypto-sskr`
 
