@@ -163,7 +163,7 @@ Comparing the two verifies that the share (`gyro keep gear able acid able paid r
 
 ## Testing SSKR URs with Blockchain Commons' Reference Tools
 
-[Gordian Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) will export seeds as either SSKR URs or SSKR Bytewords, allowing easy checking among all the formats.
+[Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) will export seeds as either SSKR URs or SSKR Bytewords, allowing easy checking among all the formats.
 
 The Blockchain Commons [Seedtool] and [Bytewords] CLIs may also be used, in conjunction with [cbor2diag].
 
@@ -188,7 +188,7 @@ taadecgocadkaeadaemhbebtbegwimghykvlhevwfhsppybwutiepfjprk
 ```
 Note that this is _not_ the same thing as an SSKR UR, because it contains that `309` tag (`tuna acid epic` or `taadec`) and a different checksum (`idle puff jump rock` or `iepfjprk`).
 
-In fact, none of the command-line tools currently output SSKR URs, but if you import one from somewhere else, such Gordian Guardian, you can convert it to CBOR using `bytewords` and then examine it using `cbor2diag`.
+In fact, none of the command-line tools currently output SSKR URs, but if you import one from somewhere else, such Gordian SeedTool, you can convert it to CBOR using `bytewords` and then examine it using `cbor2diag`.
 
 For:
 ```
