@@ -107,7 +107,7 @@ Project | Publisher | UR Usage | Status
 [BlueWallet](https://bluewallet.io/) | BlueWallet | bc-ur v1 | Live
 [Cobo&nbsp;Wallet](https://cobo.com/) | Cobo | bc-ur v1 | Live
 [Gordian&nbsp;Cosigner](https://github.com/BlockchainCommons/GordianCosigner-iOS) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-seed | Reference
-[Gordian&nbsp;Guardian](https://github.com/BlockchainCommons/GordianGuardian-iOS) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-request<br>ur:crypto-response<br>ur:crypto-sskr | Reference
+[Gordian&nbsp;SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-request<br>ur:crypto-response<br>ur:crypto-sskr | Reference
 [Sparrow Wallet](https://sparrowwallet.com/) | Craig Raw | ur:crypto:account<br>ur:crypto-address<br>ur:crypto-hdkey<br>ur:crypto-output<br>ur:crypto-psbt | Live
 
 ## Conclusion
