@@ -27,9 +27,7 @@ _See the [complete listing](Docs/README.md)._
   
 ### Video Overview
 
-<p style="margin-left:50px">
 <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="images/video-tech-overview.png"></a>
-</p>
 
 ## Gordian Tools & Demos
 
