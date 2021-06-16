@@ -27,7 +27,7 @@ URs allow for the interoperable transmission and storage of a variety of informa
 
 ### Technology Overview Video
 
-<a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="images/video-tech-overview.png"></a>
+<a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="../images/video-tech-overview.png"></a>
 
 ### Coming Soon
 
