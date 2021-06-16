@@ -25,7 +25,7 @@ _See the [complete listing](Docs/README.md)._
    * **[A Guide to Using URs for SSKRs](Docs/ur-3-sskrs.md)**
 1. **[A Guide to Using UR Request & Response](Docs/ur-99-request-response.md)**
   
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RYgOFSdUqWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="images/video-tech-overview.png"></a>
 
 ## Gordian Tools & Demos
 
