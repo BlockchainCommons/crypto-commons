@@ -21,7 +21,7 @@ The BIP39 words are:
 ```
 fly mule excess resource treat plunge nose soda reflect adult ramp planet
 ```
-If you'd like to test the seed yourself, download [Gordian SeedTool for iOS](https://testflight.apple.com/join/0LIl6H1h) and click the "QR" icon at the top to scan a QR code. Point it to the QR code above and you'll load this Test Vector into your own phone!
+If you'd like to test the seed yourself, download [Gordian SeedTool for iOS](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229) and click the "QR" icon at the top to scan a QR code. Point it to the QR code above and you'll load this Test Vector into your own phone!
 
 ## The SSKR
 
