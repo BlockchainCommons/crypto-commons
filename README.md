@@ -43,9 +43,9 @@ _Blockchain Commons has released a number of kits and CLI tools that exercise th
   * _LifeHashTool uses [LifeHash](https://github.com/BlockchainCommons/LifeHash)._
 * **[Seedtool](https://github.com/BlockchainCommons/bc-seedtool-cli) \(CLI\).** A tool for generating seeds from a variety of random inputs and for translating seeds among formats like BIP39, [SSKR](https://github.com/blockchaincommons/bc-sskr), hex, and [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md).
    * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur)._
-* **[GordianSeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) \(iOS App\).** An iOS tool for managing seeds.
-  * _Uses [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) which incorporates [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), and [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr)._
 * **[URDemo](https://github.com/BlockchainCommons/URDemo) \(iOS Demo\).** A demonstration of the [URKit](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur) that can be compiled and run in Xcode using Swift. It demonstrates multi-part animated QRs.
+
+See also our [Gordian repo](https://github.com/BlockchainCommons/Gordian/blob/master/README.md#quick-links-for-reference-apps) for our complete list of reference apps, including other CLIs, mobile apps, and web servers.
 
 ## Gordian Reference Libraries
 
