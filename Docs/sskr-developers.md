@@ -111,3 +111,5 @@ SSKR is the end-result of over two years of effort. It most immediately grew out
 SSKR was designed from the beginning to work with different types of secret sharing. The first expansion is likely to be into VSS.
 
 _Also see the [SSKR Example & Test Vector](sskr-test-vector.md) for a ready-to-use seed and [A Guide to Using URs for SSKRs](https://github.com/BlockchainCommons/crypto-commons/blob/shannona-docs-sskr-request-response/Docs/ur-3-sskrs.md) for discussions of a variety of SSKR formatting._
+
+_For a higher level discussion of secret-sharing designs and dangers, see our #SmartCustody articles on [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md) and [The Dangers of Secret-Sharing Schemes](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md)._
