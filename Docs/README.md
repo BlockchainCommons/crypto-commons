@@ -39,7 +39,7 @@ _Please feel free to file an issue if there's more Crypto Commons specifications
 
 #SmartCustody is an initiative meant to help users to safely manage their cryptocurrency and is focused on responsible key management.
 
-1. [SmartCustody 1.01](https://www.smartcustody.com/)
+1. [SmartCustody Book 1.01](https://www.smartcustody.com/)
 1. [Designing Multisig for Independence & Resilience](https://github.com/BlockchainCommons/SmartCustody/blob/master/README.md#the-smartcustody-book)
 1. [Using Timelocks to Protect Digital Assets](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Timelocks.md)
 1. [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md)
