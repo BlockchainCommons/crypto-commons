@@ -16,14 +16,15 @@ If you’d like to see more #SmartCustody work to support responsible key manage
 
 ## Intro
 
-The following documents overview SSKR.
+The following overviews SSKR.
 
 * [SSKR for Users](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-users.md)
+* [SSKR in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1612s)
 * [Early Demo Video](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-video.md)
 
 ## For Users
 
-How can you use SSKR? The following documents describe its usage in [Gordian Seed Tool](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229).
+How can you use SSKR? The following describes its usage in [Gordian Seed Tool](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229).
 
 * [Sharding a Seed (from Gordian Seed Tool Manual)](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Docs/MANUAL.md#sharding-a-seed)
 * [Importing SSKR Shards (from Gordian Seed Tool Manual)](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Docs/MANUAL.md#importing-sskr-shares)
@@ -49,32 +50,47 @@ How can you use SSKR? The following documents describe its usage in [Gordian See
 
 ## For Power Users
 
+Want to do more with SSKR? The following describes how to design SSKR sharing, how to put your shares in cold storage, and how to SSKR with  [`seedtool-cli`](https://github.com/BlockchainCommons/seedtool-cli).
+
 * [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md)
 * [SSKR Dangers](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md)
-* [SSKR from Command Line (from SeedTool-CLI manua)](https://github.com/BlockchainCommons/seedtool-cli/blob/master/Docs/MANUAL.md#sskrs)
 * [SSKR Cold Storage Example](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-cold-storage.md)
 
+* [SSKR from Command Line (from `seedtool-cli` manua)](https://github.com/BlockchainCommons/seedtool-cli/blob/master/Docs/MANUAL.md#sskrs)
+
 ## For Developers
+
+Want to develop using SSKR? The following provide an array of documents for using SSKR and placing them in URs, as well as info on test vectors, our security review, and the foundation of Shamir's Secret Sharing.
 
 * [SSKR for Developers](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-developers.md)
 * [Guide for Using URs for SSKR](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md)
 * [UR Type Definition for Sharded Secret Key Reconstruction (SSKR)](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md)
 * [SSKR Test Vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-test-vector.md)
-* [Shamir’s Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa)
-
 * [Security Review of bc-shamir & bc-sskr libraries](https://github.com/BlockchainCommons/bc-shamir/blob/master/SECURITY-REVIEW.md)
+
+* [Shamir’s Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa)
 
 ## Code
 
+Ready to code? Developers can use the following libraries to incorporate SSKR in their own programs.
+
 * [bc-shamir - Shamir Secret Sharing reference library in C](https://github.com/BlockchainCommons/bc-shamir)
 * [bc-sskr - Sharded Secret Key Reconstruction (SSKR) reference library in C](https://github.com/BlockchainCommons/bc-shamir)
+* [bc-libs-java - Java ports of the Shamir and SSKR libraries](https://github.com/BlockchainCommons/bc-libs-java)
+* [BCLibsSwift - Swift ports of the Shamir and SSKR libraries](https://github.com/BlockchainCommons/BCLibsSwift)
+
+Please note that at this time only the core C-language libraries have been [security reviewed](https://github.com/BlockchainCommons/bc-shamir/blob/master/SECURITY-REVIEW.md). If you are introducing in using the Java or Swift ports, or creating a new library, a new security review will be required for a secure production release.
 
 ### Reference Tools
+
+Want to verify your code? That's what the Blockchain Commons reference tools are for.
 
 * [seedtool-cli - Cryptographic Seed Tool for the command line](https://github.com/BlockchainCommons/seedtool-cli)
 * [Gordian Seed Tool iOS - Cryptographic Seed Manager for iOS & Mac](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
 
 ## Related
+
+The following topics are related to SSKR.
 
 * [Creating an Autonomous Multisig from Building Blocks (from Designing Multisig for Independence & Resilience)](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Multisig.md#alternative-creating-an-autonomous-multisig-from-building-blocks)
 * [RWOT9 - Evaluating Social Recover](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/final-documents/evaluating-social-recovery.md)
