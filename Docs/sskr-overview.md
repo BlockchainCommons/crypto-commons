@@ -97,6 +97,6 @@ The following topics are related to SSKR.
 
 ## Support
 
-To support the continued creation and growth of specifications such as this, please become a sponsor of Blockchain Commons, either through [GitHub](https://github.com/sponsors/BlockchainCommons) or through Bitcoin donations on our [BTCpay](https://btcpay.blockchaincommons.com/).
+To support the continued creation and growth of specifications such as this, please become a sponsor of Blockchain Commons, either through [GitHub](https://github.com/sponsors/BlockchainCommons) or through Bitcoin donations on our [BTCpay](https://btcpay.blockchaincommons.com/). Thank you to our [sustaining and additional sponsors](https://www.blockchaincommons.com/sponsors.html).
 
 Please also join us in our [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions) where we are discussing and advancing this and other specifications.
