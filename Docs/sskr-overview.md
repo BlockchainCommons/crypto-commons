@@ -93,4 +93,10 @@ Want to verify your code? That's what the Blockchain Commons reference tools are
 The following topics are related to SSKR.
 
 * [Creating an Autonomous Multisig from Building Blocks (from Designing Multisig for Independence & Resilience)](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Multisig.md#alternative-creating-an-autonomous-multisig-from-building-blocks)
-* [RWOT9 - Evaluating Social Recover](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/final-documents/evaluating-social-recovery.md)
+* [RWOT9 - Evaluating Social Recovery](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/final-documents/evaluating-social-recovery.md)
+
+## Support
+
+To support the continued creation and growth of specifications such as this, please become a sponsor of Blockchain Commons, either through [GitHub](https://github.com/sponsors/BlockchainCommons) or through Bitcoin donations on our [BTCpay](https://btcpay.blockchaincommons.com/).
+
+Please also join us in our [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions) where we are discussing and advancing this and other specifications.
