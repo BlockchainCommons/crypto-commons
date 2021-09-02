@@ -16,6 +16,8 @@ SSKRs allow a seed to be sharded into shares that can be stored as words, URs, o
 1. [SSKR for Developers](sskr-developers.md)
    * [SSKR Test Vector](sskr-test-vector.md)
 
+_For an even more comprehensive list, please see our [SSKR overview page](sskr-overview.md), which includes links to research papers, references, code, and other material from other repos, all intended to support your understanding of SSKR, whether you're a user, a power user, or a developer._
+
 ### Uniform Resources (URs)
 
 URs allow for the interoperable transmission and storage of a variety of information, especially cryptographic data.
