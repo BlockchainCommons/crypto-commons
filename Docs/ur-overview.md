@@ -21,7 +21,7 @@ These videos offer overviews in a different format:
 
 ## For Users
 
-As a user, you will URs of the format "ur:type/bytewords" or a QR encoding that UR. These allow for the free movement of data among apps that support the UR specification.
+As a user, you might note applications using URs of the format "ur:type/bytewords" (or a QR encoding that UR). These allow for the free movement of data among apps that support the UR specification. This will be mostly automated, typically requiring you to show a QR from one app to another.
 
 Example UR:
 ```
