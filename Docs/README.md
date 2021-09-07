@@ -27,6 +27,8 @@ URs allow for the interoperable transmission and storage of a variety of informa
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
 
+_We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research paepers, references, code, and other material of interest primarily to UR developers._
+
 ### Technology Overview Video
 
 <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="../images/video-tech-overview.png"></a>
