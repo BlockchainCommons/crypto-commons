@@ -13,6 +13,8 @@ The following provides broad overviews of UR:
 * [UR High Level Overview](https://www.blockchaincommons.com/projects/Blockchain-Commons-URs-Support-Airgapped-PSBTs/)
 * [UR Technology Introduction](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)
 
+These videos offer overviews in a different format:
+
 * [URs in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1198s)
 * [Multi-part URs in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1373s)
 * [UR Types in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1464s)
