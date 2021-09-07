@@ -37,3 +37,29 @@ They are based on the following, original definitional research papers:
 * [BCR-2020-015: UR Type Definition for BIP44 Accounts](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-015-account.md)
 * [BCR-2021-001: UR Type Definitions for Transactions Between Airgapped Devices](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md)
 
+## Code
+
+The following Blockchain Commons libraries support the usage of URs:
+
+* [bc-ur](https://github.com/BlockchainCommons/bc-ur) — C++ reference library
+* [bc-ur-java](https://github.com/BlockchainCommons/bc-ur-java) — Java reference library
+* [URKit](https://github.com/BlockchainCommons/URKit) and [URUI](https://github.com/BlockchainCommons/URUI) — Swift libraries for usage and display of URs.
+
+The following third-party libraries support URs in a variety of languages:
+
+* [Hummingbird](https://github.com/sparrowwallet/hummingbird) — Another Java library
+* [foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) — Python library
+* [ur-rs](https://github.com/dspicher/ur-rs) — Rust library
+
+### Reference Tools
+
+Want to verify your code? That's what the Blockchain Commons reference tools are for.
+
+* [seedtool-cli - Cryptographic Seed Tool for the command line](https://github.com/BlockchainCommons/seedtool-cli)
+* [Gordian Seed Tool iOS - Cryptographic Seed Manager for iOS & Mac](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
+
+## Support
+
+To support the continued creation and growth of specifications such as this, please become a sponsor of Blockchain Commons, either through [GitHub](https://github.com/sponsors/BlockchainCommons) or through Bitcoin donations on our [BTCpay](https://btcpay.blockchaincommons.com/). Thank you to our [sustaining and additional sponsors](https://www.blockchaincommons.com/sponsors.html).
+
+Please also join us in our [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions) where we are discussing and advancing this and other specifications.
