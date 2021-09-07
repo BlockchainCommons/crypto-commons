@@ -1,4 +1,4 @@
-# Uniform Resources (UR): An Overview
+# Uniform Resources (UR): An Introduction
 
 The [Uniform Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md) specification is a method for encoding structured binary data in plain-text strings that are also well-formed URIs. It's usable with any binary data, but was developed with Bitcoin and other cryptocurrencies in mind.
 
