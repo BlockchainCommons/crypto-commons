@@ -10,10 +10,44 @@ Typed data, reliable interoperation, QR optimization, and animated QRs are the m
 
 The following provides broad overviews of UR:
 
-* [URs: An Introduction](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)
+* [UR High Level Overview](https://www.blockchaincommons.com/projects/Blockchain-Commons-URs-Support-Airgapped-PSBTs/)
+* [UR Technology Introduction](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)
+
 * [URs in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1198s)
 * [Multi-part URs in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1373s)
 * [UR Types in Technology Overview Video](https://www.youtube.com/watch?v=RYgOFSdUqWY&t=1464s)
+
+## For Users
+
+As a user, you will URs of the format "ur:type/bytewords" or a QR encoding that UR. These allow for the free movement of data among apps that support the UR specification.
+
+Example UR:
+```
+ur:crypto-seed/oyadgdhkwzdtfthptokigtvwnnjsqzcxknsktdhpyljeda
+```
+
+<div align="center">
+  <table border=0>
+    <tr>
+      <td>
+        <a href="https://github.com/BlockchainCommons/GordianQRTool-iOS/blob/master/images/qr-seed.jpeg"><img src="https://github.com/BlockchainCommons/GordianQRTool-iOS/blob/master/images/qr-seed.jpeg" width=250></a> 
+        <br><div align="center"><b>QR Tool Recognition</b></div>
+      </center></td>
+      <td>
+        <a href="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-export.jpeg"><img src="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-export.jpeg" width=250></a> 
+        <br><div align="center"><b>Seed Tool Exports</b></div>
+      </center></td>
+      <td>     
+        <a href="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-sskr-expor-3.jpeg"><img src="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-sskr-expor-3.jpeg" width=250></a> 
+        <br><div align="center"><b>Seed Tool SSKR</b></div>
+      </center></td>
+    </tr>
+  </table>
+</div>
+The following iOS reference applications support the use of URs:
+
+* [Gordian QR Tool](https://apps.apple.com/us/app/gordian-qr-tool/id1506851070) — recognizes UR types
+* [Gordian Seed Tool](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229) — imports and exports URs
 
 ## For Developers
 
