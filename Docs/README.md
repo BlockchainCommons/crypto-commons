@@ -22,7 +22,7 @@ _For an even more comprehensive list, please see our [SSKR overview page](sskr-o
 
 URs allow for the interoperable transmission and storage of a variety of information, especially cryptographic data.
 
-1. [URs: An Overview](ur-1-overview.md)
+1. [URs: An Introduction](ur-1-overview.md)
    * [A Guide to Using URs for Key Material](ur-2-keys.md)
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
