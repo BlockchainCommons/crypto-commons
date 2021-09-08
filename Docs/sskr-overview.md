@@ -62,13 +62,15 @@ We've also got docs for using SSKR with  [`seedtool-cli`](https://github.com/Blo
 
 ## For Developers
 
-Want to develop using SSKR? The following provide an array of documents for using SSKR and placing them in URs, as well as info on test vectors, our security review, and the foundation of Shamir's Secret Sharing.
+Want to develop using SSKR? The following provide an array of documents for using SSKR and placing them in URs, as well as info on test vectors, and our security review.
 
 * [SSKR for Developers](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-developers.md)
 * [Guide for Using URs for SSKR](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md)
 * [UR Type Definition for Sharded Secret Key Reconstruction (SSKR)](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md)
 * [SSKR Test Vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-test-vector.md)
 * [Security Review of bc-shamir & bc-sskr libraries](https://github.com/BlockchainCommons/bc-shamir/blob/master/SECURITY-REVIEW.md)
+
+You might also want to read about the foundational technology of Shamir's Secret Sharing itself:
 
 * [Shamir’s Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa)
 
