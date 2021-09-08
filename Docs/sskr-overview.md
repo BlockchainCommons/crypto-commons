@@ -50,13 +50,15 @@ How can you use SSKR? The following describes its usage in [Gordian Seed Tool](h
 
 ## For Power Users
 
-Want to do more with SSKR? The following describes how to design SSKR sharing, how to put your shares in cold storage, and how to SSKR with  [`seedtool-cli`](https://github.com/BlockchainCommons/seedtool-cli).
+Want to do more with SSKR? The following describes how to design SSKR sharing, how to put your shares in cold storage:
 
 * [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md)
 * [SSKR Dangers](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md)
 * [SSKR Cold Storage Example](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/sskr-cold-storage.md)
 
-* [SSKR from Command Line (from `seedtool-cli` manua)](https://github.com/BlockchainCommons/seedtool-cli/blob/master/Docs/MANUAL.md#sskrs)
+We've also got docs for using SSKR with  [`seedtool-cli`](https://github.com/BlockchainCommons/seedtool-cli):
+
+* [SSKR from Command Line (from `seedtool-cli` manual)](https://github.com/BlockchainCommons/seedtool-cli/blob/master/Docs/MANUAL.md#sskrs)
 
 ## For Developers
 
