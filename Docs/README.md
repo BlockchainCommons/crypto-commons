@@ -26,6 +26,7 @@ URs allow for the interoperable transmission and storage of a variety of informa
    * [A Guide to Using URs for Key Material](ur-2-keys.md)
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
 1. [A Guide to Using UR Request & Response](ur-99-request-response.md)
+1. [crypto-request and crypto-response vs Signing via crypto-psbt](crypto-request-or-crypto-psbt.md)
 
 _We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research paepers, references, code, and other material of interest primarily to UR developers._
 
