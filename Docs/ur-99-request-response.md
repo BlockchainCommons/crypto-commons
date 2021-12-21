@@ -505,3 +505,5 @@ Most URs allows for the transmission of data from one device to another, which i
 But you may instead want to allow a more automated dialogue, where one application queries another for a specific key, seed, or PSBT. This allows for more dynamic and interactive functionality, without the user needing to know the specifics of seeds and keys. That's what `crypto-request` and `crypto-response` support, using a back and forth mechanism that builds on the [key material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md#hd-keys-urcrypo-hdkey) and PSBT URs.
 
 The response and request URs will expand in the future. Among our first plans are requests for SSKRs and ephemeral Diffie-Hellman keys, with response-requests that require multiple trips also intended for the future.
+
+Also see our article on [`crypto-request/response` vs `crypto-psbt`](crypto-request-or-crypto-psbt.md) for more on why you'd want to use this design pattern.
