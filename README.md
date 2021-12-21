@@ -24,7 +24,8 @@ _See the [complete listing](Docs/README.md)._
    * **[A Guide to Using URs for Key Material](Docs/ur-2-keys.md)**
    * **[A Guide to Using URs for SSKRs](Docs/ur-3-sskrs.md)**
 1. **[A Guide to Using UR Request & Response](Docs/ur-99-request-response.md)**
-  
+1. **[crypto-request and crypto-response vs Signing via crypto-psbt](Docs/crypto-request-or-crypto-psbt.md)**
+
 ### Video Overview
 
 <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="images/video-tech-overview.png"></a>
