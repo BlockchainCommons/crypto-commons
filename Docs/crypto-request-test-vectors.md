@@ -118,6 +118,8 @@ _AKA Segwit Multsig Private Key_
 ```
 ### Segwit Single Sig (`84'/0'/0'`) Public Key
 
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-public.png)
+
 ```
 {
   1: 37(h'f684371af9d245589c1f1f888ec7b7a3'), 
@@ -131,6 +133,8 @@ _AKA Segwit Multsig Private Key_
 ```
 
 ### Segwit Single Sig (`84'/0'/0'`) Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-private.png)
 
 ```
 {
