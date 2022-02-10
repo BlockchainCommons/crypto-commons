@@ -91,6 +91,8 @@ _AKA Segwit Multsig Private Key_
 
 ### Master Public Key
 
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-public.png)
+
 ```
 {
   1: 37(h'36ED0A7280A04AF98C8030F39871B6EA'), 
@@ -104,6 +106,9 @@ _AKA Segwit Multsig Private Key_
 ```
 
 ### Master Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-private.png)
+
 
 ```
 {
@@ -155,4 +160,11 @@ The body (map element #2) of these `crypto-requests` for specific keys has two e
 1. Is it a private key? (`true` or `false`)
 2. What is the derivation path  (with numbers separated by `true` or `false` for whether it's hardened)
 
+## TODO
+
+1. Six arbitrary crypto-requests for hdkey with text
+2. Six (or twelve?) crypto-requests for hdkey from specific seed
+3. Import and Export Yimn Blue
+4. Import and Export Khaki
+5. PSBT Test
 
