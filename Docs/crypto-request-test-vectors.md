@@ -54,6 +54,64 @@ When deriving a specific key from a user-selected seed (tag 501), the body of th
 ```
 The above requests a public key from `84'/0'/0'` (the Segwith single-sig derivation).
 
+### Cosigner (`48'/0'/0'/2') Public Key
+
+_AKA Segwit Multsig Public Key_
+
+```
+{
+  1: 37(h'36ED0A7280A04AF98C8030F39871B6EA'), 
+  2: 501({
+          1: false, 
+          2: 304({
+                  1: [48, true, 0, true, 0, true, 2, true]
+                })
+        })
+}
+```
+### Cosigner (`48'/0'/0'/2') Private Key
+
+_AKA Segwit Multsig Private Key_
+
+```
+{
+  1: 37(h'36ED0A7280A04AF98C8030F39871B6EA'), 
+  2: 501({
+          1: true, 
+          2: 304({
+                  1: [48, true, 0, true, 0, true, 2, true]
+                })
+        })
+}
+```
+
+### Master Public Key
+
+```
+{
+  1: 37(h'36ED0A7280A04AF98C8030F39871B6EA'), 
+  2: 501({
+          1: false, 
+          2: 304({
+                  1: []
+                })
+        })
+}
+```
+
+### Master Private Key
+
+```
+{
+  1: 37(h'36ED0A7280A04AF98C8030F39871B6EA'), 
+  2: 501({
+          1: true, 
+          2: 304({
+                  1: []
+                })
+        })
+}
+```
 ### Segwit Single Sig (`84'/0'/0'`) Public Key
 
 ```
@@ -84,6 +142,9 @@ The above requests a public key from `84'/0'/0'` (the Segwith single-sig derivat
 
 ### Process for Creating Test Vectors for Arbitrary Key Derivations
 
-Creating a test vector for an arbitrary key derivation follows the standard process for creating `crypto-requests`
+The body (map element #2) of these `crypto-requests` for specific keys has two elements:
 
-1. 
+1. Is it a private key? (`true` or `false`)
+2. What is the derivation path  (with numbers separated by `true` or `false` for whether it's hardened)
+
+
