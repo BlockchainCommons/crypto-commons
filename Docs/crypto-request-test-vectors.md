@@ -56,6 +56,8 @@ The above requests a public key from `84'/0'/0'` (the Segwith single-sig derivat
 
 ### Cosigner (`48'/0'/0'/2') Public Key
 
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-public.png)
+
 _AKA Segwit Multsig Public Key_
 
 ```
@@ -70,6 +72,8 @@ _AKA Segwit Multsig Public Key_
 }
 ```
 ### Cosigner (`48'/0'/0'/2') Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private.png)
 
 _AKA Segwit Multsig Private Key_
 
