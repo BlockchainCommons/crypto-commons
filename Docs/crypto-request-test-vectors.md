@@ -43,7 +43,7 @@ echo "ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwk
 
 ### Requests for Key Derivations from Any Seed
 
-When deriving a specific key from a user-selected seed (tag 501), the body of the `crypto-request` has two elements of note: whether the key is private (1) and what the derivation path is (2).
+When deriving a specific HD key from a user-selected seed (tag 501), the body of the `crypto-request` has two elements of note: whether the key is private (1) and what the derivation path is (2).
 ```
   2: 501({
           1: false, 
@@ -54,7 +54,7 @@ When deriving a specific key from a user-selected seed (tag 501), the body of th
 ```
 The above requests a public key from `84'/0'/0'` (the Segwith single-sig derivation).
 
-### Cosigner (`48'/0'/0'/2'`) Public Key
+#### Cosigner (`48'/0'/0'/2'`) Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-public.png)
 
@@ -71,7 +71,7 @@ _AKA Segwit Multsig Public Key_
         })
 }
 ```
-### Cosigner (`48'/0'/0'/2'`) Private Key
+#### Cosigner (`48'/0'/0'/2'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private.png)
 
@@ -89,7 +89,7 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
-### Master Public Key
+#### Master Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-public.png)
 
@@ -105,7 +105,7 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
-### Master Private Key
+#### Master Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-private.png)
 
@@ -121,7 +121,7 @@ _AKA Segwit Multsig Private Key_
         })
 }
 ```
-### Segwit Single Sig (`84'/0'/0'`) Public Key
+#### Segwit Single Sig (`84'/0'/0'`) Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-public.png)
 
@@ -137,7 +137,7 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
-### Segwit Single Sig (`84'/0'/0'`) Private Key
+#### Segwit Single Sig (`84'/0'/0'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-private.png)
 
@@ -150,6 +150,122 @@ _AKA Segwit Multsig Private Key_
                   1: [84, true, 0, true, 0, true]
                 })
         })
+}
+```
+
+### Requests for Key Derivations from Any Seed with Comment
+
+Adding a comment to a request for a general key derivation simply requires adding a description, which is element 3 of the `crypto-request`. It should be displayed by the recipient, but it should not be used in any response
+```
+  3: "Watch-only key to create ACME Multisig."
+```
+The above adds the listed comment to a `crypto-request`.
+
+Reviewing a comment can help a user to determine if a request is clearly legitimate (or clearly fradulent).
+
+#### Cosigner (`48'/0'/0'/2'`) Public Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-public-comment.png)
+
+_AKA Segwit Multsig Public Key_
+
+```
+{
+  1: 37(h'F94ADE8D3843486180CC9B4D37F70724'), 
+  2: 501({
+          1: false, 
+          2: 304({
+                  1: [48, true, 0, true, 0, true, 2, true]
+                })
+        }),
+  3: "Watch-only key to create ACME Multisig."
+}
+```
+
+#### Cosigner (`48'/0'/0'/2'`) Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private-comment.png)
+
+_AKA Segwit Multsig Private Key_
+
+```
+{
+  1: 37(h'03B0CB4C54C143E89E6D137FC56C41D6'), 
+  2: 501({
+          1: true, 
+          2: 304({
+                  1: [48, true, 0, true, 0, true, 2, true]
+                })
+        }),
+  3: "Please give over private key for usage in real multisig."
+}
+```
+
+#### Master Public Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-public-comment.png)
+
+```
+{
+  1: 37(h'84D22FD40EA74968993B9BDCF2CC00F3'), 
+  2: 501({
+          1: false, 
+          2: 304({
+                  1: []
+                })
+        }),
+  3: "Master public key for watch-only wallet on Sparrow."
+}
+```
+
+#### Master Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-private-comment.png)
+
+
+```
+{
+  1: 37(h'389C3AA302C14088B21D4425B77B6450'), 
+  2: 501({
+          1: true, 
+          2: 304({
+                  1: []
+                })
+        }),
+  3: "Transfer master key to Electrum for online usage."
+}
+```
+#### Segwit Single Sig (`84'/0'/0'`) Public Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-public-comment.png)
+
+```
+{
+  1: 37(h'601FDC4EE38841898D6DA3CEF9E855CE'), 
+  2: 501({
+          1: false, 
+          2: 304({
+                  1: [84, true, 0, true, 0, true]
+                })
+        }),
+  3: "Creating single-sig watch-only wallet on Sparrow."
+}
+```
+
+#### Segwit Single Sig (`84'/0'/0'`) Private Key
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-private-comment.png)
+
+```
+{
+  1: 37(h'5C99BB444C354B659D58BC2299C47032'), 
+  2: 501({
+          1: true, 
+          2: 304({
+                  1: [84, true, 0, true, 0, true]
+                })
+        }),
+   3: "We are withholding your arrest for one more day. This is your last chance to prove your identity by sending your private key. Police sherriffs will be on their way otherwise. Do naught delay!"
 }
 ```
 
