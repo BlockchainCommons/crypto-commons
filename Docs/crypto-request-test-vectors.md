@@ -54,7 +54,7 @@ When deriving a specific key from a user-selected seed (tag 501), the body of th
 ```
 The above requests a public key from `84'/0'/0'` (the Segwith single-sig derivation).
 
-### Cosigner (`48'/0'/0'/2') Public Key
+### Cosigner (`48'/0'/0'/2'`) Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-public.png)
 
@@ -71,7 +71,7 @@ _AKA Segwit Multsig Public Key_
         })
 }
 ```
-### Cosigner (`48'/0'/0'/2') Private Key
+### Cosigner (`48'/0'/0'/2'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private.png)
 
