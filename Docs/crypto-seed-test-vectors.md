@@ -4,6 +4,8 @@
 
 ### Seed with No Additional Data
 
+<img src="https://raw.githubusercontent.com/BlockchainCommons/crypto-commons/master/images/yinmn-blue-300.jpg" align="right" width=200"
+                                                                                                                             
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn.png)
 
 ```
