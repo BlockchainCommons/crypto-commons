@@ -71,7 +71,6 @@
 
 The following process, which can be used for all test vector creation, using a detailed `crypto-seed` as an example.
 
-```
 1. Write the JSON vector using [BCR-2020-006](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#cryptographic-seed-crypto-seed) as reference. Place the hex seed in map element #1, and then optionally place a creation date in element #2, a name in element #3, and a note in element #4.
 ```
 {
