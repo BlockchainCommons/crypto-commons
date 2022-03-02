@@ -6,6 +6,10 @@ Blockchain Commons has produced a variety of documentation of interest to develo
 
 Our crypto-commons specifications, reference tools, and libraries offer new interoperable methodologies for cryptocurrency wallets, and may be of interest to developers and users.
 
+### General
+
+1. [Key Derivation Names](key-derivations.md)
+
 ### Sharded Secret Key Reconstruction (SSKR)
 
 SSKRs allow a seed to be sharded into shares that can be stored as words, URs, or QRs.
