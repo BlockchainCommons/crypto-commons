@@ -269,6 +269,15 @@ ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaad
 echo "ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf" | qrencode -o ~/vector-segwit-single-pubkey.png
 ```
 
+## `crypto-psbt` Requests
+
+To test a PSBT:
+
+1. [Add Alice seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Alice.pdf)
+2. [Add Bob seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Bob.pdf)
+3. [Test Alice signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
+4. [Test Both signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
+
 ## TODO
 
 2. Six (or twelve?) crypto-requests for hdkey from specific seed
