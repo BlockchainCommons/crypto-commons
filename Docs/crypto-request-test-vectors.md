@@ -230,6 +230,48 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
+## `crypto-seed` Requests
+
+### Sample Seed: Yinmn Blue
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn Blue Puff-Seed-UR.jpeg)
+
+### Seed-Digest Request for Yinmn Blue
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn.png)
+
+```
+{
+  1: 37(h'3CB81644ADA44ECB9DDFA285C14FA877'), 
+  2: 500({
+    1: 600(h'ffa11a8b90954fc89ae625779ca11b8f0227573a2f8b4ed85d96ddf901a72cea')
+  })
+}
+```
+
+### Seed-Digest Request for Yinmn Blue with Comment
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-comment.png)
+```
+{
+  1: 37(h'3CB81644ADA44ECB9DDFA285C14FA877'), 
+  2: 500({
+    1: 600(h'ffa11a8b90954fc89ae625779ca11b8f0227573a2f8b4ed85d96ddf901a72cea')
+  }),
+  3: "Seed request by ACME Exchange."
+}
+```
+
+
+## `crypto-psbt` Requests
+
+To test a PSBT:
+
+1. [Add Alice seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Alice.pdf)
+2. [Add Bob seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Bob.pdf)
+3. [Test Alice signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
+4. [Test Both signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
+
 ## Appendix: Standard Process for Creating Test Vectors:
 
 The following process, which can be used for all test vector creation, using a `crypto-request` of a `crypto-hdkey` as an example.
@@ -257,27 +299,17 @@ A201D82550F684371AF9D245589C1F1F888EC7B7A302D901F5A201F402D90130A101861854F500F5
 ```
 4. Use `bytewords` with `hex` input and `minimal` output to produce the UR body.
 ```
-bytewords -i hex -o minimal A201D82550F684371AF9D245589C1F1F888EC7B7A302D901F5A201F402D90130A101861854F500F500F5
+bytewords -i hex -o minimal A201D82550F684371AF9D245589C1F1F888EC7B7A302D901F5A201F402D90130A101861854F500F500F5 
 oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf
 ```
 5. Add `ur:crypto-request/` as a prefix.
 ```
 ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf
 ```
-6. Encode the `crypto-request` as a QR.
+6. Encode the `crypto-request` as a QR. Be sure to capitalize to maximize efficiency of QR.
 ```
-echo "ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf" | qrencode -o ~/vector-segwit-single-pubkey.png
+echo "ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf" | tr '[:lower:]' '[:upper:]' | qrencode -o ~/vector-segwit-single-pubkey.png
 ```
-
-## `crypto-psbt` Requests
-
-To test a PSBT:
-
-1. [Add Alice seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Alice.pdf)
-2. [Add Bob seed](https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/Testing/PSBT%20Signing%20Request/Bob.pdf)
-3. [Test Alice signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
-4. [Test Both signing](https://raw.githubusercontent.com/BlockchainCommons/GordianSeedTool-iOS/master/Testing/PSBT%20Signing%20Request/PSBT%20Signing%20Request%201%20of%202.png)
-
 ## TODO
 
 2. Six (or twelve?) crypto-requests for hdkey from specific seed
