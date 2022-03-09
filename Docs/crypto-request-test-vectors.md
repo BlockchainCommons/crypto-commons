@@ -251,7 +251,7 @@ _AKA Segwit Multsig Private Key_
 
 ### Seed-Digest Request for Yinmn Blue with Comment
 
-![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-comment.png)
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-note.png)
 ```
 {
   1: 37(h'3CB81644ADA44ECB9DDFA285C14FA877'), 
