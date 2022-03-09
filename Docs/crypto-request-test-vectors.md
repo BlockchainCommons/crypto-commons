@@ -4,7 +4,7 @@
 
 ### Requests for Key Derivations from Any Seed
 
-When deriving a specific HD key from a user-selected seed (tag 501), the body of the `crypto-request` has two elements of note: whether the key is private (1) and what the derivation path is (2).
+When requesting a specific HD key derivation from a user-selected seed (tag 501), the body of the `crypto-request` has two elements of note: whether the key is private (1) and what the derivation path is (2).
 ```
   2: 501({
           1: false, 
@@ -236,6 +236,19 @@ _AKA Segwit Multsig Private Key_
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn-Blue-Puff-Seed-UR.png)
 
+`crypto-seeds` can be specifically requested by sending a `crypto-request` body that contains a typed 500 seed-digest for the seeds. This is the SHA256 of the seed, which can be calculated by programs such as `shasum`:
+```
+$ echo '59f2293a5bce7d4de59e71b4207ac5d2' | xxd -r -p | shasum -a 256
+ffa11a8b90954fc89ae625779ca11b8f0227573a2f8b4ed85d96ddf901a72cea  -
+```
+This digest would then be listed as the first and only entry of the 500-encoded map:
+```
+  2: 500({
+    1: 600(h'ffa11a8b90954fc89ae625779ca11b8f0227573a2f8b4ed85d96ddf901a72cea')
+  })
+
+```
+
 ### Seed-Digest Request for Yinmn Blue
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn.png)
@@ -248,6 +261,7 @@ _AKA Segwit Multsig Private Key_
   })
 }
 ```
+The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for the following examples.
 
 ### Seed-Digest Request for Yinmn Blue with Comment
 
