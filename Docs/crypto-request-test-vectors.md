@@ -234,7 +234,7 @@ _AKA Segwit Multsig Private Key_
 
 ### Sample Seed: Yinmn Blue
 
-![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn-Blue-Puff-Seed-UR.jpeg)
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn-Blue-Puff-Seed-UR.png)
 
 ### Seed-Digest Request for Yinmn Blue
 
