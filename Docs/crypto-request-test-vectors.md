@@ -32,6 +32,11 @@ _AKA Segwit Multsig Public Key_
         })
 }
 ```
+
+```
+ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadwkaotaaddyoyadlocsdyykaeykaeykaoykynurjomh
+```
+
 #### Cosigner (`48'/0'/0'/2'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private.png)
@@ -50,6 +55,10 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
+```
+ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadykaotaaddyoyadlocsdyykaeykaeykaoykjskkrkte
+```
+
 #### Master Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-public.png)
@@ -64,6 +73,10 @@ _AKA Segwit Multsig Private Key_
                 })
         })
 }
+```
+
+```
+ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadwkaotaaddyoyadlavdhfhnhp
 ```
 
 #### Master Private Key
@@ -82,6 +95,11 @@ _AKA Segwit Multsig Private Key_
         })
 }
 ```
+
+```
+ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf
+```
+
 #### Segwit Single Sig (`84'/0'/0'`) Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-public.png)
@@ -98,6 +116,10 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
+```
+ur:crypto-request/oeadtpdagdynlremcyyttdfehdnsctctlomnstrlotaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaeuolywf
+```
+
 #### Segwit Single Sig (`84'/0'/0'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-private.png)
@@ -112,6 +134,10 @@ _AKA Segwit Multsig Private Key_
                 })
         })
 }
+```
+
+```
+ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadykaotaaddyoyadlncsghykaeykaeykbkatbncl
 ```
 
 ### Requests for Key Derivations from Any Seed with Comment
@@ -143,6 +169,10 @@ _AKA Segwit Multsig Public Key_
 }
 ```
 
+```
+ur:crypto-request/otadtpdagdytgeuelgetfxfdhslasfndgtemylatdkaotaadykoeadwkaotaaddyoyadlocsdyykaeykaeykaoykaxksdihghsjyiaisdpjljtjzkkcxjeihkkcxjyjlcxiajpihhsjyihcxfpfxgtfecxgtkpjzjyinjkiniodmtddydeiy
+```
+
 #### Cosigner (`48'/0'/0'/2'`) Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-cosigner-private-comment.png)
@@ -160,6 +190,9 @@ _AKA Segwit Multsig Private Key_
         }),
   3: "Please give over private key for usage in real multisig."
 }
+```
+```
+ur:crypto-request/otadtpdagdaxpfsbgsghsefxvsnnjnbwlbskjzfptbaotaadykoeadykaotaaddyoyadlocsdyykaeykaeykaoykaxksetgdjzihhsjkihcxioinkoihcxjlkoihjpcxjojpinkohsjyihcxjeihkkcxiyjljpcxkpjkhsioihcxinjtcxjpihhsjzcxjnkpjzjyinjkiniodmasgefpwf
 ```
 
 #### Master Public Key
@@ -179,6 +212,10 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
+```
+ur:crypto-request/otadtpdagdlrtddltybaosgaisnlfrnduowzsfaewfaotaadykoeadwkaotaaddyoyadlaaxkseogthsjkjyihjpcxjokpidjziniacxjeihkkcxiyjljpcxkthsjyiaisdpjljtjzkkcxkthsjzjzihjycxjljtcxgujohsjpjpjlktdmbgfrdaon
+```
+
 #### Master Private Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-master-private-comment.png)
@@ -196,6 +233,10 @@ _AKA Segwit Multsig Private Key_
   3: "Transfer master key to Electrum for online usage."
 }
 ```
+
+```
+ur:crypto-request/otadtpdagdetnsftotaosefzloprcafydarlkgiegdaotaadykoeadykaotaaddyoyadlaaxksehghjphsjtjkiyihjpcxjnhsjkjyihjpcxjeihkkcxjyjlcxfejzihiajyjpkpjncxiyjljpcxjljtjzinjtihcxkpjkhsioihdmkiaamows
+```
 #### Segwit Single Sig (`84'/0'/0'`) Public Key
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-segwit-single-public-comment.png)
@@ -211,6 +252,9 @@ _AKA Segwit Multsig Private Key_
         }),
   3: "Creating single-sig watch-only wallet on Sparrow."
 }
+```
+```
+ur:crypto-request/otadtpdagdhnctuoglvllofpldlgjnottoytvsgotoaotaadykoeadwkaotaaddyoyadlncsghykaeykaeykaxksehfxjpihhsjyinjtiocxjkinjtiojzihdpjkiniocxkthsjyiaisdpjljtjzkkcxkthsjzjzihjycxjljtcxgujohsjpjpjlktdmjyskeshk
 ```
 
 #### Segwit Single Sig (`84'/0'/0'`) Private Key
@@ -230,11 +274,17 @@ _AKA Segwit Multsig Private Key_
 }
 ```
 
+```
+ur:crypto-request/otadtpdagdhhnlrkfygsecgrihnthdrfcpnlssjoeyaotaadykoeadykaotaaddyoyadlncsghykaeykaeykaxksrshgihcxhsjpihcxktinjyisisjljzieinjtiocxkkjlkpjpcxhsjpjpihjkjycxiyjljpcxjljtihcxjnjljpihcxiehskkdmcxghisinjkcxinjkcxkkjlkpjpcxjzhsjkjycxiaishsjtiaihcxjyjlcxjojpjlkoihcxkkjlkpjpcxinieihjtjyinjykkcxidkkcxjkihjtieinjtiocxkkjlkpjpcxjojpinkohsjyihcxjeihkkdmcxgdjljziniaihcxjkisihjpjpiniyiyjkcxktinjzjzcxidihcxjljtcxjyisihinjpcxkthskkcxjljyisihjpktinjkihdmcxfyjlcxjthskpioisjycxieihjzhskkclleskzohd
+```
+
 ## `crypto-seed` Requests
 
 ### Sample Seed: Yinmn Blue
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn-Blue-Puff-Seed-UR.png)
+
+The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for the following examples.
 
 `crypto-seeds` can be specifically requested by sending a `crypto-request` body that contains a typed 500 seed-digest for the seeds. This is the SHA256 of the seed, which can be calculated by programs such as `shasum`:
 ```
@@ -261,7 +311,10 @@ This digest would then be listed as the first and only entry of the 500-encoded 
   })
 }
 ```
-The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for the following examples.
+
+```
+ur:crypto-request/oeadtpdagdfnrocmfypmoxglsbnturoelpsegwpdktaotaadwkoyadtaaohdhdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdetjsdwwt
+```
 
 ### Seed-Digest Request for Yinmn Blue with Comment
 
@@ -275,7 +328,9 @@ The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for t
   3: "Seed request by ACME Exchange."
 }
 ```
-
+```
+ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadwkaotaaddyoyadlocsdyykaeykaeykaoykynurjomh
+```
 
 ## `crypto-psbt` Requests
 
