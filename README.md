@@ -133,7 +133,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
-### *LifeHash*
+### *bc-lifehash*
 
 <table width="100%">
  <tr>
@@ -143,12 +143,16 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
  <tr>
   <td><b>Language</b></td>
-  <td width="100%">Swift</td>
+  <td width="100%">C/C++</td>
  </tr>
  <tr>
   <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a></td>
+   <td><a href="https://github.com/BlockchainCommons/bc-lifehash">bc-lifehash</a></td>
  </tr>
+  <tr>
+  <td><b>Other Versions</b></td>
+   <td><a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a> (Swift)</td>
+ </tr>    
 </table>
 
 ### *bc-shamir*
