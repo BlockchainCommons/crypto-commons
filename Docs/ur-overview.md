@@ -33,7 +33,7 @@ ur:crypto-seed/oyadgdhkwzdtfthptokigtvwnnjsqzcxknsktdhpyljeda
     <tr>
       <td>
         <a href="https://github.com/BlockchainCommons/GordianQRTool-iOS/blob/master/images/qr-seed.jpeg"><img src="https://github.com/BlockchainCommons/GordianQRTool-iOS/blob/master/images/qr-seed.jpeg" width=250></a> 
-        <br><div align="center"><b>QR Tool Recognition</b></div>
+        <br><div align="center"><b>QR Tool (deprecated) Recognition</b></div>
       </center></td>
       <td>
         <a href="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-export.jpeg"><img src="https://github.com/BlockchainCommons/GordianSeedTool-iOS/blob/master/images/st-export.jpeg" width=250></a> 
@@ -48,7 +48,6 @@ ur:crypto-seed/oyadgdhkwzdtfthptokigtvwnnjsqzcxknsktdhpyljeda
 </div>
 The following iOS reference applications support the use of URs:
 
-* [Gordian QR Tool](https://apps.apple.com/us/app/gordian-qr-tool/id1506851070) — recognizes UR types
 * [Gordian Seed Tool](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229) — imports and exports URs
 
 ## For Developers
