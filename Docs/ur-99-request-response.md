@@ -177,7 +177,7 @@ ur:crypto-response/oeadtpdagdaobncpftlnylfgfgmuztihbawfsgrtflaotaaddwoeadgdstasl
 
 ## Request & Response: `crypto-hdkey`
 
-To request a `crypto-hdkey`, a `crypto-request` must make a request for tag `501` and must flag whether the requested key is private and must include a `crypto-keypath` per the [crypto-request CDDL](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md#cddl-for-request). The `crypto-keypath` is defined in the [crypto-keypath CDDL](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md#cddl-for-key-path), tagged as `304` and must include a `source-fingerprint`. 
+To request a `crypto-hdkey`, a `crypto-request` must make a request for tag `501` and must flag whether the requested key is private and must include a `crypto-keypath` per the [crypto-request CDDL](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md#cddl-for-request). The `crypto-keypath` is defined in the [crypto-keypath CDDL](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md#cddl-for-key-path), tagged as `304` and may include a `source-fingerprint`. 
 
 ### A Master Key Request
 
@@ -332,7 +332,7 @@ That same key is indeed embedded in the `crypto-response`, as should be the case
 * **Key:** oxadykaoykaxhdclaekbrtdyktgrinhhvsfriefdaygopsvyzeclvaldjtgljtbnuyplrtpmgubewkhhpfaahdcxzshhfxvasacfesrppddksgbkecmueofpfzimutcptbspgdintpenurrffsbegetp
 * **Checksum:** ryhdinct
 
-### A Derived Key Rquest
+### A Derived Key Request
 
 You may instead want to request a derived key. This follows the same format as a master-key request, but you must fill in the `components` element of the `crypto-keypath` in the `crypto-request` per [the keypath CDDL](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-007-hdkey.md#cddl-for-key-path).
 
