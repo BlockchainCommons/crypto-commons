@@ -151,7 +151,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a> (Swift)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-lifehash-python">bc-lifehash-python</a> (Python),<a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a> (Swift)</td>
  </tr>    
 </table>
 
