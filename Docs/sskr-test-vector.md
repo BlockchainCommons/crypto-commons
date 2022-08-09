@@ -75,7 +75,7 @@ e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13
 ```
 This seed can be stored in [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS), which can reveal other info about the seed, such as how to back it up with either Blockchain Commons' [ByteWords](https://github.com/BlockchainCommons/bc-bytewords) or traditional BIP39 words:
 
-![](../images/sskr-seed-256.jpg)
+<img src="../images/sskr-seed-256.jpg" width=250>
 
 The ByteWords for `59f2293a5bce7d4de59e71b4207ac5d2` are:
 ```
