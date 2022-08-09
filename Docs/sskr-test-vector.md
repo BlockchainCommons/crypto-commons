@@ -2,7 +2,7 @@
 
 SSKR shards a seed to create shares that can then be distributed to other parties for later retrieval. The following example offers a test vector of a seed and shows its SSKR equivalents.
 
-## The Seed
+## 128-bit Seed
 
 This example is built from the seed:
 ```
@@ -23,11 +23,11 @@ fly mule excess resource treat plunge nose soda reflect adult ramp planet
 ```
 If you'd like to test the seed yourself, download [Gordian SeedTool for iOS](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229) and click the "QR" icon at the top to scan a QR code. Point it to the QR code above and you'll load this Test Vector into your own phone!
 
-## The SSKR
+### The SSKR
 
 [SSKR](https://github.com/BlockchainCommons/bc-sskr) uses Shamir's Secret Sharing to shard a secret, such as the DPAL Test seed, so that the secret can be restored using some threshold of those secrets. 
 
-### Two-of-Three SSKR
+#### Two-of-Three SSKR
 
 A traditional use of Shamir's Secret Sharing might shard a secret into three shares, and then allow the secret to be restored from two of those shares. 
 
@@ -55,7 +55,7 @@ A UR uses the minimal bytewords form, meaning that it shows only the first and l
 
 > :warning: **WARNING.** SSKR is non-deterministic. There is a random factor introduced when the shares are created, which means that every time you generate shares, they will be different. This is an expected and correct result.
   
-### The Two-of-Three Two-of-Three SSKR
+#### The Two-of-Three Two-of-Three SSKR
 
 One of the advantages of SSKR is that it can support arbitrary groups, where you can then reconstruct a secret by using some number of shares from some number of groups.
 
