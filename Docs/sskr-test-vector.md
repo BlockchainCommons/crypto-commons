@@ -124,6 +124,19 @@ A UR uses the minimal bytewords form, meaning that it shows only the first and l
 
 > :warning: **WARNING.** SSKR is non-deterministic. There is a random factor introduced when the shares are created, which means that every time you generate shares, they will be different. This is an expected and correct result.
 
+#### The Two-of-Three Two-of-Three SSKR
+
+One of the advantages of SSKR is that it can support arbitrary groups, where you can then reconstruct a secret by using some number of shares from some number of groups.
+
+One example is a two-of-three two-of-three (grouped four-of-nine) SSKR. Three groups are created, each of which has three shares. Reconstructing the secret requires a threshold of two shares from a threshold of two groups. In other words, the secret can be reconstructed from four of the nine shares, provided that they are two each from two of the groups.
+
+For a more complex SSKR such as this, you might want to use Gordian SeedTool's print function, rather than cutting and pasting SSKRs or URs:
+
+![](../images/sskr-shares-256-1.jpg)
+![](../images/sskr-shares-256-2.jpg)
+![](../images/sskr-shares-256-3.jpg)
+
+
 ## Final Notes
 
 SSKR is a powerful way to back up digital secrets. This example demonstrates a specific seed and how it can be used to generate SSKR shares using two different groupings.
