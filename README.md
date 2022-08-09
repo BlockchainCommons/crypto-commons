@@ -26,6 +26,7 @@ _See the [complete listing](Docs/README.md)._
 1. **[A Guide to Using UR Request & Response](Docs/ur-99-request-response.md)**
 1. **[crypto-request and crypto-response vs Signing via crypto-psbt](Docs/crypto-request-or-crypto-psbt.md)**
 1. **[crypto-request test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md)**
+1. **[crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md)**
 
 ### Video Overview
 
