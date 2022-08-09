@@ -14,8 +14,8 @@ This seed can be stored in [Gordian SeedTool](https://github.com/BlockchainCommo
 
 The ByteWords for `59f2293a5bce7d4de59e71b4207ac5d2` are:
 ```
-hawk whiz diet fact help taco kiwi gift view noon jugs 
-quiz crux kiln silk tied omit keno lung jade
+hawk whiz diet fact help taco kiwi gift view noon 
+jugs quiz crux kiln silk tied omit keno lung jade
 ```
 The BIP39 words are:
 ```
@@ -66,6 +66,29 @@ For a more complex SSKR such as this, you might want to use Gordian SeedTool's p
 ![](../images/sskr-shares-1.png)
 ![](../images/sskr-shares-2.png)
 ![](../images/sskr-shares-3.png)
+
+## 256-bit Seed
+
+This example is built from the seed:
+```
+e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13
+```
+This seed can be stored in [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS), which can reveal other info about the seed, such as how to back it up with either Blockchain Commons' [ByteWords](https://github.com/BlockchainCommons/bc-bytewords) or traditional BIP39 words:
+
+![](../images/sskr-seed.png)
+
+The ByteWords for `59f2293a5bce7d4de59e71b4207ac5d2` are:
+```
+vial mild high twin duty fuel jugs rust apex cats 
+mild idea lamb gyro scar play vibe gray guru soap 
+kiln ruby lazy silk cook tent girl love pose obey 
+pose brew exit gray king iced
+```
+The BIP39 words are:
+```
+toe priority custom gauge jacket theme arrest bargain gloom wide ill fit eagle prepare capable fish limb cigar reform other priority speak rough imitate
+```
+If you'd like to test the seed yourself, download [Gordian SeedTool for iOS](https://apps.apple.com/us/app/gordian-seed-tool/id1545088229) and click the "QR" icon at the top to scan a QR code. Point it to the QR code above and you'll load this Test Vector into your own phone!
 
 ## Final Notes
 
