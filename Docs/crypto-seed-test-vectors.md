@@ -1,5 +1,8 @@
 # `crypto-seed` Test Vectors
 
+* [128 Bit Examples (Yinmn Blue)](#128-bit-examples-yinmn-blue)
+* [256 Bit Examples (Khaki)](#256-bit-examples-khaki)
+
 ## 128 Bit Examples (Yinmn Blue)
 
 <img src="https://raw.githubusercontent.com/BlockchainCommons/crypto-commons/master/images/yinmn-blue-300.jpg" align="right" width="200">
