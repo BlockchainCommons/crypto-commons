@@ -27,7 +27,7 @@
 
 ### Seed with Date & Name
 
-![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-date.png)
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-name.png)
 
 ```
 {
@@ -69,6 +69,30 @@
 }
 ```
 
+## 256 Bit Examples (Khaki)
+
+### Seed with No Additional Data
+                                                                                                                             
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-khaki.png)
+
+```
+{
+  1: h'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13'
+}
+```
+
+### Seed with Date
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-khaki-date.png)
+
+```
+{
+  1: h'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13',
+  2: 1(1645539742)
+}
+```
+
+
 ## Appendix: Standard Process for Creating Test Vectors:
 
 The following process, which can be used for all test vector creation, using a detailed `crypto-seed` as an example.
@@ -91,7 +115,7 @@ A4015059F2293A5BCE7D4DE59E71B4207AC5D202C11A6214F19E037459696E6D6E20426C75652041
 bytewords -i hex -o minimal A4015059F2293A5BCE7D4DE59E71B4207AC5D202C11A6214F19E037459696E6D6E20426C75652041636964204578616D04782754686973206973206F7572207374616E64617264203132382D626974207465737420736565642E
 oxadgdhkwzdtfthptokigtvwnnjsqzcxknsktdaosecyidbbwnnnaxjyhkinjtjnjtcxfwjzkpihcxfpiainiecxfekshsjnaaksdighisinjkcxinjkcxjlkpjpcxjkjyhsjtiehsjpiecxeheyetdpidinjycxjyihjkjycxjkihihiedmksjpaate
 ```
-5. Add `ur:crypto-request/` as a prefix.
+4. Add `ur:crypto-request/` as a prefix.
 ```
 ur:crypto-request/oxadgdhkwzdtfthptokigtvwnnjsqzcxknsktdaosecyidbbwnnnaxjyhkinjtjnjtcxfwjzkpihcxfpiainiecxfekshsjnaaksdighisinjkcxinjkcxjlkpjpcxjkjyhsjtiehsjpiecxeheyetdpidinjycxjyihjkjycxjkihihiedmksjpaate
 ```
