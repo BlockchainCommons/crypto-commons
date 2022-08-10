@@ -284,7 +284,7 @@ ur:crypto-request/otadtpdagdhhnlrkfygsecgrihnthdrfcpnlssjoeyaotaadykoeadykaotaad
 
 ![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/ffa11a8-Yinmn-Blue-Puff-Seed-UR.png)
 
-The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for the following examples.
+The above seed, Yinmn Blue, or `59f2293a5bce7d4de59e71b4207ac5d2`, is used for the following examples. See [the crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md).
 
 `crypto-seeds` can be specifically requested by sending a `crypto-request` body that contains a typed 500 seed-digest for the seeds. This is the SHA256 of the seed, which can be calculated by programs such as `shasum`:
 ```
@@ -301,7 +301,7 @@ This digest would then be listed as the first and only entry of the 500-encoded 
 
 ### Seed-Digest Request for Yinmn Blue
 
-![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn.png)
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-request-yinmn.png)
 
 ```
 {
@@ -318,7 +318,7 @@ ur:crypto-request/oeadtpdagdfnrocmfypmoxglsbnturoelpsegwpdktaotaadwkoyadtaaohdhd
 
 ### Seed-Digest Request for Yinmn Blue with Comment
 
-![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-seed-yinmn-note.png)
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-request-yinmn-note.png)
 ```
 {
   1: 37(h'3CB81644ADA44ECB9DDFA285C14FA877'), 
@@ -332,6 +332,31 @@ ur:crypto-request/oeadtpdagdfnrocmfypmoxglsbnturoelpsegwpdktaotaadwkoyadtaaohdhd
 ur:crypto-request/oeadtpdagdenwebkjplanbgeytlkladywfmkjsrpwdaotaadykoeadwkaotaaddyoyadlocsdyykaeykaeykaoykynurjomh
 ```
 
+### Sample Seed: Khaki
+
+See [the crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md) for our 256-bit test seed, Khaki.
+
+```
+$ echo 'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13' | xxd -r -p | shasum -a 256
+8b206fb05be13485e7e39f8fdba045ce01c98cf42b6687b083e71ae9739d3609  -
+```
+
+### Seed-Digest Request for Khaki
+
+![](https://github.com/BlockchainCommons/crypto-commons/blob/master/images/vectors/vector-request-khaki.png)
+
+```
+{
+  1: 37(h'3CB81644ADA44ECB9DDFA285C14FA877'), 
+  2: 500({
+    1: 600(h'8b206fb05be13485e7e39f8fdba045ce01c98cf42b6687b083e71ae9739d3609')
+  })
+}
+```
+
+```
+ur:crypto-request/oeadtpdagdfnrocmfypmoxglsbnturoelpsegwpdktaotaadwkoyadtaaohdhdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdetjsdwwt
+``
 ## `crypto-psbt` Requests
 
 To test a PSBT:
