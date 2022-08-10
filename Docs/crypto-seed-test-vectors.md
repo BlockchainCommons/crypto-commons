@@ -99,7 +99,7 @@
 {
   1: h'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13',
   2: 1(1645539742),
-  3: "Yinmn Blue Acid Exam"
+  3: "Khaki Gala Jazz"
 }
 ```
 
@@ -111,8 +111,8 @@
 {
   1: h'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13',
   2: 1(1645539742),
-  3: "Yinmn Blue Acid Exam",
-  4: "This is our standard 128-bit test seed."
+  3: "Khaki Gala Jazz",
+  4: "This is our standard 256-bit test seed."
 }
 ```
 
@@ -130,8 +130,8 @@
 {
   1: h'e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13',
   2: 1(1645539742),
-  3: "Yinmn Blue Acid Exam",
-  4: "This is our standard 128-bit test seed. However, this version of it has a very long note. Why? The object is to force the creation of an animated GIF, which demonstrates the power of URs, not just to allow for the self-identification of information, but also to do so in a way the integrates well with QR codes, creating an animated QR when the data would otherwise be too long for a static QR. To force that to happen, this note was made to be over 500 characters long, which is a lot of data for a QR, which maxes out at about 4,000 alphanumeric characters, but which gets very hard to read (especially from a phone) before that."
+  3: "Khaki Gala Jazz",
+  4: "This is our standard 256-bit test seed. However, this version of it has a very long note. Why? The object is to force the creation of an animated GIF, which demonstrates the power of URs, not just to allow for the self-identification of information, but also to do so in a way the integrates well with QR codes, creating an animated QR when the data would otherwise be too long for a static QR. To force that to happen, this note was made to be over 500 characters long, which is a lot of data for a QR, which maxes out at about 4,000 alphanumeric characters, but which gets very hard to read (especially from a phone) before that."
 }
 ```
 
