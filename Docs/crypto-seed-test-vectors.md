@@ -140,6 +140,10 @@
 }
 ```
 
+## Crypto-Seed Requests
+
+For example requests for these seeds, see the [crypto-requests test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md#crypto-seed-requests).
+
 ## Appendix: Standard Process for Creating Test Vectors:
 
 The following process, which can be used for all test vector creation, using a detailed `crypto-seed` as an example.
