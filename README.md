@@ -32,7 +32,7 @@ _See the [complete listing](Docs/README.md)._
 
 1. **[Envelope Overview](https://www.youtube.com/watch?v=FVzTRsqcyMU)**
 1. **[Envelope & SSKR](https://www.youtube.com/watch?v=ERRhMDSEFm8)**
-   * **[Seed Tool & SSKR](https://www.youtube.com/watch?v=aciTNh402Co)
+   * **[Seed Tool & SSKR](https://www.youtube.com/watch?v=aciTNh402Co)**
 1. **[Envelope MVA](https://www.youtube.com/watch?v=S0deyIHXukk)**
 1. **[Envelope Non-Correlation & Elision](https://www.youtube.com/watch?v=ubqKJAizayU)**
 1. **[Envelope-CLI](https://www.youtube.com/watch?v=JowheoEIGmE)**
