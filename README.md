@@ -28,6 +28,16 @@ _See the [complete listing](Docs/README.md)._
 1. **[crypto-request test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md)**
 1. **[crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md)**
 
+### Envelopes (Videos)
+
+1. **[Envelope Overview](https://www.youtube.com/watch?v=FVzTRsqcyMU)**
+1. **[Envelope & SSKR](https://www.youtube.com/watch?v=ERRhMDSEFm8)**
+   * **[Seed Tool & SSKR](https://www.youtube.com/watch?v=aciTNh402Co)
+1. **[Envelope MVA](https://www.youtube.com/watch?v=S0deyIHXukk)**
+1. **[Envelope Non-Correlation & Elision](https://www.youtube.com/watch?v=ubqKJAizayU)**
+1. **[Envelope-CLI](https://www.youtube.com/watch?v=JowheoEIGmE)**
+1. **[Envelope-CLI Q&A](https://www.youtube.com/watch?v=2MjcrKLEsSE)**
+
 ### Video Overview
 
 <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY"><img src="images/video-tech-overview.png"></a>
