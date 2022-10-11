@@ -30,7 +30,8 @@ _See the [complete listing](Docs/README.md)._
 
 ### Envelopes (Videos)
 
-1. **[Envelope Overview](https://www.youtube.com/watch?v=FVzTRsqcyMU)**
+1. **[Envelope Introduction](https://www.youtube.com/watch?v=tQ9SPek0mnI)**
+1. **[Envelope Overview](https://www.youtube.com/watch?v=K2gFTyjbiYk)**
 1. **[Envelope & SSKR](https://www.youtube.com/watch?v=ERRhMDSEFm8)**
    * **[Seed Tool & SSKR](https://www.youtube.com/watch?v=aciTNh402Co)**
 1. **[Envelope MVA](https://www.youtube.com/watch?v=S0deyIHXukk)**
