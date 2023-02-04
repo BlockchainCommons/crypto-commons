@@ -35,7 +35,7 @@ URs allow for the interoperable transmission and storage of a variety of informa
 1. [ur:crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md)
 
 
-_We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research paepers, references, code, and other material of interest primarily to UR developers._
+_We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research papers, references, code, and other material of interest primarily to UR developers._
 
 ### Technology Overview Video
 
@@ -61,6 +61,6 @@ See [the SmartCustody repo](https://github.com/BlockchainCommons/SmartCustody/bl
 
 ## Learning Bitcoin from the Command Line
 
-Learning Bitcoin is our classic course that introduce Bitcoin concepts and programming beginning with Bitcoin Core's command-line tools and its RPC interface.
+Learning Bitcoin is our classic course that introduces Bitcoin concepts and programming beginning with Bitcoin Core's command-line tools and its RPC interface.
 
 1. [Learning Bitcoin from the Command Line 2.0](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/README.md)
