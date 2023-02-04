@@ -51,7 +51,7 @@ _Blockchain Commons has released a number of kits and CLI tools that exercise th
    * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base) and [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords)._
 * **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
   * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base)._
-* **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
+* **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Contains its own version of seedtool built using the Arduino IDE.
   * _LetheKit's Seedtool exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base), [bc-bip-39](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bip-39), [bc-bytewords](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-bytewords), [bc-shamir](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-shamir), [bc-sskr](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-sskr), and [bc-ur](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur) (the last through a bc-ur-arduino port)._
 * **[LifeHashTool](https://github.com/BlockchainCommons/LifeHashTool) \(Swift CLI\).** A tool for generating Lifehash PNGs from the command line.
   * _LifeHashTool uses [LifeHash](https://github.com/BlockchainCommons/LifeHash)._
@@ -203,7 +203,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  <tr>
   <td><b>Notes</b></td>
   <td>Implementation of Satoshi Labs' <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">SLIP-39</a>.<br> 
- Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> instead.
+ Largely deprecated due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> instead.
   </td>
  </tr>
 </table>
@@ -266,7 +266,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 ## Third-Party Libraries
 
-Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong usage of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-bclibwally-java).
+Blockchain Commons also uses well-supported libraries from third parties. In particular, we make strong use of The Elements Project [libwally wallet library](https://github.com/ElementsProject/libwally-core). We are further supporting it with wrappers for [Swift](https://github.com/BlockchainCommons/BCLibwallySwift) and [Java](https://github.com/BlockchainCommons/bc-bclibwally-java).
 
 ## Status - Varied
 
@@ -314,7 +314,7 @@ The following people directly contributed to this repository. You can add your n
 
 We want to keep all of our software safe for everyone. If you have discovered a security vulnerability, we appreciate your help in disclosing it to us in a responsible manner. We are unfortunately not able to offer bug bounties at this time.
 
-We do ask that you offer us good faith and use best efforts not to leak information or harm any user, their data, or our developer community. Please give us a reasonable amount of time to fix the issue before you publish it. Do not defraud our users or us in the process of discovery. We promise not to bring legal action against researchers who point out a problem provided they do their best to follow the these guidelines.
+We do ask that you offer us good faith and use best efforts not to leak information or harm any user, their data, or our developer community. Please give us a reasonable amount of time to fix the issue before you publish it. Do not defraud our users or us in the process of discovery. We promise not to bring legal action against researchers who point out a problem provided they do their best to follow these guidelines.
 
 ### Reporting a Vulnerability
 
