@@ -22,7 +22,7 @@ We are well aware of the dangers of competing standards:
 
 However, we believe that the UR specification serves enough real purposes to make the introduction of a new specification worthwhile:
 
-* **It's self-identifying.** We saw different methodologies for transfering keys such as `xpub`, `ypub`, and `zpub` proliferating and thus causing confusion. Worse, they created layer violations by mixing encoding and policy. We wanted to create a specification with more clearly defined layers that could be expandable, yet still self-identify its contents.
+* **It's self-identifying.** We saw different methodologies for transferring keys such as `xpub`, `ypub`, and `zpub` proliferating and thus causing confusion. Worse, they created layer violations by mixing encoding and policy. We wanted to create a specification with more clearly defined layers that could be expandable, yet still self-identify its contents.
 * **It's focused on security.** We're well aware that the transfer of key material between devices is a prime point of vulnerability, and so URs do their best to minimize that danger, ideally by supporting the transmission of those keys (and seeds and other private information) in an airgapped fashion.
 * **It integrates with QRs.** While QR codes themselves are standard, the data encoded within QR codes is not, resulting in inconsistent usage among developers. We designed URs to resolve these interoperability issues by creating a standardized method for encoding binary data using CBOR and by specifying how to sequence larger binary encoding (as version 40 QR codes max out at 2,953 bytes).
 * **It focuses on the multisig experience.** We see multisig as the future of Bitcoin, allowing for the creation of independent and resilient cryptocurrency addresses. Previous specifications are locked into the single-sig paradigm, while URs include specifications for a variety of data types crucial to multisig use.
@@ -50,7 +50,7 @@ For example:
 * **Seed:** 59F2293A5BCE7D4DE59E71B4207AC5D2
 * **CBOR:** A1015059F2293A5BCE7D4DE59E71B4207AC5D2
    * `ur:crypto-seed` is defined as a map which must include the seed and which may include other data such as creation date.
-   * `A1`represents a map of length 1.
+   * `A1` represents a map of length 1.
       * That's major type 5 (for a map), which is represented as `101` in the most significant three bits, plus a length of 1, which is represented as `00001` in the least significant three bits, or overall `0b10100001`, which is `0xA1`.
    * `01` represents item 1 in the map.
    * `50` represents a 16-byte byte-string payload.
