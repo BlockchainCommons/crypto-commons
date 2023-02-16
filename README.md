@@ -145,6 +145,31 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
 </table>
 
+### *bc-dcbor*
+
+<table width="100%">
+  <tr>
+  <td><b>Description</b></td>
+  <td>Libraries for CBOR compliant with the [deterministic](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c).</td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Rust</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-dcbor-rust">bc-dcbor-rust</a></td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Swift</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/BCSwiftDCBOR">BCSwiftDCBOR</a></td>
+ </tr>
+</table>
+
 ### *bc-lifehash*
 
 <table width="100%">
