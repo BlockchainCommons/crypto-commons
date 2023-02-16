@@ -49,6 +49,8 @@ _Blockchain Commons has released a number of kits and CLI tools that exercise th
 
 * **[Bytewords](https://github.com/BlockchainCommons/bc-bytewords-cli) \(CLI\).** A tool for testing bytewords.
    * _Exercises [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base) and [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords)._
+* **[dCBOR](https://github.com/BlockchainCommons/dcbor-cli) \(CLI\).** A tool for parsing & validating deterministic CBOR.
+   * _Exercises [bc-dcbor-rust](https://github.com/BlockchainCommons/bc-dcbor-rust)._
 * **[Keytool](https://github.com/BlockchainCommons/bc-keytool-cli) \(CLI\).** A tool for deriving keys and addresses from seeds. 
   * _Uses [bc-crypto-base](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-crypto-base)._
 * **[LetheKit](https://github.com/BlockchainCommons/bc-lethekit) \(Hardware Kit\).** A do-it-yourself hardware kit for generating and translating seeds in an airgapped manner. Cotains its own version of seedtool built using the Arduino IDE.
