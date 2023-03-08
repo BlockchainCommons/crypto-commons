@@ -257,7 +257,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>, <a href="https://github.com/proxyco/jc-sskr">jc-sskr</a> (JavaCard)
  </tr>
 </table>
 
