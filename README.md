@@ -152,7 +152,7 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 <table width="100%">
   <tr>
   <td><b>Description</b></td>
-  <td>Libraries for CBOR compliant with the [deterministic](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c).</td>
+  <td>Libraries for CBOR compliant with the <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c">deterministic options</a>.</td>
  </tr>
  <tr>
   <td><b>Language</b></td>
@@ -171,6 +171,8 @@ _The Crypto Commons libraries are reference implementations, meant to be example
   <td><a href="https://github.com/BlockchainCommons/BCSwiftDCBOR">BCSwiftDCBOR</a></td>
  </tr>
 </table>
+
+For more, see our [dCBOR page](dcbor.md).
 
 ### *bc-lifehash*
 
