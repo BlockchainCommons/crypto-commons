@@ -88,27 +88,13 @@ The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also
 * [A Guide to Using URs for SSKR](ur-3-sskrs.md)
 * [A Guide to Using URs for PSBTs] (pending)
 * [A Guide to Using URs for Request & Response](ur-99-request-response.md)
+* [List of UR Implementations](https://github.com/BlockchainCommons/Gordian-Developer-Community/blob/master/README.md#urs)
 
 ## Reference Libraries
 
 See the [crypto-commons `bc-ur` entry](https://github.com/BlockchainCommons/crypto-commons#bc-ur) for the most up-to-date listing of reference libraries.
 
 Current implementations of UR include C++, Java, Python, Rust, and Swift.
-
-## UR Implementations
-
-The following implementations demonstrate examples of UR usage:
-
-Project | Publisher | UR Usage | Status
---------|-------------|----------|--------
-[AirGap Vault](https://airgap.it/) | Papers | TBD | Live
-[BCC Keytool CLI](https://github.com/BlockchainCommons/bc-keytool-cli) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-request<br>ur:crypto-response<br>ur:crypto-seed | Reference
-[BCC Seedtool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) | Blockchain&nbsp;Commons | ur:crypto-seed<br>ur:crypto-sskr | Reference
-[BlueWallet](https://bluewallet.io/) | BlueWallet | bc-ur v1 | Live
-[Cobo&nbsp;Wallet](https://cobo.com/) | Cobo | bc-ur v1 | Live
-[Gordian&nbsp;Cosigner](https://github.com/BlockchainCommons/GordianCosigner-iOS) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-seed | Reference
-[Gordian&nbsp;SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) | Blockchain&nbsp;Commons | ur:crypto-hdkey<br>ur:crypto-psbt<br>ur:crypto-request<br>ur:crypto-response<br>ur:crypto-sskr | Reference
-[Sparrow Wallet](https://sparrowwallet.com/) | Craig Raw | ur:crypto:account<br>ur:crypto-address<br>ur:crypto-hdkey<br>ur:crypto-output<br>ur:crypto-psbt | Live
 
 ## Conclusion
 
