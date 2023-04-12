@@ -36,7 +36,7 @@ URs allow for the interoperable transmission and storage of a variety of informa
 
 One of the important aspects of URs was that they allowed for the introduction of Animated QRs:
 
-1. [Animated QRs](https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/airgap.png)
+1. [Animated QRs](https://www.blockchaincommons.com/devs/animated-qrs.html)
 1. [Animated QRs Video](https://www.youtube.com/watch?v=HsFF5HPKQIk)
 
 _We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research papers, references, code, and other material of interest primarily to UR developers._
