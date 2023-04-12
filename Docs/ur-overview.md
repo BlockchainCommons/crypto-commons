@@ -73,6 +73,13 @@ They are based on the following, original definitional research papers:
 * [BCR-2020-015: UR Type Definition for BIP44 Accounts](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-015-account.md)
 * [BCR-2021-001: UR Type Definitions for Transactions Between Airgapped Devices](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md)
 
+### Animated QRs
+
+One of the important aspects of URs was that they allowed for the introduction of Animated QRs. These are crucial for airgapped architectures because they allow the transmission of PSBTs over an airgap.
+
+1. [Animated QRs](https://www.blockchaincommons.com/devs/animated-qrs.html)
+1. [Animated QRs Video](https://www.youtube.com/watch?v=HsFF5HPKQIk)
+
 ## Code
 
 The following Blockchain Commons libraries support the usage of URs:
