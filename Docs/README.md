@@ -34,8 +34,12 @@ URs allow for the interoperable transmission and storage of a variety of informa
 1. [ur:crypto-request test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md)
 1. [ur:crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md)
 
+One of the important aspects of URs was that they allowed for the introduction of Animated QRs:
 
-_We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research paepers, references, code, and other material of interest primarily to UR developers._
+1. **[Animated QRs](https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/airgap.png)**
+1. **[Animated QRs Video](https://www.youtube.com/watch?v=HsFF5HPKQIk)
+
+_We also have a more comprehensive [UR overview page](ur-overview.md) that includes links to research papers, references, code, and other material of interest primarily to UR developers._
 
 ### Technology Overview Video
 
