@@ -14,16 +14,16 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
   <td>
     <td width="50%">
 
-      **Why CBOR?**
+      <b>Why CBOR?</b>
 
-<a href="https://www.youtube.com/watch?v=uoD5_Vr6qzw"><img src="https://i.ytimg.com/vi/uoD5_Vr6qzw/hqdefault.jpg"></a>
+      <a href="https://www.youtube.com/watch?v=uoD5_Vr6qzw"><img src="https://i.ytimg.com/vi/uoD5_Vr6qzw/hqdefault.jpg"></a>
 
     </td>
     <td width="50%">
   
-**dCBOR Library from Blockchain Commons**
+      <b>dCBOR Library from Blockchain Commons</>
 
-<a href="https://www.youtube.com/watch?v=NlJE8oF1B5M"><img src="https://i.ytimg.com/vi/NlJE8oF1B5M/hqdefault.jpg"></a>
+      <a href="https://www.youtube.com/watch?v=NlJE8oF1B5M"><img src="https://i.ytimg.com/vi/NlJE8oF1B5M/hqdefault.jpg"></a>
 
     </td>
   </tr>
