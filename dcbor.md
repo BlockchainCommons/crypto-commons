@@ -8,6 +8,12 @@ Though RFC 8949 includes some requirements for dCBOR, it leaves other options up
 
 We have also released libraries for dCBOR in Rust and Swift as well as a command line application for testing encoding and decoding that all follow the specifications laid out in this Draft.
 
+## dCBOR Videos
+
+**Why CBOR?**
+
+{% include youtube.html id="JLMbpiywVxQ" %}
+
 ## Developer Libraries & Applications
 
 * **bc-dcbor-rust Library** - https://github.com/BlockchainCommons/bc-dcbor-rust
