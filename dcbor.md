@@ -24,7 +24,7 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
   </tr>
 </table>
 
-## dCBOR Specification
+## Preliminary dCBOR Specification
 
 * **dCBOR IETF I-D** — https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/
 
