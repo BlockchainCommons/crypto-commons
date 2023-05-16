@@ -28,8 +28,18 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
 
 * **dCBOR IETF I-D** — https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/
 
-## Developer Libraries & Applications
+## dCBOR Developer Libraries & Applications
 
 * **bc-dcbor-rust Library** - https://github.com/BlockchainCommons/bc-dcbor-rust
 * **BCSwiftDCBOR Library** - https://github.com/BlockchainCommons/BCSwiftDCBOR
 * **dcbor-cli Parser/Validator** - https://github.com/BlockchainCommons/dcbor-cli
+
+## dCBOR Discussions
+
+* [5/8/23: Updated Drafts for dCBOR I-D and Gordian Envelope Structured Data Format I-D & IANA Tag Registration](https://mailarchive.ietf.org/arch/msg/cbor/DOUxXB-IMTPtvDeGh13ob-IjJsE/)
+* [5/8/23:  Proposal for Deterministic CBOR (dCBOR) discussion at May 17th meeting](https://mailarchive.ietf.org/arch/msg/cbor/G1oXN5DlSpAt7TI5re-fb1lL69I/)
+* [3/12/23: dCBOR moving from numerically-typeless systems](https://mailarchive.ietf.org/arch/msg/cbor/aiGvqw1-sQWJ4pXY3zzQuWwNVzE/)
+* [3/10/23: Decoding numbers and compliance verification in dCBOR](https://mailarchive.ietf.org/arch/msg/cbor/LUQ0lMaAA1ADGuRtb1VLahnlQUg/)
+* [3/10/23: New IETF Internet-Draft draft-mcnally-deterministic-cbor-00](https://mailarchive.ietf.org/arch/msg/cbor/fnz_F5lQNiDiTJFAaJGB3YJdPik/)
+* [3/5/23: Deterministic CBOR as a possible DISPATCH item](https://mailarchive.ietf.org/arch/msg/cbor/qMAOUa8-wIZn5Ts2_53VunGu7Co/)
+* [2/16/23: Fwd: New deterministic CBOR Libraries (Rust & Swift) from Blockchain Commons](https://mailarchive.ietf.org/arch/msg/cbor/l7nzQHFjfpK9nfBOHiQ1L-Rr558/)
