@@ -4,7 +4,7 @@ dCBOR is deterministic CBOR, a optional variant of CBOR described in [RFC 8949](
 
 A deterministic version of CBOR is critical when an application requires the same data to always be encoded in the same way. This is true for [Gordian Envelope](https://www.blockchaincommons.com/introduction/Envelope-Intro/), which uses CBOR to arrange data that is identified by hashes. The hashes only remain the same if the same data is always encoded in the exact same way, hence the need for determinism.
 
-Though RFC 8949 includes some requirements for dCBOR, it leaves other options up to encoder developers. This results in dCBOR usage that is not necessarily consistent across multiple encoders. As a result, Blockchain Commons has produced an [Internet-Draft](https://www.ietf.org/id/draft-mcnally-deterministic-cbor-00.html) to fully codify dCBOR practices.
+Though RFC 8949 includes some requirements for dCBOR, it leaves other options up to encoder developers. This results in dCBOR usage that is not necessarily consistent across multiple encoders. As a result, Blockchain Commons has produced an [Internet-Draft](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/) to fully codify dCBOR practices.
 
 We have also released libraries for dCBOR in Rust and Swift as well as a command line application for testing encoding and decoding that all follow the specifications laid out in this Draft.
 
@@ -24,6 +24,9 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
   </tr>
 </table>
 
+## dCBOR Specification
+
+* **dCBOR IETF I-D** — https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/
 
 ## Developer Libraries & Applications
 
