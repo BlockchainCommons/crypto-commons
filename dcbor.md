@@ -12,6 +12,8 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
 
 **Why CBOR?**
 
+<a href="https://www.youtube.com/watch?v=uoD5_Vr6qzw"><img src="https://i.ytimg.com/vi/uoD5_Vr6qzw/hqdefault.jpg"></a>
+
 {% include youtube.html id="JLMbpiywVxQ" %}
 
 ## Developer Libraries & Applications
