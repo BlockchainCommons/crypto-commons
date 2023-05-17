@@ -27,6 +27,7 @@ We have also released libraries for dCBOR in Rust and Swift as well as a command
 ## Preliminary dCBOR Specification
 
 * **dCBOR IETF I-D** — https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/
+* **Editor's Draft (Repo)** — https://github.com/BlockchainCommons/WIPs-IETF-draft-deterministic-cbor
 
 ## dCBOR Developer Libraries & Applications
 
