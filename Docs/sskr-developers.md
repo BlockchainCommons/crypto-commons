@@ -113,3 +113,6 @@ SSKR was designed from the beginning to work with different types of secret shar
 _Also see the [SSKR Example & Test Vector](sskr-test-vector.md) for a ready-to-use seed and [A Guide to Using URs for SSKRs](https://github.com/BlockchainCommons/crypto-commons/blob/shannona-docs-sskr-request-response/Docs/ur-3-sskrs.md) for discussions of a variety of SSKR formatting._
 
 _For a higher level discussion of secret-sharing designs and dangers, see our #SmartCustody articles on [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md) and [The Dangers of Secret-Sharing Schemes](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md)._
+
+_For a discussion of using SSKR for storing more data than just seeds, such as descriptors, transaction details, etc. see the [CSR - Collaborative Seed Recovery Project](https://github.com/BlockchainCommons/Gordian/blob/master/CSR/README.md)
+
