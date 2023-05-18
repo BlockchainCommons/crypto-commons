@@ -68,7 +68,7 @@ So, while we're leading the way in using multisig to better protect our digital 
 
 ## What are Two-Level Shares?
 
-Using SSKR, you can implement Shamir's Secret Sharing as normal, using a group of sahres with a threshold for reconstruction. However, you can also implement a two-level hierarchy with multiple groups, each of which contain some shares. You can then specify a threshold for both groups and shares.
+Using SSKR, you can implement Shamir's Secret Sharing as normal, using a group of shares with a threshold for reconstruction. However, you can also implement a two-level hierarchy with multiple groups, each of which contain some shares. You can then specify a threshold for both groups and shares.
 
 For example, you could create shares for 2 groups: the first group might require 2 of 3 shares and the second group might require 3 of 5 shares. With a group threshold of 2, individual thresholds from both groups must be met.
 
