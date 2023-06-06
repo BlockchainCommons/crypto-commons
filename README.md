@@ -261,7 +261,7 @@ For more, see our [dCBOR page](dcbor.md).
  </tr>
   <tr>
   <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift), <a href="https://github.com/proxyco/jc-sskr">jc-sskr</a> (JavaCard)</td>
+   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href=" https://github.com/BlockchainCommons/bc-sskr-rust">bc-sskr-rust</a> (Rust) <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift), <a href="https://github.com/proxyco/jc-sskr">jc-sskr</a> (JavaCard)</td>
  </tr>
 </table>
 
