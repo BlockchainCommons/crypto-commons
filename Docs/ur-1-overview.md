@@ -9,10 +9,9 @@ To be precise, Uniform Resources (URs) include:
 3. A standard way split and sequence longer messages.
 4. Optimizations for efficiency when URs are presented as QR codes.
 
-URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data, [all listed in a registry of data types](06-urtypes.md), most notably including seeds, keys, shards, and PSBTs. It's focused on airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
+URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data, most notably including seeds, keys, shards, and PSBTs [all listed in a registry of data types](06-urtypes.md). It's optimized for airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
 
-> :bulb: _URs are used widely in our Gordian reference apps, but our community members have focused most on UR's sequencing feature to create animated QRs that support PSBTs. URs can do a lot more: they can support any airgapped Bitcoin function and more than that, can support data encoding for a large number of decentralized technologies._
-
+> :bulb: _URs are used widely in our Gordian reference apps, but our community members have focused most on UR's sequencing feature to create animated QRs that support PSBTs. URs can do a lot more: they can support any airgapped Bitcoin function and more than that, can support data encoding and storage for a large number of decentralized technologies whether it's airgapped or not._
 
 ## Why Another Standard?
 
@@ -23,7 +22,7 @@ We are well aware of the dangers of competing standards:
 However, we believe that the UR specification serves enough real purposes to make the introduction of a new specification worthwhile:
 
 * **It's self-identifying.** We saw different methodologies for transfering keys such as `xpub`, `ypub`, and `zpub` proliferating and thus causing confusion. Worse, they created layer violations by mixing encoding and policy. We wanted to create a specification with more clearly defined layers that could be expandable, yet still self-identify its contents.
-* **It's focused on security.** We're well aware that the transfer of key material between devices is a prime point of vulnerability, and so URs do their best to minimize that danger, ideally by supporting the transmission of those keys (and seeds and other private information) in an airgapped fashion.
+* **It's focused on security.** The transfer of key material between devices is a prime point of vulnerability, and so URs do their best to minimize that danger, ideally by supporting the transmission of those keys (and seeds and other private information) in an airgapped fashion.
 * **It integrates with QRs.** While QR codes themselves are standard, the data encoded within QR codes is not, resulting in inconsistent usage among developers. We designed URs to resolve these interoperability issues by creating a standardized method for encoding binary data using CBOR and by specifying how to sequence larger binary encoding (as version 40 QR codes max out at 2,953 bytes).
 * **It focuses on the multisig experience.** We see multisig as the future of Bitcoin, allowing for the creation of independent and resilient cryptocurrency addresses. Previous specifications are locked into the single-sig paradigm, while URs include specifications for a variety of data types crucial to multisig use.
 
@@ -31,18 +30,18 @@ However, we believe that the UR specification serves enough real purposes to mak
 
 You can't ever be certain that a network or serial interface between two devices won't lead to one of those devices corrupting the other. Nor can you be certain that a networked connection is proof from man-in-the-middle attacks. That leads to the need for airgaps, where devices don't physically connect. To still allow connectivity, airgaps leverage the cameras and displays in the devices to communicate "through a gap of air". Supporting airgaps is one of the primary purposes for URs: they support the use of QR codes to communicate through that gap of air, and then use UR's tagging feature to reveal what has been sent. This allows the transmission of arbitrary structured data between diverse platforms.
 
-Blockchain Commons' development of airgap specifications is not just the product of our work, but also cooperation with other Bitcoin wallet companies to create digital formats, specifications, and reference apps that support new ways to protect your digital assets. This discussion happens primarily in the [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions).
+Blockchain Commons' development of airgap specifications is not just the product of our work, but also cooperation with other Bitcoin wallet companies to create digital formats, specifications, and reference apps that support new ways to protect your digital assets. This discussion happens primarily in the [Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions).
 
 ## How Are URs Encoded?
 
-As discussed in the [UR specification](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md), binary data is represented with CBOR using a minimal canonical representation, converted to [minimal bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md), and prefaced with the UR type.
+As detailed in the [UR specification](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md), URs are binary data that is represented with CBOR using a minimal canonical representation, converted to [minimal bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md), and prefaced with the UR type.
 
 Thus the process encoding a UR, which is largely automated by Blockchain Commons libraries, is:
 
 1. Refer to the [Registry of Uniform Resource Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) for how to represent the desired data.
 2. Refer to the [CBOR RFC](https://tools.ietf.org/html/rfc7049) for how to encode the data. In particular, be aware of how to [use Canonical CBOR](https://tools.ietf.org/html/rfc7049#section-3.9), how to [encode major types](https://tools.ietf.org/html/rfc7049#section-2.1), and how to [encode byte strings](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#canonical-cbor).
    * The CBOR reference is the _best_ place to read about CBOR encoding, but be aware that whenever you encode something, you will typically preface data with one or more bytes showing data type and length; and as required you may also tag data (which is data type #6).
-3. Convert your complete CBOR binary representation to [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md) using the minimal encoding. This is the first and last letters of the word, and will be done automatically if you are using the Blockchain Commons [bytewords library](https://github.com/BlockchainCommons/bc-bytewords) and request minimal encoding
+3. Convert your complete CBOR binary representation to [Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md) using the minimal encoding. This is the first and last letters of the byteword, and will be done automatically if you are using the Blockchain Commons [bytewords library](https://github.com/BlockchainCommons/bc-bytewords) and request `minimal` encoding
 4. Prefix your UR with `ur:type/`, or in the case of a part of a sequence `ur:type:sequence/`. Again, this will be done automatically if you use a Blockchain Commons [UR Library](https://github.com/BlockchainCommons/bc-ur).
 
 For example:
@@ -50,6 +49,7 @@ For example:
 * **Seed:** 59F2293A5BCE7D4DE59E71B4207AC5D2
 * **CBOR:** A1015059F2293A5BCE7D4DE59E71B4207AC5D2
    * `ur:crypto-seed` is defined as a map which must include the seed and which may include other data such as creation date.
+   * The CBOR breaks down into `A1-01-50-59F2293A5BCE7D4DE59E71B4207AC5D2`.
    * `A1`represents a map of length 1.
       * That's major type 5 (for a map), which is represented as `101` in the most significant three bits, plus a length of 1, which is represented as `00001` in the least significant three bits, or overall `0b10100001`, which is `0xA1`.
    * `01` represents item 1 in the map.
@@ -65,12 +65,13 @@ For example:
 
 *Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
 
-To date, the major uses have fallen into two categories:
+To date, the major uses have fallen into three categories:
 
-* **Key Transfer.** URs can be used to encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
-* **PSBT Signing.** URs can be used to transfer PSBTs as they are being signed (`ur:crypto-psbt`).
-
-When data is being transferred between airgapped documents, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).
+* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
+* **PSBT Signing.** URs can transfer PSBTs as they are being signed (`ur:crypto-psbt`).
+* **SSKR Shares.** URs can encode shards of a key or seed sharded by SSKR.
+ 
+When data is being transferred between airgapped apps, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).
 
 ## What Tools Can I Use to Understand CBOR?
 
@@ -80,7 +81,7 @@ CBOR has a more human-readable text [diagnostic notation](https://datatracker.ie
 
 Specifications for CBOR structures are written in the [Concise Data Defintion Language (CDDL)](https://datatracker.ietf.org/doc/html/rfc8610).
 
-The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be of use, since in URs, CBOR is converted to bytewords for text encoding.
+The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be of use, since CBOR is converted to bytewords for text encoding when constructing URs.
 
 ## More Documents
 
