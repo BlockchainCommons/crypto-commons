@@ -29,7 +29,8 @@ URs allow for the interoperable transmission and storage of a variety of informa
 1. [URs: An Introduction](ur-1-overview.md)
    * [A Guide to Using URs for Key Material](ur-2-keys.md)
    * [A Guide to Using URs for SSKRs](ur-3-sskrs.md)
-1. [A Guide to Using UR Request & Response](ur-99-request-response.md) [**Deprecated**]
+   * [A Guide to Using URs for PSBTs](ur-4-psbt.md)
+   * [A Guide to Using UR Request & Response](ur-99-request-response.md) [**Deprecated**]
 1. [crypto-request and crypto-response vs Signing via crypto-psbt](crypto-request-or-crypto-psbt.md)
 1. [ur:crypto-request test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md)
 1. [ur:crypto-seed test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-seed-test-vectors.md)
