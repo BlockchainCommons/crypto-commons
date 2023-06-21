@@ -9,7 +9,7 @@ To be precise, Uniform Resources (URs) include:
 3. A standard way split and sequence longer messages.
 4. Optimizations for efficiency when URs are presented as QR codes.
 
-URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data, most notably including seeds, keys, shards, and PSBTs [all listed in a registry of data types](06-urtypes.md). It's optimized for airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
+URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data, most notably including seeds, keys, shards, and PSBTs [all listed in a registry of data types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md). It's optimized for airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
 
 > :bulb: _URs are used widely in our Gordian reference apps, but our community members have focused most on UR's sequencing feature to create animated QRs that support PSBTs. URs can do a lot more: they can support any airgapped Bitcoin function and more than that, can support data encoding and storage for a large number of decentralized technologies whether it's airgapped or not._
 
