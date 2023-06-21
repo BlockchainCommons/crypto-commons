@@ -6,11 +6,11 @@ As usual, this will typically be done for you automatically using Blockchain Com
 
 ## Why Use URs for PSBTs?
 
-PSBTs are perhaps the ultimate interoperable data type in Bitcoin Core. They were explicitly built to allow different devices to create and/or sign Bitocin transmissions. As such, they are crucial to [Gordian](https://github.com/BlockchainCommons/Gordian) best practices, which advocate for the storage or seeds and other vulnerable data on non-networked devices. Using PSBTs, transactions can be created on networked devices, shipped to non-networked devices for signing, then shipped back to the networked devices for transmission. 
+PSBTs are perhaps the ultimate interoperable data type in Bitcoin Core. They were explicitly built to allow different devices to create and/or sign Bitocin transmissions. As such, they are crucial to [Gordian](https://github.com/BlockchainCommons/Gordian) best practices, which advocate for the storage of seeds and other vulnerable data on non-networked devices. Using PSBTs, transactions can be created on networked devices, shipped to non-networked devices for signing, then shipped back to the networked devices for transmission. 
 
 So why do you need URs rather than PSBT's standard data format? Quite simply, because PSBTs are too big. If you're just sending around a PSBT's mass of data as base64, no problem. But when transmitting to non-networked devices, for maximum resiliency of your seeds and keys, you probably need to use QRs, and even if you can jam a PSBT into a QR, it may not be readable by a computer camera.
 
-This is especially true when PSBTs are used for multisigs, which is a prime use case for PSBTs: they can allow a transaction to be easily passed around until it's signed by a threshold of people required to authenticate a UTXO. However, as signatures accrue, a PSBT gets ever bigger, to the point where it may be too large for a QR code entirely.
+This is especially true when PSBTs are used for multisigs, and multisigs are a prime use case for PSBTs: that's because PSBTs allow a transaction to be easily passed around until it's signed by a threshold of people required to authenticate a UTXO. However, as signatures accrue, a PSBT gets ever bigger, to the point where it may be too large for a QR code entirely.
 
 URs resolve this by using fountain codes to enable Animated QRs. A single UR is turned into a sequence or URs, each preceded by its type and by its place in a sequence. Each individual frame is not just small enough to fit into a QR, but small enough to be read by a lower-resolution camera. (Best practice is to allow a user to dynamically downsize an animated QR if they're having troubles transmitting it.) The reading device then reads the animation until it's put together enough frames to reconstruct the original data.
 
@@ -23,7 +23,7 @@ Take the following PSBT:
 cHNidP8BAHECAAAAAUKAmWVFG/zLmhHQZ8Q8bQKCoNxxiurIcNZVhafCoLCyAAAAAAD9////AjksAAAAAAAAFgAUvDLbTPtQXj/JTiGj7HTRrvz8ASwiwQAAAAAAABYAFOq0zUDTkmdWzFLl+RydPI47QA4ReCIMAE8BBIiyHgPG2cycgAAAADKRxb1j69WGKYT3nQrjs2zcdlE3UiHFNYyGd3vysjMcAiVPCY671cdIpViKxJr/88kFWlty0jqxfwY8PfU3Tbu3EMh3/URUAACAAAAAgAAAAIAAAQEfN/cAAAAAAAAWABSUBvAKoN3uZMfqYvmU5pVYAoCj5QEDBAEAAAAiBgNa5FjqiQq3akaVNyAsPdho05JgUpccQlhll1wyKD/3FhjId/1EVAAAgAAAAIAAAACAAAAAAAEAAAAAACICAkjtpvsDgJ+za5zGXZjCZhj5fNVw8Uqc+AgQItHhEYiTGMh3/URUAACAAAAAgAAAAIABAAAAAAAAAAA=
 ```
 
-Which decodes as following:
+Which decodes as shown:
 ```
 {
   "tx": {
@@ -122,7 +122,7 @@ Which decodes as following:
 ```
 This is a simple PSBT with a UTXO requiring a single signature.
 
-To turn the PSBT into a UR simple requires wrapping the PSBT. No effort is made to rewrite the PSBT, which has its own format.
+To turn the PSBT into a UR only requires wrapping the PSBT. No effort is made to rewrite the PSBT, which has its own format.
 
 The first step is to convert the base64 of the PSBT into hex code:
 ```
@@ -137,13 +137,13 @@ Looking at this in cbor.me, you can see it breaks down to:
 59 017F                                 # bytes(383)
    70736274FF010071020000000142809965451BFCCB9A11D067C43C6D0282A0DC718AEAC870D65585A7C2A0B0B20000000000FDFFFFFF02392C000000000000160014BC32DB4CFB505E3FC94E21A3EC74D1AEFCFC012C22C1000000000000160014EAB4CD40D3926756CC52E5F91C9D3C8E3B400E1178220C004F010488B21E03C6D9CC9C800000003291C5BD63EBD5862984F79D0AE3B36CDC7651375221C5358C86777BF2B2331C02254F098EBBD5C748A5588AC49AFFF3C9055A5B72D23AB17F063C3DF5374DBBB710C877FD445400008000000080000000800001011F37F70000000000001600149406F00AA0DDEE64C7EA62F994E695580280A3E5010304010000002206035AE458EA890AB76A469537202C3DD868D3926052971C425865975C32283FF71618C877FD445400008000000080000000800000000001000000000022020248EDA6FB03809FB36B9CC65D98C26618F97CD570F14A9CF8081022D1E111889318C877FD44540000800000008000000080010000000000000000 # 
 ```
-That then needs to be converted into minimal bytewords and prepended with the `ur:crypto-psbt` tag so that it's self-describing:
+That hex with the prepended size then needs to be converted into minimal bytewords and prepended again, this time with the `ur:crypto-psbt` tag so that it's self-describing:
 ```
 ur:crypto-psbt/hkadlbjojkidjyzmadaejsaoaeaeaeadfwlanlihfecwztsbnybytiiossfnjnaolfnbuojslewdspjotbgolpossanbpfpraeaeaeaeaezczmzmzmaoesdwaeaeaeaeaeaecmaebbrfeyuygszogdhyfhsoglclotwpjyttplztztaddwcpseaeaeaeaeaeaecmaebbwdqzsnfztemoiohfsfgmvwytcentfnmnfrfzbabykscpbnaegwadaaloprckaxswtasfnslaaeaeaeeymeskryiawmtllndtlrylntbkvlqdjzuokogyemgmclskeclklnktkgwzpreoceaodagwasmnrktlstfdonhdlessnyzmwfsoahhthpjptdftpalbamfnfsykemgtrkrlbespktzcfyghaeaelaaeaeaelaaeaeaelaaeadadctemylaeaeaeaeaeaecmaebbmwamwtbknbutwyiestwdidytmwvamdhdaolaotvwadaxaaadaeaeaecpamaxhtvehdwdldbkrlimfgmdemcxdwfstpistemohngmmscefwhdihmshheydefhylcmcsspktzcfyghaeaelaaeaeaelaaeaeaelaaeaeaeaeadaeaeaeaeaecpaoaofdweolzoaxlaneqdjensswhlmksaiycsytketljowngensyaaybecpttvybylomucsspktzcfyghaeaelaaeaeaelaaeaeaelaadaeaeaeaeaeaeaeaecfktctrf
 ```
 Voila! You have a PSBT in UR form. Sequencing that, for usage in an animated QR, would take some additional work, which is best done with the [UR libraries](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur).
 
-## Integrating Key Material URs Into Your Code
+## Integrating PSBT URs Into Your Code
 
 You can incorporate URs into your own code using [bc-ur for C++](https://github.com/BlockchainCommons/bc-ur) or through [conversions of that library to other languages such as Java and Swift](https://github.com/BlockchainCommons/crypto-commons/blob/master/README.md#bc-ur).
 
@@ -154,4 +154,4 @@ bc-ur provides access to objects such as `UREncoder`, `URDecoder`, and `Byteword
 PSBTs are perhaps the easiest data type to convert into URs. They also offer one of the strongest use cases for URs.
 
 1. The animated QRs that are easy to create using UR sequences are very important for PSBTs because of their potential for large sizes, particularly with multisig PSBTs.
-2. The fact that PSBTs are perhaps the blockchain data most likely to be passed from device to device makes their interoperability that much more important, and URs (especially when integrated with QRs) offer a way to do so that's accessible and easy to use for an average user.
+2. The fact that PSBTs are very likely to be passed from device to device makes their interoperability that much more important, and URs (especially when integrated with QRs) offer a way to do so that's accessible and easy to use for an average user, while its self-describing nature also ensures that devices know what to do with the data!
