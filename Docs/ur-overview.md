@@ -55,10 +55,10 @@ The following iOS reference applications support the use of URs:
 The following are accessible guides to using URs in your programs:
 
 * [URs: An Introduction](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-1-overview.md)
-* [A Guide to URs for Key Material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md)
-* [A Guide to URs for SSKRs](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md)
-* [A Guide to URs for PSBTs](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-4-psbt.md)
-* [A Guide to UR Request & Response](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-99-request-response.md) [**Deprecated**]
+   * [A Guide to URs for PSBTs](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-4-psbt.md)
+   * [A Guide to URs for Key Material](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-2-keys.md)
+   * [A Guide to URs for SSKRs](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md)
+   * [A Guide to UR Request & Response](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-99-request-response.md) [**Deprecated**]
 * [crypto-request and crypto-response vs Signing via crypto-psbt](crypto-request-or-crypto-psbt.md)
 
 They are based on the following, original definitional research papers:
