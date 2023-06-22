@@ -21,9 +21,9 @@ _See the [complete listing](Docs/README.md)._
 ### URs
 
 1. **[URs: An Overview](Docs/ur-1-overview.md)**
+   * **[A Guide to Using URs for PSBTs](Docs/ur-4-psbt.md)** [our biggest success story]
    * **[A Guide to Using URs for Key Material](Docs/ur-2-keys.md)**
    * **[A Guide to Using URs for SSKRs](Docs/ur-3-sskrs.md)**
-   * **[A Guide to Using URs for PSBTs](Docs/ur-4-psbt.md)** [our biggest success story]
    * **[A Guide to Using UR Request & Response](Docs/ur-99-request-response.md)**
 1. **[crypto-request and crypto-response vs Signing via crypto-psbt](Docs/crypto-request-or-crypto-psbt.md)**
 1. **[crypto-request test vectors](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/crypto-request-test-vectors.md)**
