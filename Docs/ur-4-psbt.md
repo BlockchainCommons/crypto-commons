@@ -14,6 +14,8 @@ This is especially true when PSBTs are used for multisigs, and multisigs are a p
 
 URs resolve this by using fountain codes to enable Animated QRs. A single UR is turned into a sequence or URs, each preceded by its type and by its place in a sequence. Each individual frame is not just small enough to fit into a QR, but small enough to be read by a lower-resolution camera. (Best practice is to allow a user to dynamically downsize an animated QR if they're having troubles transmitting it.) The reading device then reads the animation until it's put together enough frames to reconstruct the original data.
 
+The proof is in the pudding. `crypto-psbt` has been our most widely used UR specification with [about a dozen wallets](https://github.com/BlockchainCommons/Gordian-Developer-Community#urs) already incorporating it.
+
 ## PRBTs: `[crypto-psbt]`
 
 `crypto-psbt` is the simplest conversion of UR data type.
