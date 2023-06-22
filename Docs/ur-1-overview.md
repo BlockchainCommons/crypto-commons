@@ -9,7 +9,7 @@ To be precise, Uniform Resources (URs) include:
 3. A standard way split and sequence longer messages.
 4. Optimizations for efficiency when URs are presented as QR codes.
 
-URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data, most notably including seeds, keys, shards, and PSBTs [all listed in a registry of data types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md). It's optimized for airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
+URs are a crucial element of the [Gordian architecture](https://github.com/BlockchainCommons/Gordian), allowing for the self-identified encoding of a variety of cryptographic data. This has been [widely adopted](https://github.com/BlockchainCommons/Gordian-Developer-Community#urs) for use in PSBTs and is also avialable for many other types of data such as seeds, keys, and shards, [all listed in a registry of data types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md). It's optimized for airgapped usage and allows for standardized interoperability for Bitcoin apps released by different companies.
 
 > :bulb: _URs are used widely in our Gordian reference apps, but our community members have focused most on UR's sequencing feature to create animated QRs that support PSBTs. URs can do a lot more: they can support any airgapped Bitcoin function and more than that, can support data encoding and storage for a large number of decentralized technologies whether it's airgapped or not._
 
@@ -69,8 +69,8 @@ For example:
 
 To date, the major uses have fallen into three categories:
 
-* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
 * **PSBT Signing.** URs can transfer PSBTs as they are being signed (`ur:crypto-psbt`).
+* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
 * **SSKR Shares.** URs can encode shards of a key or seed sharded by SSKR.
  
 When data is being transferred between airgapped apps, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).
@@ -87,9 +87,9 @@ The [bytewords CLI](https://github.com/BlockchainCommons/bytewords-cli) can also
 
 ## More Documents
 
+* [A Guide to Using URs for PSBTs](ur-4-psbt.md) [our biggest success story]
 * [A Guide to Using URs for Key Material](ur-2-keys.md)
 * [A Guide to Using URs for SSKR](ur-3-sskrs.md)
-* [A Guide to Using URs for PSBTs](ur-4-psbt.md)
 * [A Guide to Using URs for Request & Response](ur-99-request-response.md)
 * [List of UR Implementations](https://github.com/BlockchainCommons/Gordian-Developer-Community/blob/master/README.md#urs)
 
