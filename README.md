@@ -79,7 +79,7 @@ _Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SH
 | C | [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) | Blockchain Commons |
 | Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
 | Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
-| Rust | [https://github.com/BlockchainCommons/bc-crypto-rust](bc-crypto-rust) | Blockchain Commons |
+| Rust | [bc-crypto-rust](https://github.com/BlockchainCommons/bc-crypto-rust) | Blockchain Commons |
 
 ### *bc-bech32*
 
