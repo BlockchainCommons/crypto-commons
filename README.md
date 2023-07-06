@@ -177,6 +177,32 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 For more, see our [dCBOR page](dcbor.md).
 
+### *bc-envelope*
+
+<table width="100%">
+  <tr>
+  <td><b>Description</b></td>
+  <td>Libraries for <a href="https://www.blockchaincommons.com/introduction/Envelope-Intro/">Gordian Envelope</a>a>.</td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Rust</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-envelope-rust">bc-envelope-rust</a></td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Swift</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/BCSwiftEnvelope">BCSwiftEnvelope</a></td>
+ </tr>
+</table>
+
+
 ### *bc-lifehash*
 
 <table width="100%">
@@ -280,6 +306,14 @@ For more, see our [dCBOR page](dcbor.md).
  <tr>
   <td><b>Link</b></td>
   <td><a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a></td>
+ </tr>
+ <tr>
+  <td><b>Language</b></td>
+  <td width="100%">Rust</td>
+ </tr>
+ <tr>
+  <td><b>Link</b></td>
+  <td><a href="https://github.com/BlockchainCommons/bc-ur-rust">bc-ur-rust</a></td>
  </tr>
   <tr>
   <td><b>Notes</b></td>
