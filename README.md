@@ -72,24 +72,14 @@ _The Crypto Commons libraries are reference implementations, meant to be example
 
 ### *bc-crypto-base*
 
-<table width="100%">
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-crypto-base">bc-crypto-base</a></td>
- </tr>
- <tr>
-  <td><b>Notes</b></td>
-  <td>Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions.</td>
- </tr>
-  <tr>
-  <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift), <a href="https://github.com/BlockchainCommons/bc-crypto-rust">bc-crypto-rust</a> (Rust)</td>
- </tr>
-</table>
+_Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SHA-256, HMAC-SHA-512, PBKDF2-SHA-256, PBKDF2-SHA-512, SHA-256, and SHA-512 algorithms, and memzero functions._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C | [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) | Blockchain Commons |
+| Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
+| Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
+| Rust | [https://github.com/BlockchainCommons/bc-crypto-rust](bc-crypto-rust) | Blockchain Commons |
 
 ### *bc-bech32*
 
