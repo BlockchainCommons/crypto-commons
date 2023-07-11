@@ -175,6 +175,8 @@ _Implementation of Satoshi Labs' SLIP-39. Largely deprected due to discovery of 
 
 ### *bc-sskr*
 
+**Specification:** [bcr-2020-011](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md)
+
 _The SSKR (Sharded Secret Key Reconstruction) methodology is an alternative to SLIP-39 that converts Shamir shares to [URs](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md) or [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md). Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas [SLIP-39 does not](https://github.com/BlockchainCommons/bc-lethekit/issues/38)._
 
 | Language | Repo | Contributor | Status |
