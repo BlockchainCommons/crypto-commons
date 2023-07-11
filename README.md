@@ -100,6 +100,7 @@ _Implementation of BIP-39 mnemonic codes._
 | Language | Repo | Contributor | Status |
 |----------|------|-------------|--------|
 | C | [bc-bip39](https://github.com/blockchaincommons/bc-bip39) | Blockchain Commons | |
+| Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
 
 ### *bc-bytewords*
 
@@ -110,6 +111,7 @@ _The Bytewords methodology encodes binary data as English words, using a set of 
 | Language | Repo | Contributor | Status |
 |----------|------|-------------|--------|
 | C | [bc-bytewords](https://github.com/BlockchainCommons/bc-bytewords) | Blockchain Commons | |
+| Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
 
 
 ### *bc-dcbor*
@@ -138,47 +140,28 @@ _Libraries for [Gordian Envelope](https://www.blockchaincommons.com/introduction
 
 ### *bc-lifehash*
 
-<table width="100%">
- <tr>
-  <td><b>Description</b></td>
-  <td>A library for creating LifeHash security images
-</td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C/C++</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-lifehash">bc-lifehash</a></td>
- </tr>
-  <tr>
-  <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-lifehash-python">bc-lifehash-python</a> (Python),<a href="https://github.com/BlockchainCommons/LifeHash">LifeHash</a> (Swift)</td>
- </tr>    
-</table>
+**Overview:** [Lifehash.info](https://github.com/BlockchainCommons/lifehash.info)
+
+_A library for creating LifeHash visual hashes._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C/C++ | [bc-lifehash](https://github.com/BlockchainCommons/bc-lifehash) | Blockchain Commons |
+| Python | [bc-lifehash-python](https://github.com/BlockchainCommons/bc-lifehash-python) | CrossBar |
+| Swift | [LifeHash](https://github.com/BlockchainCommons/LifeHash) | Blockchain Commons |
 
 ### *bc-shamir*
 
-<table width="100%">
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-shamir">bc-shamir</a></td>
- </tr>
- <tr>
-  <td><b>Notes</b></td>
-  <td>Implementation of Shamir Secret Sharing.
-  </td>
- </tr>
-  <tr>
-  <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/bc-shamir-rust">bc-shamir-rust</a> (Rust), <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift)</td>
- </tr>
-</table>
+**Specification:** ["How to Share a Secret"](https://dl.acm.org/doi/pdf/10.1145/359168.359176)
+
+_Implementation of Shamir's Secret Sharing._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C | [bc-shamir](https://github.com/BlockchainCommons/bc-shamir) | Blockchain Commons | [Security Reviewed](https://github.com/BlockchainCommons/bc-shamir/blob/master/SECURITY-REVIEW.md) |
+| Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
+| Rust | [bc-shamir-rust](https://github.com/BlockchainCommons/bc-shamir-rust) | Blockchain Commons |
+| Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
 
 ### *bc-slip39*
 
