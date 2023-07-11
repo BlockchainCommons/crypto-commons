@@ -167,7 +167,7 @@ _Implementation of Shamir's Secret Sharing._
 
 **Specification:** [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md).
 
-_Implementation of Satoshi Labs' SLIP-39. Largely deprected due to discovery of [round-trip failure with BIP-39](https://github.com/BlockchainCommons/bc-lethekit/issues/38). Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead.
+_Implementation of Satoshi Labs' SLIP-39. Largely deprected due to discovery of [round-trip failure with BIP-39](https://github.com/BlockchainCommons/bc-lethekit/issues/38). Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead._
 
 | Language | Repo | Contributor | Status |
 |----------|------|-------------|--------|
