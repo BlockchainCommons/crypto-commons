@@ -78,8 +78,8 @@ _Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SH
 |----------|------|-------------|--------|
 | C | [bc-crypto-base](https://github.com/BlockchainCommons/bc-crypto-base) | Blockchain Commons |
 | Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
-| Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
 | Rust | [bc-crypto-rust](https://github.com/BlockchainCommons/bc-crypto-rust) | Blockchain Commons |
+| Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
 
 ### *bc-bech32*
 
@@ -93,7 +93,9 @@ _Implementation of Bech32 address format. No longer being actively supported._
 
 ### *bc-bip-39*
 
-_Implementation of <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP-39</a> mnemonic codes._
+**Specification:** [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+
+_Implementation of BIP-39 mnemonic codes._
 
 | Language | Repo | Contributor | Status |
 |----------|------|-------------|--------|
@@ -103,7 +105,7 @@ _Implementation of <a href="https://github.com/bitcoin/bips/blob/master/bip-0039
 
 **Specification:** [bcr-2020-012](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)
 
-_The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters. Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur).
+_The Bytewords methodology encodes binary data as English words, using a set of 256 four-letter words, each of which can be recovering using just the first two letters. Bytewords are also used in [bc-sskr](https://github.com/blockchaincommons/bc-sskr) and [bc-ur](https://github.com/BlockchainCommons/bc-ur)._
 
 | Language | Repo | Contributor | Status |
 |----------|------|-------------|--------|
@@ -112,55 +114,26 @@ _The Bytewords methodology encodes binary data as English words, using a set of 
 
 ### *bc-dcbor*
 
-<table width="100%">
-  <tr>
-  <td><b>Description</b></td>
-  <td>Libraries for CBOR compliant with the <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c">deterministic options</a>.</td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">Rust</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-dcbor-rust">bc-dcbor-rust</a></td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">Swift</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/BCSwiftDCBOR">BCSwiftDCBOR</a></td>
- </tr>
-</table>
+**Specification:** [RFC8949](https://www.rfc-editor.org/rfc/rfc8949.html) / [dCBOR I-D](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/)
 
-For more, see our [dCBOR page](dcbor.md).
+_Libraries for CBOR compliant with the [deterministic options](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c). For more, see our [dCBOR page](dcbor.md)._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| Rust | [bc-dcbor-rust](https://github.com/BlockchainCommons/bc-dcbor-rust) | Blockchain Commons | |
+| Swift | [BCSwiftDCBOR](https://github.com/BlockchainCommons/BCSwiftDCBOR) | Blockchain Commons | |
+
 
 ### *bc-envelope*
 
-<table width="100%">
-  <tr>
-  <td><b>Description</b></td>
-  <td>Libraries for <a href="https://www.blockchaincommons.com/introduction/Envelope-Intro/">Gordian Envelope</a>a>.</td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">Rust</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-envelope-rust">bc-envelope-rust</a></td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">Swift</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/BCSwiftEnvelope">BCSwiftEnvelope</a></td>
- </tr>
-</table>
+**Specification:** [Envelope Structured Data Format I-D](https://datatracker.ietf.org/doc/draft-mcnally-envelope/)
+
+_Libraries for [Gordian Envelope](https://www.blockchaincommons.com/introduction/Envelope-Intro/)._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| Rust | [bc-envelope-rust](https://github.com/BlockchainCommons/bc-envelope-rust) | Blockchain Commons | |
+| Swift | [BCSwiftEnvelope](https://github.com/BlockchainCommons/BCSwiftEnvelope) | Blockchain Commons | |
 
 
 ### *bc-lifehash*
