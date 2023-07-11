@@ -165,48 +165,25 @@ _Implementation of Shamir's Secret Sharing._
 
 ### *bc-slip39*
 
-<table width="100%">
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-slip39">bc-slip39</a></td>
- </tr>
- <tr>
-  <td><b>Notes</b></td>
-  <td>Implementation of Satoshi Labs' <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">SLIP-39</a>.<br> 
- Largely deprected due to discovery of round-trip failure with BIP-39. Blockchain Commons projects use <a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a> instead.
-  </td>
- </tr>
-</table>
+**Specification:** [SLIP-39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md).
+
+_Implementation of Satoshi Labs' SLIP-39. Largely deprected due to discovery of [round-trip failure with BIP-39](https://github.com/BlockchainCommons/bc-lethekit/issues/38). Blockchain Commons projects use [bc-sskr](https://github.com/blockchaincommons/bc-sskr) instead.
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C | [bc-slip39](https://github.com/BlockchainCommons/bc-slip39) | Blockchain Commons | Deprecated |
 
 ### *bc-sskr*
 
-<table width="100%">
-  <tr>
-  <td><b>Description</b></td>
-  <td>The SSKR (Sharded Secret Key Reconstruction) methodology is an alternative to SLIP-39 that converts Shamir shards to <a href="https://github.com/BlockchainCommons/bc-ur">URs</a> or <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>. Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas <a href="https://github.com/BlockchainCommons/bc-lethekit/issues/38">SLIP-39 does not</a>.</td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/blockchaincommons/bc-sskr">bc-sskr</a></td>
- </tr>
-  <tr>
-  <td><b>Notes</b></td>
-  <td>Implementation of Sharmir Secret Sharing Key Recovery, an alternative to SLIP-39 that allows round-tripping with BIP-39, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md">BCR-2020-011</a>
-</td>
- </tr>
-  <tr>
-  <td><b>Other Versions</b></td>
-   <td><a href="https://github.com/BlockchainCommons/bc-libs-java">bc-libs-java</a> (Java), <a href="https://github.com/BlockchainCommons/bc-sskr-rust">bc-sskr-rust</a> (Rust) <a href="https://github.com/BlockchainCommons/BCLibsSwift">BCLibsSwift</a> (Swift), <a href="https://github.com/proxyco/jc-sskr">jc-sskr</a> (JavaCard)</td>
- </tr>
-</table>
+_The SSKR (Sharded Secret Key Reconstruction) methodology is an alternative to SLIP-39 that converts Shamir shares to [URs](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md) or [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md). Its main improvement over SLIP-39 is that it round trips with BIP-39, whereas [SLIP-39 does not](https://github.com/BlockchainCommons/bc-lethekit/issues/38)._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C | [bc-sskr](https://github.com/blockchaincommons/bc-sskr) | Blockchain Commons | [Security Reviewed](https://github.com/BlockchainCommons/bc-sskr/blob/master/SECURITY-REVIEW.md) |
+| Java | [bc-libs-java](https://github.com/BlockchainCommons/bc-libs-java) | Bitmark | 
+| JavaCard | [jc-sskr](https://github.com/proxyco/jc-sskr) | Proxy |
+| Rust | [bc-sskr-rust](https://github.com/BlockchainCommons/bc-sskr-rust) | Blockchain Commons |
+| Swift | [BCLibsSwift](https://github.com/BlockchainCommons/BCLibsSwift) | Blockchain Commons |
 
 ### *bc-ur*
 
