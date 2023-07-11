@@ -83,21 +83,11 @@ _Well-reviewed, audited, and optimized crypto functions. Includes CRC32, HMAC-SH
 
 ### *bc-bech32*
 
-<table width="100%">
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-bech32">bc-bech32</a></td>
- </tr>
- <tr>
-  <td><b>Notes</b></td>
-  <td>Implementation of <a href="https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki">BIP-173</a>, Bech32 address format.<br><i>No longer being actively supported.</i>
-</td>
- </tr>
-</table>
+Implementation of <a href="https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki">BIP-173</a>, Bech32 address format.<br><i>No longer being actively supported.</i>
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C | [bc-bech32](https://github.com/BlockchainCommons/bc-bech32) | Blockchain Commons | Unsupported |
 
 ### *bc-bip-39*
 
