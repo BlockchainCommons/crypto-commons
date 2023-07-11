@@ -187,41 +187,19 @@ _The SSKR (Sharded Secret Key Reconstruction) methodology is an alternative to S
 
 ### *bc-ur*
 
-<table width="100%">
-  <tr>
-  <td><b>Description</b></td>
-  <td>The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md">bytewords</a>.</td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">C++</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-ur">bc-ur</a></td>
- </tr>
- <tr>
-  <td><b>Language</b></td>
-  <td width="100%">Rust</td>
- </tr>
- <tr>
-  <td><b>Link</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-ur-rust">bc-ur-rust</a></td>
- </tr>
-  <tr>
-  <td><b>Notes</b></td>
-  <td>Implementation of Blockchain Commons' UR standard for Uniform Resources, as described in <a href="https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md">BCR-2020-005</a>.  
-</td>
- </tr>
- <tr>
-  <td><b>Other Versions</b></td>
-  <td><a href="https://github.com/BlockchainCommons/bc-ur-java">bc-ur-java</a> (Java), <a href="https://github.com/BlockchainCommons/URKit">URKit</a> and <a href="https://github.com/BlockchainCommons/URUI">URUI</a> (Swift)
- </tr>
-  <tr>
-  <td><b>Third-Party Implementations</b></td>
-   <td><a href="https://github.com/sparrowwallet/hummingbird">Hummingbird</a> (Java), <a href="https://github.com/Foundation-Devices/foundation-ur-py">foundation-ur-py</a> (Python), and <a href="https://github.com/dspicher/ur-rs">ur-rs</a> (Rust)
- </tr>
-</table>
+**Specification:** [bcr-2020-005](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md)
+
+_The UR methodology allows the encoding of binary data of arbitrary content and length and their transportation using one or more URIs or QR codes (or alternatively animated QR codes). It also integrates with [bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)._
+
+| Language | Repo | Contributor | Status |
+|----------|------|-------------|--------|
+| C++ | [bc-ur](https://github.com/BlockchainCommons/bc-ur) | Blockchain Commons |
+| Java | [bc-ur-java](https://github.com/BlockchainCommons/bc-ur-java) | Bitmark |
+| Java | [Hummingbird](https://github.com/sparrowwallet/hummingbird) | Craig Raw |
+| Python | [foundation-ur-py](https://github.com/Foundation-Devices/foundation-ur-py) | Foundation |
+| Rust | [bc-ur-rust](https://github.com/BlockchainCommons/bc-ur-rust) | Blockchain Commons | 
+| Rust | [ur-rust](https://github.com/dspicher/ur-rs) | Dominik Spicher |
+| Swift | [URKit](https://github.com/BlockchainCommons/URKit) + [URUI](https://github.com/BlockchainCommons/URUI) | Blockchain Commons |
 
 ## Third-Party Libraries
 
