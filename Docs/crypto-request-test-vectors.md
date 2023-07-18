@@ -1,5 +1,7 @@
 # `crypto-request` Test Vectors
 
+_**Deprecated.** crypto-requests are being replaced with Envelopes in newer reference apps._
+
 ## `crypto-hdkey` Requests
 
 ### Requests for Key Derivations from Any Seed
