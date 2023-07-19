@@ -15,7 +15,7 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
  200(201([200(202(100)), 200([200(24(209(100))), 200(201([200(24(210(200))), 200(24(313(h'ffa11a8b90954fc89ae625779ca11b8f0227573a2f8b4ed85d96ddf901a72cea')))]))])])),
 200(201([200(202(4)), 200(24("Harum numquam dicta dolorem incidunt eum! Quis quis dolores sit illo consequatur sit voluptatem aut."))]))]
 
-
+```
 83                                      # array(3)
    D8 C8                                # tag(200) ENVELOPE
       D8 18                             # tag(24) BYTE STRING
@@ -57,13 +57,16 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
                D8 18                    # tag(24) BYTE STRING
                   78 64                 # text(100)
                      486172756D206E756D7175616D20646963746120646F6C6F72656D20696E636964756E742065756D212051756973207175697320646F6C6F7265732073697420696C6C6F20636F6E73657175617475722073697420766F6C7570746174656D206175742E # "Harum numquam dicta dolorem incidunt eum! Quis quis dolores sit illo consequatur sit voluptatem aut."
+```
 
+```
 request(CID(03ce809c)) [
     body: «100» [
         ❰200❱: seed-digest(Bytes(32))
     ]
     note: "Harum numquam dicta dolorem incidunt eum! Quis quis dolores sit illo consequatur sit voluptatem aut."
 ]
+```
 
 ```mermaid
 graph LR
@@ -120,13 +123,14 @@ graph LR
 [Response Seed]
 ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksggtmnvttycpnnynuydmswtpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsietpsptpsolftpsptpcstptdcssptpsptpcstaadeshdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdtpsptpsolftpsptpsgaatpsptpcsksiefdhsjpkpjncxjtkpjnjskphsjncxieiniajyhscxiejljzjljpihjncxinjtiainiekpjtjycxihkpjnclcxgykpinjkcxjskpinjkcxiejljzjljpihjkcxjkinjycxinjzjzjlcxiajljtjkihjskphsjykpjpcxjkinjycxkojljzkpjojyhsjyihjncxhskpjydmhesrdkts
 
+```
 response(CID(03ce809c)) [
     result: Bytes(16) [
         hasName: "Dark Purple Peck Vial"
         id: 200
     ]
 ]
-
+```
 
 ```mermaid
 graph LR
