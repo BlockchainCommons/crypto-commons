@@ -6,6 +6,15 @@ DragonBook:~ ShannonA$ bytewords -i minimal -o hex lftpsptpcsihhsjziniaihtpsptps
 DragonBook:~ ShannonA$ cbor2diag -x 82d8c8d81865616c696365d8c8d8c982d8c8d818656c696b6573d8c8d81863626f62
 [200(24("alice")), 200(201([200(24("likes")), 200(24("bob"))]))]
 
+EXPRESSIONS:
+https://github.com/BlockchainCommons/Gordian/blob/master/Envelope/Expressions.md
+
+UR TYPES:
+https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md
+
+FUNCTION/PARAMETER LISTING:
+https://github.com/BlockchainCommons/BCSwiftFoundation/blob/d410454bae8f6d460211b7bdd8c6ae2c539d2f0b/Sources/BCFoundation/Shared/FunctionExtensions.swift#L12
+
 ## Request Seed
 ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksggtmnvttycpnnynuydmswtpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsietpsptpsolftpsptpcstptdcssptpsptpcstaadeshdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdtpsptpsolftpsptpsgaatpsptpcsksiefdhsjpkpjncxjtkpjnjskphsjncxieiniajyhscxiejljzjljpihjncxinjtiainiekpjtjycxihkpjnclcxgykpinjkcxjskpinjkcxiejljzjljpihjkcxjkinjycxinjzjzjlcxiajljtjkihjskphsjykpjpcxjkinjycxkojljzkpjojyhsjyihjncxhskpjydmhesrdkts
 
@@ -60,11 +69,13 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
 ```
 
 ```
-request(CID(03ce809c)) [
-    body: «100» [
-        ❰200❱: seed-digest(Bytes(32))
+request(CID(7370feae)) [
+    body: «getKey» [
+        ❰derivationPath❱: crypto-keypath(Map) [
+            isA: derivationPath
+        ]
     ]
-    note: "Harum numquam dicta dolorem incidunt eum! Quis quis dolores sit illo consequatur sit voluptatem aut."
+    note: "Sint qui doloribus aperiam vel recusandae sit alias adipisci aut aliquid harum non. Nulla saepe provident illum sint autem ut consequatur fuga sapiente sint consectetur dolores?"
 ]
 ```
 
@@ -121,8 +132,7 @@ graph LR
 
 
 [Response Seed]
-ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksggtmnvttycpnnynuydmswtpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsietpsptpsolftpsptpcstptdcssptpsptpcstaadeshdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdtpsptpsolftpsptpsgaatpsptpcsksiefdhsjpkpjncxjtkpjnjskphsjncxieiniajyhscxiejljzjljpihjncxinjtiainiekpjtjycxihkpjnclcxgykpinjkcxjskpinjkcxiejljzjljpihjkcxjkinjycxinjzjzjlcxiajljtjkihjskphsjykpjpcxjkinjycxkojljzkpjojyhsjyihjncxhskpjydmhesrdkts
-
+?
 ```
 response(CID(03ce809c)) [
     result: Bytes(16) [
@@ -187,10 +197,76 @@ graph LR
 ur:envelope/lstpsptpcstptktaadethdcxjkjozepladdliysbjnhnsertmnzolrspfslsroimeszefpfsledagmattaglgyentpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsihtpsptpsolftpsptpcstptdcssotpsplftpsptpcstaaddyoeadlocsdyykaeykaeykaoykaxaatpsptpsolftpsptpsgadtpsptpsgcfadyntpsptpsolftpsptpsgaatpsptpcskspaguinjtjycxjskpincxiejljzjljpinidkpjkcxhsjoihjpinhsjncxkoihjzcxjpihiakpjkhsjtiehsihcxjkinjycxhsjzinhsjkcxhsieinjoinjkiaincxhskpjycxhsjzinjskpiniecxishsjpkpjncxjtjljtdmcxglkpjzjzhscxjkhsihjoihcxjojpjlkoinieihjtjycxinjzjzkpjncxjkinjtjycxhskpjyihjncxkpjycxiajljtjkihjskphsjykpjpcxiykpiohscxjkhsjoinihjtjyihcxjkinjtjycxiajljtjkihiajyihjykpjpcxiejljzjljpihjkfhuyghcedp
 
 ```
+83                                      # array(3)
+   D8 C8                                # tag(200) ENVELOPE
+      D8 18                             # tag(24) BYTE STRING
+         D8 CF                          # tag(207) REQUEST
+            D9 0138                     # tag(312)
+               58 20                    # bytes(32)
+                  7370FEAE012F66CB6D60C1C08EFB84C83D83B86A39FE413D8A255207D94E5136 # "sp\xFE\xAE\u0001/f\xCBm`\xC1\xC0\x8E\xFB\x84\xC8=\x83\xB8j9\xFEA=\x8A%R\a\xD9NQ6"
+   D8 C8                                # tag(200)
+      D8 C9                             # tag(201)
+         82                             # array(2)
+            D8 C8                       # tag(200)
+               D8 CA                    # tag(202)
+                  18 64                 # unsigned(100)
+            D8 C8                       # tag(200)
+               82                       # array(2)
+                  D8 C8                 # tag(200)
+                     D8 18              # tag(24)
+                        D8 D1           # tag(209)
+                           18 65        # unsigned(101)
+                  D8 C8                 # tag(200)
+                     D8 C9              # tag(201)
+                        82              # array(2)
+                           D8 C8        # tag(200)
+                              D8 18     # tag(24)
+                                 D8 D2  # tag(210)
+                                    18 C9 # unsigned(201)
+                           D8 C8        # tag(200)
+                              82        # array(2)
+                                 D8 C8  # tag(200)
+                                    D8 18 # tag(24)
+                                       D9 0130 # tag(304)
+                                          A2 # map(2)
+                                             01 # unsigned(1)
+                                             88 # array(8)
+                                                18 30 # unsigned(48)
+                                                F5 # primitive(21)
+                                                00 # unsigned(0)
+                                                F5 # primitive(21)
+                                                00 # unsigned(0)
+                                                F5 # primitive(21)
+                                                02 # unsigned(2)
+                                                F5 # primitive(21)
+                                             03 # unsigned(3)
+                                             04 # unsigned(4)
+                                 D8 C8  # tag(200)
+                                    D8 C9 # tag(201)
+                                       82 # array(2)
+                                          D8 C8 # tag(200)
+                                             D8 CA # tag(202)
+                                                01 # unsigned(1)
+                                          D8 C8 # tag(200)
+                                             D8 CA # tag(202)
+                                                19 01F6 # unsigned(502)
+   D8 C8                                # tag(200)
+      D8 C9                             # tag(201)
+         82                             # array(2)
+            D8 C8                       # tag(200)
+               D8 CA                    # tag(202)
+                  04                    # unsigned(4)
+            D8 C8                       # tag(200)
+               D8 18                    # tag(24)
+                  78 B1                 # text(177)
+                     53696E742071756920646F6C6F7269627573206170657269616D2076656C207265637573616E6461652073697420616C6961732061646970697363692061757420616C697175696420686172756D206E6F6E2E204E756C6C612073616570652070726F766964656E7420696C6C756D2073696E7420617574656D20757420636F6E736571756174757220667567612073617069656E74652073696E7420636F6E736563746574757220646F6C6F7265733F # "Sint qui doloribus aperiam vel recusandae sit alias adipisci aut aliquid harum non. Nulla saepe provident illum sint autem ut consequatur fuga sapiente sint consectetur dolores?"
+
+```
+```
 request(CID(7370feae)) [
-    body: «101» [
-        ❰201❱: crypto-keypath(Map) [
-            id: 502
+    body: «getKey» [
+        ❰derivationPath❱: crypto-keypath(Map) [
+            isA: derivationPath
         ]
     ]
     note: "Sint qui doloribus aperiam vel recusandae sit alias adipisci aut aliquid harum non. Nulla saepe provident illum sint autem ut consequatur fuga sapiente sint consectetur dolores?"
