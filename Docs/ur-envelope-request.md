@@ -67,6 +67,69 @@ request(CID(03ce809c)) [
 
 ```mermaid
 graph LR
+    1(("73a74d84<br/>NODE"))
+    2["7a0302af<br/>request(CID(03ce809c))"]
+    3(["572491ba<br/>ASSERTION"])
+    4[/"b2cbfa6b<br/>100"/]
+    5(("c046590d<br/>NODE"))
+    6["d44a14fe<br/>«100»"]
+    7(["26b385ea<br/>ASSERTION"])
+    8["a85815d7<br/>❰200❱"]
+    9["43fa6f3d<br/>313(Bytes(32))"]
+    10(["dfffc9e6<br/>ASSERTION"])
+    11[/"49a5f41b<br/>4"/]
+    12["5f515e27<br/>#quot;Harum numquam dicta dolorem incidunt eum…#quot;"]
+    1 -->|subj| 2
+    1 --> 3
+    3 -->|pred| 4
+    3 -->|obj| 5
+    5 -->|subj| 6
+    5 --> 7
+    7 -->|pred| 8
+    7 -->|obj| 9
+    1 --> 10
+    10 -->|pred| 11
+    10 -->|obj| 12
+    style 1 stroke:red,stroke-width:3.0px
+    style 2 stroke:#55f,stroke-width:3.0px
+    style 3 stroke:red,stroke-width:3.0px
+    style 4 stroke:#55f,stroke-width:3.0px
+    style 5 stroke:red,stroke-width:3.0px
+    style 6 stroke:#55f,stroke-width:3.0px
+    style 7 stroke:red,stroke-width:3.0px
+    style 8 stroke:#55f,stroke-width:3.0px
+    style 9 stroke:#55f,stroke-width:3.0px
+    style 10 stroke:red,stroke-width:3.0px
+    style 11 stroke:#55f,stroke-width:3.0px
+    style 12 stroke:#55f,stroke-width:3.0px
+    linkStyle 0 stroke:red,stroke-width:2.0px
+    linkStyle 1 stroke-width:2.0px
+    linkStyle 2 stroke:green,stroke-width:2.0px
+    linkStyle 3 stroke:#55f,stroke-width:2.0px
+    linkStyle 4 stroke:red,stroke-width:2.0px
+    linkStyle 5 stroke-width:2.0px
+    linkStyle 6 stroke:green,stroke-width:2.0px
+    linkStyle 7 stroke:#55f,stroke-width:2.0px
+    linkStyle 8 stroke-width:2.0px
+    linkStyle 9 stroke:green,stroke-width:2.0px
+    linkStyle 10 stroke:#55f,stroke-width:2.0px
+```
+
+
+
+[Response Seed]
+ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksggtmnvttycpnnynuydmswtpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsietpsptpsolftpsptpcstptdcssptpsptpcstaadeshdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdtpsptpsolftpsptpsgaatpsptpcsksiefdhsjpkpjncxjtkpjnjskphsjncxieiniajyhscxiejljzjljpihjncxinjtiainiekpjtjycxihkpjnclcxgykpinjkcxjskpinjkcxiejljzjljpihjkcxjkinjycxinjzjzjlcxiajljtjkihjskphsjykpjpcxjkinjycxkojljzkpjojyhsjyihjncxhskpjydmhesrdkts
+
+response(CID(03ce809c)) [
+    result: Bytes(16) [
+        hasName: "Dark Purple Peck Vial"
+        id: 200
+    ]
+]
+
+
+```mermaid
+graph LR
     1(("23f82a73<br/>NODE"))
     2["d07a8b9f<br/>response(CID(03ce809c))"]
     3(["ee94c24e<br/>ASSERTION"])
@@ -114,13 +177,3 @@ graph LR
     linkStyle 9 stroke:green,stroke-width:2.0px
     linkStyle 10 stroke:#55f,stroke-width:2.0px
 ```
-
-[Response Seed]
-ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksggtmnvttycpnnynuydmswtpsptpsolftpsptpsgcsietpsplftpsptpcstpttcsietpsptpsolftpsptpcstptdcssptpsptpcstaadeshdcxzmoycylumhmdgwspnyvadaktnsoycwmyaodihgftdllugltphlmtutytadosdwwdtpsptpsolftpsptpsgaatpsptpcsksiefdhsjpkpjncxjtkpjnjskphsjncxieiniajyhscxiejljzjljpihjncxinjtiainiekpjtjycxihkpjnclcxgykpinjkcxjskpinjkcxiejljzjljpihjkcxjkinjycxinjzjzjlcxiajljtjkihjskphsjykpjpcxjkinjycxkojljzkpjojyhsjyihjncxhskpjydmhesrdkts
-
-response(CID(03ce809c)) [
-    result: Bytes(16) [
-        hasName: "Dark Purple Peck Vial"
-        id: 200
-    ]
-]
