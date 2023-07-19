@@ -19,8 +19,8 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
 83                                      # array(3)
    D8 C8                                # tag(200) ENVELOPE
       D8 18                             # tag(24) BYTE STRING
-         D8 CF                          # tag(207)
-            D9 0138                     # tag(312)
+         D8 CF                          # tag(207) REQUEST
+            D9 0138                     # tag(312) CID
                58 20                    # bytes(32)
                   03CE809C31C2E0345BEA433EE465EDEB7BD79479C5CA4D8EE0D4229EF6DB2EC6 # "\u0003\u0380\x9C1\xC2\xE04[\xEAC>\xE4e\xED\xEB{הy\xC5\xCAM\x8E\xE0\xD4\"\x9E\xF6\xDB.\xC6"
    D8 C8                                # tag(200) ENVELOPE
@@ -32,19 +32,19 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
             D8 C8                       # tag(200) ENVELOPE
                82                       # array(2)
                   D8 C8                 # tag(200) ENVELOPE
-                     D8 18              # tag(24)
-                        D8 D1           # tag(209)
+                     D8 18              # tag(24) BYTE STRING
+                        D8 D1           # tag(209) FUNCTION
                            18 64        # unsigned(100)
                   D8 C8                 # tag(200) ENVELOPE
-                     D8 C9              # tag(201)
+                     D8 C9              # tag(201) ASSERTION
                         82              # array(2)
                            D8 C8        # tag(200) ENVELOPE
-                              D8 18     # tag(24)
-                                 D8 D2  # tag(210)
+                              D8 18     # tag(24) BYTE STRING
+                                 D8 D2  # tag(210) PARAMETER
                                     18 C8 # unsigned(200)
                            D8 C8        # tag(200) ENVELOPE
-                              D8 18     # tag(24)
-                                 D9 0139 # tag(313)
+                              D8 18     # tag(24) BYTE STRING
+                                 D9 0139 # tag(313) SEED DIGEST
                                     58 20 # bytes(32)
                                        FFA11A8B90954FC89AE625779CA11B8F0227573A2F8B4ED85D96DDF901A72CEA # "\xFF\xA1\u001A\x8B\x90\x95OȚ\xE6%w\x9C\xA1\e\x8F\u0002'W:/\x8BN\xD8]\x96\xDD\xF9\u0001\xA7,\xEA"
    D8 C8                                # tag(200) ENVELOPE
@@ -52,7 +52,7 @@ ur:envelope/lstpsptpcstptktaadethdcxaxtolansehsavteehpwdfxfmveihwewmkgtsmwkksksg
          82                             # array(2)
             D8 C8                       # tag(200) ENVELOPE
                D8 CA                    # tag(202) KNOWN VALUE
-                  04                    # unsigned(4) KV: 2
+                  04                    # unsigned(4) KV: NOTE
             D8 C8                       # tag(200) ENVELOPE
                D8 18                    # tag(24) BYTE STRING
                   78 64                 # text(100)
